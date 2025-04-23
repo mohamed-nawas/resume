@@ -23,8 +23,8 @@ function Header() {
                     <div className="collapse navbar-collapse" id="rss-navbar">
                         <ul className="nav navbar-nav">
                             <li><a href="/resume">Home</a></li>
-                            <li><a href="/resume/about">About Me</a></li>
-                            <li className="active"><a href="/resume/projects">Portfolio</a></li>
+                            <li><a href="/resume/#/about">About Me</a></li>
+                            <li className="active"><a href="/resume/#/projects">Portfolio</a></li>
                             <li><a href="/resume/#/contact">Contact Me</a></li>
                             <li className="rss-navbar__menu__call"><a href="#call"><span className="glyphicon glyphicon-earphone"><p>Book-Call</p></span></a></li>
                         </ul>
