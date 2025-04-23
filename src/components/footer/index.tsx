@@ -13,7 +13,7 @@ function Footer() {
                     <a href="/resume/projects">
                         <p className="rss-footer__brand-container__link-container__link font-14-18">Portfolio</p>
                     </a>
-                    <a href="/resume/contact">
+                    <a href="/resume/#/contact">
                         <p className="rss-footer__brand-container__link-container__link font-14-18">Contact Me</p>
                     </a>
                 </div>
