@@ -1,4 +1,15 @@
+import { useEffect } from "react";
+
 function Header() {
+
+    useEffect(() => {
+      const header = document.querySelector(".rss-header");
+      if (header) {
+        const headerHeight = header.getBoundingClientRect().height;
+        document.body.style.paddingTop = `${headerHeight}px`;
+      }
+    }, []);
+    
     return (
         <header className="rss-header">
             <nav className="navbar navbar-inverse">
