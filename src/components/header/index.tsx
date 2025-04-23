@@ -1,6 +1,6 @@
 function Header() {
     return (
-        <header>
+        <header className="rss-header">
             <nav className="navbar navbar-inverse">
                 <div className="container-fluid">
                     <div className="navbar-header">
