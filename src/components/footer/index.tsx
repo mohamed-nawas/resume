@@ -4,16 +4,16 @@ function Footer() {
             <div className="rss-footer__brand-container">
                 <h5 className="rss-footer__brand-container__title font-18-24">Mohamed Nawas.</h5>
                 <div className="rss-footer__brand-container__link-container">
-                    <a href="/">
+                    <a href="/resume">
                         <p className="rss-footer__brand-container__link-container__link font-14-18">Home</p>
                     </a>
-                    <a href="/about">
+                    <a href="/resume/about">
                         <p className="rss-footer__brand-container__link-container__link font-14-18">About Me</p>
                     </a>
-                    <a href="/resume">
+                    <a href="/resume/projects">
                         <p className="rss-footer__brand-container__link-container__link font-14-18">Portfolio</p>
                     </a>
-                    <a href="/contact">
+                    <a href="/resume/contact">
                         <p className="rss-footer__brand-container__link-container__link font-14-18">Contact Me</p>
                     </a>
                 </div>
