@@ -38,17 +38,17 @@ function Footer() {
 
             <div className="rss-footer__info-container">
                 <div className="rss-footer__info-container__item-container">
-                    <img src="resume/icons/envelope-ico.png" alt="Envelope Icon" className="rss-footer__info-container__item-container__icon" />
+                    <img src={`${import.meta.env.BASE_URL}/icons/envelope-ico.png`} alt="Envelope Icon" className="rss-footer__info-container__item-container__icon" />
                     <p className="rss-footer__info-container__item-container__content font-16-18">mgmnawas@gmail.com</p>
                 </div>
                 <div className="rss-footer__info-container__vertical-ruler" />
                 <div className="rss-footer__info-container__item-container">
-                    <img src="resume/icons/call-ico.png" alt="Call Icon" className="rss-footer__info-container__item-container__icon" />
+                    <img src={`${import.meta.env.BASE_URL}/icons/call-ico.png`} alt="Call Icon" className="rss-footer__info-container__item-container__icon" />
                     <p className="rss-footer__info-container__item-container__content font-16-18">+94 77 455 2663</p>
                 </div>
                 <div className="rss-footer__info-container__vertical-ruler" />
                 <div className="rss-footer__info-container__item-container">
-                    <img src="resume/icons/marker-ico.png" alt="Marker Icon" className="rss-footer__info-container__item-container__icon" />
+                    <img src={`${import.meta.env.BASE_URL}/icons/marker-ico.png`} alt="Marker Icon" className="rss-footer__info-container__item-container__icon" />
                     <p className="rss-footer__info-container__item-container__content font-16-18">Colombo, Sri Lanka</p>
                 </div>
             </div>
