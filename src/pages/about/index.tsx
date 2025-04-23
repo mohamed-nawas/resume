@@ -11,7 +11,7 @@ function About() {
 
 
                 <div className="rss-about__details-section">
-                    <img src={`${import.meta.env.BASE_URL}/icons/profile-image__mobile.png`} alt="Profile Image" className="rss-about__details-section__banner-image" />
+                    <img src={`${import.meta.env.BASE_URL}/icons/profile-image__desktop.png`} alt="Profile Image" className="rss-about__details-section__banner-image" />
                     {/* <div className="rss-about__details-section__banner-image" /> */}
                     <div className="rss-about__details-section__content-container">
                         <h4 className="rss-about__details-section__content-container__slug font-14-24">Welcome to the world of captivating web design!</h4>
