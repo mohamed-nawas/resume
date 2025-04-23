@@ -7,10 +7,10 @@ function Footer() {
                     <a href="/resume">
                         <p className="rss-footer__brand-container__link-container__link font-14-18">Home</p>
                     </a>
-                    <a href="/resume/about">
+                    <a href="/resume/#/about">
                         <p className="rss-footer__brand-container__link-container__link font-14-18">About Me</p>
                     </a>
-                    <a href="/resume/projects">
+                    <a href="/resume/#/projects">
                         <p className="rss-footer__brand-container__link-container__link font-14-18">Portfolio</p>
                     </a>
                     <a href="/resume/#/contact">
