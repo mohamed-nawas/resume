@@ -12,11 +12,11 @@
         gap: clamp(30px, 7.5vw, 80px);
 
         &__banner-image {
-            width: 358px;
+            // width: 358px;
             // height: auto;
             height: 345px;
             object-fit: cover;
-            // aspect-ratio: 1.038;
+            aspect-ratio: 1.038;
             position: relative;
             background-size: cover;
             background-position: center;
@@ -90,9 +90,9 @@
             flex-direction: row;
 
             &__banner-image {
-                width: 615px;
+                // width: 615px;
                 height: 596px;
-                // aspect-ratio: 1.031;
+                aspect-ratio: 1.031;
                 background-image: url("/icons/profile-image__laptop.png");
             }
 
@@ -123,9 +123,9 @@
     @include screens.min-lg {
         &__details-section {
             &__banner-image {
-                width: 758px;
+                // width: 758px;
                 height: 596px;
-                // aspect-ratio: 1.272;
+                aspect-ratio: 1.272;
                 background-image: url("/icons/profile-image__desktop.png");
             }
 
