@@ -1,7 +1,6 @@
 {
   "name": "resume-template-1",
   "homepage": "https://mohamed-nawas.github.io/resume/",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
