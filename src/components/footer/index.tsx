@@ -20,17 +20,17 @@ function Footer() {
                 <div className="rss-footer__brand-container__icons-container">
                     <div className="rss-footer__brand-container__icons-container__ico-container">
                         <a href="https://www.linkedin.com/in/mohamed-nawaz/" target="_blank">
-                            <img src="icons/linkedin-ico.png" alt="Linkedin Icon" className="rss-footer__brand-container__icons-container__ico-container__icon" />
+                            <img src={`${import.meta.env.BASE_URL}/icons/linkedin-ico.png`} alt="Linkedin Icon" className="rss-footer__brand-container__icons-container__ico-container__icon" />
                         </a>
                     </div>
                     <div className="rss-footer__brand-container__icons-container__ico-container">
                         <a href="https://www.twitter.com" target="_blank">
-                            <img src="icons/twitter-ico.png" alt="Linkedin Icon" className="rss-footer__brand-container__icons-container__ico-container__icon" />
+                            <img src={`${import.meta.env.BASE_URL}/icons/twitter-ico.png`} alt="Linkedin Icon" className="rss-footer__brand-container__icons-container__ico-container__icon" />
                         </a>
                     </div>
                     <div className="rss-footer__brand-container__icons-container__ico-container">
                         <a href="https://github.com/mohamed-nawas/" target="_blank">
-                            <img src="icons/web-ico.png" alt="Linkedin Icon" className="rss-footer__brand-container__icons-container__ico-container__icon" />
+                            <img src={`${import.meta.env.BASE_URL}/icons/web-ico.png`} alt="Linkedin Icon" className="rss-footer__brand-container__icons-container__ico-container__icon" />
                         </a>
                     </div>
                 </div>
@@ -38,17 +38,17 @@ function Footer() {
 
             <div className="rss-footer__info-container">
                 <div className="rss-footer__info-container__item-container">
-                    <img src="icons/envelope-ico.png" alt="Envelope Icon" className="rss-footer__info-container__item-container__icon" />
+                    <img src="resume/icons/envelope-ico.png" alt="Envelope Icon" className="rss-footer__info-container__item-container__icon" />
                     <p className="rss-footer__info-container__item-container__content font-16-18">mgmnawas@gmail.com</p>
                 </div>
                 <div className="rss-footer__info-container__vertical-ruler" />
                 <div className="rss-footer__info-container__item-container">
-                    <img src="icons/call-ico.png" alt="Call Icon" className="rss-footer__info-container__item-container__icon" />
+                    <img src="resume/icons/call-ico.png" alt="Call Icon" className="rss-footer__info-container__item-container__icon" />
                     <p className="rss-footer__info-container__item-container__content font-16-18">+94 77 455 2663</p>
                 </div>
                 <div className="rss-footer__info-container__vertical-ruler" />
                 <div className="rss-footer__info-container__item-container">
-                    <img src="icons/marker-ico.png" alt="Marker Icon" className="rss-footer__info-container__item-container__icon" />
+                    <img src="resume/icons/marker-ico.png" alt="Marker Icon" className="rss-footer__info-container__item-container__icon" />
                     <p className="rss-footer__info-container__item-container__content font-16-18">Colombo, Sri Lanka</p>
                 </div>
             </div>

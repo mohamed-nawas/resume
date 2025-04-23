@@ -6,7 +6,7 @@ function Contact() {
         <section className="rss-contact">
             <div className="container-fluid">
                 <div className="rss-contact__banner">
-                    <img src="icons/chat-ico.png" alt="Chat Icon" className="rss-contact__banner__ico" />
+                    <img src={`${import.meta.env.BASE_URL}/icons/chat-ico.png`} alt="Chat Icon" className="rss-contact__banner__ico" />
                     <div className="rss-contact__banner__content">
                         <h2 className="rss-contact__banner__content__title font-28-48">We'd love to here from you.</h2>
                         <p className="rss-contact__banner__content__slug font-14-20">Here's what some of my clients have to say about my work</p>
@@ -61,7 +61,7 @@ function Contact() {
                                     <p className="rss-contact__form-container__content-container__contents__item__text-container__slug font-16-20">mgmnawas@gmail.com</p>
                                 </div>
                                 <div className="rss-contact__form-container__content-container__contents__item__arrow-container">
-                                    <img src="icons/arrow-ico.png" alt="Arrow Icon" className="rss-contact__form-container__content-container__contents__item__arrow-container__arrow" />
+                                    <img src={`${import.meta.env.BASE_URL}/icons/arrow-ico.png`} alt="Arrow Icon" className="rss-contact__form-container__content-container__contents__item__arrow-container__arrow" />
                                 </div>
                             </div>
                             <div className="rss-contact__form-container__content-container__contents__item">
@@ -70,7 +70,7 @@ function Contact() {
                                     <p className="rss-contact__form-container__content-container__contents__item__text-container__slug font-16-20">+94 77 455 2663</p>
                                 </div>
                                 <div className="rss-contact__form-container__content-container__contents__item__arrow-container">
-                                    <img src="icons/arrow-ico.png" alt="Arrow Icon" className="rss-contact__form-container__content-container__contents__item__arrow-container__arrow" />
+                                    <img src={`${import.meta.env.BASE_URL}/icons/arrow-ico.png`} alt="Arrow Icon"   className="rss-contact__form-container__content-container__contents__item__arrow-container__arrow" />
                                 </div>
                             </div>
                             <div className="rss-contact__form-container__content-container__contents__item">
@@ -79,7 +79,7 @@ function Contact() {
                                     <p className="rss-contact__form-container__content-container__contents__item__text-container__slug font-16-20">Colombo, Sri Lanka</p>
                                 </div>
                                 <div className="rss-contact__form-container__content-container__contents__item__arrow-container">
-                                    <img src="icons/arrow-ico.png" alt="Arrow Icon" className="rss-contact__form-container__content-container__contents__item__arrow-container__arrow" />
+                                    <img src={`${import.meta.env.BASE_URL}/icons/arrow-ico.png`} alt="Arrow Icon"   className="rss-contact__form-container__content-container__contents__item__arrow-container__arrow" />
                                 </div>
                             </div>
                         </div>
@@ -88,17 +88,17 @@ function Contact() {
                             <div className="rss-contact__form-container__content-container__profiles__icons-container">
                                 <div className="rss-contact__form-container__content-container__profiles__icons-container__item">
                                     <a href="https://www.linkedin.com/in/mohamed-nawaz/" target="_blank">
-                                        <img src="icons/linkedin-ico.png" alt="Linkedin Icon" className="rss-contact__form-container__content-container__profiles__icons-container__item__img" />
+                                        <img src={`${import.meta.env.BASE_URL}/icons/linkedin-ico.png`} alt="Linkedin Icon" className="rss-contact__form-container__content-container__profiles__icons-container__item__img" />
                                     </a>
                                 </div>
                                 <div className="rss-contact__form-container__content-container__profiles__icons-container__item">
                                     <a href="https://www.twitter.com/" target="_blank">
-                                        <img src="icons/twitter-ico.png" alt="Twitter Icon" className="rss-contact__form-container__content-container__profiles__icons-container__item__img" />
+                                        <img src={`${import.meta.env.BASE_URL}/icons/twitter-ico.png`} alt="Twitter Icon" className="rss-contact__form-container__content-container__profiles__icons-container__item__img" />
                                     </a>
                                 </div>
                                 <div className="rss-contact__form-container__content-container__profiles__icons-container__item">
                                     <a href="https://github.com/mohamed-nawas/" target="_blank">
-                                        <img src="icons/web-ico.png" alt="Web Icon" className="rss-contact__form-container__content-container__profiles__icons-container__item__img" />
+                                        <img src={`${import.meta.env.BASE_URL}/icons/web-ico.png`} alt="Web Icon" className="rss-contact__form-container__content-container__profiles__icons-container__item__img" />
                                     </a>
                                 </div>
                             </div>
@@ -116,7 +116,7 @@ function Contact() {
                                     <p className="rss-contact__faq__container__faq-container__item__text-container__slug font-14-18">Absolutely!. I have experience working with clients from all around the world. Through effective communication channels such as email, video calls, and project management tools. I ensure seamless collaboration regardless of geographical location.</p>
                                 </div>
                                 <div className="rss-contact__faq__container__faq-container__item__icon-container">
-                                    <img src="icons/cross-ico.png" alt="Cross Icon" className="rss-contact__faq__container__faq-container__item__icon-container__icon" />
+                                    <img src={`${import.meta.env.BASE_URL}/icons/cross-ico.png`} alt="Cross Icon" className="rss-contact__faq__container__faq-container__item__icon-container__icon" />
                                 </div>
                             </div>
                             <div className="rss-contact__faq__container__faq-container__item">
@@ -124,7 +124,7 @@ function Contact() {
                                     <h4 className="rss-contact__faq__container__faq-container__item__text-container__title font-16-20">How long does it typically take to complete a web design project?</h4>
                                 </div>
                                 <div className="rss-contact__faq__container__faq-container__item__icon-container">
-                                    <img src="icons/plus-ico.png" alt="Plus Icon" className="rss-contact__faq__container__faq-container__item__icon-container__icon" />
+                                    <img src={`${import.meta.env.BASE_URL}/icons/plus-ico.png`} alt="Plus Icon" className="rss-contact__faq__container__faq-container__item__icon-container__icon" />
                                 </div>
                             </div>
                             <div className="rss-contact__faq__container__faq-container__item">
@@ -132,7 +132,7 @@ function Contact() {
                                     <h4 className="rss-contact__faq__container__faq-container__item__text-container__title font-16-20">Do you offer website maintenance services?</h4>
                                 </div>
                                 <div className="rss-contact__faq__container__faq-container__item__icon-container">
-                                    <img src="icons/plus-ico.png" alt="Plus Icon" className="rss-contact__faq__container__faq-container__item__icon-container__icon" />
+                                    <img src={`${import.meta.env.BASE_URL}/icons/plus-ico.png`} alt="Plus Icon" className="rss-contact__faq__container__faq-container__item__icon-container__icon" />
                                 </div>
                             </div>
                             <div className="rss-contact__faq__container__faq-container__item">
@@ -140,7 +140,7 @@ function Contact() {
                                     <h4 className="rss-contact__faq__container__faq-container__item__text-container__title font-16-20">Can you optimize my website for search engines?</h4>
                                 </div>
                                 <div className="rss-contact__faq__container__faq-container__item__icon-container">
-                                    <img src="icons/plus-ico.png" alt="Plus Icon" className="rss-contact__faq__container__faq-container__item__icon-container__icon" />
+                                    <img src={`${import.meta.env.BASE_URL}/icons/plus-ico.png`} alt="Plus Icon" className="rss-contact__faq__container__faq-container__item__icon-container__icon" />
                                 </div>
                             </div>
                             <div className="rss-contact__faq__container__faq-container__item">
@@ -148,13 +148,13 @@ function Contact() {
                                     <h4 className="rss-contact__faq__container__faq-container__item__text-container__title font-16-20">Can you integrate third-party tools or platforms into my website?</h4>
                                 </div>
                                 <div className="rss-contact__faq__container__faq-container__item__icon-container">
-                                    <img src="icons/plus-ico.png" alt="Plus Icon" className="rss-contact__faq__container__faq-container__item__icon-container__icon" />
+                                    <img src={`${import.meta.env.BASE_URL}/icons/plus-ico.png`} alt="Plus Icon" className="rss-contact__faq__container__faq-container__item__icon-container__icon" />
                                 </div>
                             </div>
                         </div>
                         <div className="rss-contact__faq__container__help-container">
                             <div className="rss-contact__faq__container__help-container__ico-container">
-                                <img src="icons/star-ico.png" alt="Star Icon" className="rss-contact__faq__container__help-container__ico-container__icon" />
+                                <img src={`${import.meta.env.BASE_URL}/icons/star-ico.png`} alt="Star Icon" className="rss-contact__faq__container__help-container__ico-container__icon" />
                             </div>
                             <div className="rss-contact__faq__container__help-container__text-container">
                                 <h4 className="rss-contact__faq__container__help-container__text-container__title font-18-24">Still have any questions?</h4>

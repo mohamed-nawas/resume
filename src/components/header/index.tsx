@@ -5,7 +5,7 @@ function Header() {
                 <div className="container-fluid">
                     <div className="navbar-header">
                         <button className="navbar-toggle" type="button" data-toggle="collapse" data-target="#rss-navbar">
-                            <img src="icons/toggle-ico.png" alt="menu-toggler" />
+                            <img src={`${import.meta.env.BASE_URL}/icons/toggle-ico.png`} alt="menu-toggler" />
                         </button>
                         <a href="/resume" className="navbar-brand font-18-24">Mohamed Nawas.</a>
                     </div>
