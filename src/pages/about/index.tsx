@@ -9,7 +9,6 @@ function About() {
             <div className="container-fluid">
 
 
-
                 <div className="rss-about__details-section">
                     <img src={`${import.meta.env.BASE_URL}/icons/profile-image__desktop.png`} alt="Profile Image" className="rss-about__details-section__banner-image" />
                     {/* <div className="rss-about__details-section__banner-image" /> */}
@@ -35,7 +34,6 @@ function About() {
                         </div>
                     </div>
                 </div>
-
 
 
             </div>
