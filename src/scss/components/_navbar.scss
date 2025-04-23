@@ -1,0 +1,69 @@
+@use "../shared/media-queries" as screens;
+
+.navbar.navbar-inverse {
+    background-color: var(--color-peach-85);
+    margin: 0;
+    border: none;
+    padding: 40px 16px 20px;
+
+    .navbar-toggle {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .navbar-brand {
+        font-weight: 600;
+        color: var(--color-purple-50);
+        height: auto;
+        padding-top: 10px;
+    }
+
+    a { padding: 0; }
+
+    .navbar-nav {
+        float: right;
+
+        @include screens.max-tb { float: none; }
+
+        li {
+            background-color: transparent;
+            width: auto;
+            height: 46px;
+            border-radius: 6px;
+            padding: 12px 18px;
+
+            a {
+                color: var(--color-grey-20);
+                font-size: 12.5px;
+                line-height: 150%;
+                font-weight: 500;
+
+                @include screens.max-tb { font-size: 14px; }
+                @include screens.min-smd { font-size: clamp(14px, 3.5vw, 16px); }
+            }
+
+            &.active {
+                background-color: var(--color-peach-95);
+
+                a { background-color: transparent; }
+            }
+        }
+    }
+}
+
+.rss-navbar__menu__call {
+    background-color: var(--color-purple-50) !important;
+    a { color: var(--color-peach-99) !important; }
+
+    .glyphicon {
+        display: flex;
+        gap: 5px;
+
+        &::before {
+            width: 17.5px;
+            height: 17.5px;
+            padding-top: 3px;
+        }
+    }
+}

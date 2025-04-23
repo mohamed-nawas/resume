@@ -1,0 +1,53 @@
+@use "sass:map";
+
+$screen-sm: 390px;
+$screen-smtb: 565px;    // temporary break point for footer aligning
+$screen-tb: 768px;      // temporary break point for bootstrap
+$screen-smd: 960px;     // breakpoint to make transition of contact page form area smooth from sm to md
+$screen-md: 1440px;
+$screen-lg: 1920px;
+
+/* Media query mixins */
+// Min media queries
+@mixin min-sm {
+    @media (min-width: $screen-sm) { @content; }
+}
+
+@mixin min-smtb {
+    @media (min-width: $screen-smtb) { @content; }
+}
+
+@mixin min-smd {
+    @media (min-width: $screen-smd) { @content; }
+}
+
+@mixin min-md {
+    @media (min-width: $screen-md) { @content; }
+}
+
+@mixin min-lg {
+    @media (min-width: $screen-lg) { @content; }
+}
+
+// Max media queries
+@mixin max-tb {
+    @media (max-width: #{$screen-tb - 1}) { @content; }
+}
+
+@mixin max-sm {
+    @media (max-width: #{$screen-sm - 1}) { @content; }
+}
+
+/* Media query range - sm */
+// @mixin min-sm-max-md {
+//     @media only screen and (min-width: $screen-sm) and (max-width: #{$screen-md - 1}) { @content; }
+// }
+
+// @mixin min-sm-max-lg {
+//     @media only screen and (min-width: $screen-sm) and (max-width: #{$screen-lg - 1}) { @content; }
+// }
+
+// /* Media query range - md */
+// @mixin min-md-max-lg {
+//     @media only screen and (min-width: $screen-md) and (max-width: #{$screen-lg - 1}) { @content; }
+// }

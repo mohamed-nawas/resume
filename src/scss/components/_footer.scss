@@ -1,0 +1,102 @@
+@use "../shared/media-queries" as screens;
+
+.rss-footer {
+    padding: 30px 16px 20px;
+    border: 1px solid var(--color-peach-85);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+
+    & > * { 
+        width: calc(100% - 40px); 
+        @include screens.min-sm { width: calc(100% - clamp(40px, 10.25vw, 80px)); }
+        @include screens.min-md { width: calc(100% - clamp(80px, 5.55vw, 100px)); }
+    }
+
+    &__brand-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        @include screens.min-smtb { justify-content: space-between; }
+
+        &__title {
+            font-weight: 600;
+            color: var(--color-purple-50);
+        }
+
+        &__link-container {
+            display: flex;
+            gap: 20px;
+
+            &__link {
+                font-weight: 500;
+                color: var(--color-grey-20);
+            }
+        }
+
+        &__icons-container {
+            display: flex;
+            gap: 14px;
+
+            &__ico-container {
+                background-color: var(--color-purple-50);
+                width: 40px;
+                height: 40px;
+                display: grid;
+                place-content: center;
+                border-radius: 6px;
+            }
+        }
+    }
+
+    &__info-container { 
+        display: none; 
+        justify-content: center;
+        align-items: center;
+        padding: clamp(22px, 1.5vw, 24px) clamp(28px, 2vw, 32px);
+        gap: clamp(12px, 1vw, 20px);
+        border-radius: 8px;
+        border: 1px solid var(--color-peach-85);
+        width: auto;
+
+        &__item-container {
+            display: flex;
+            gap: clamp(6px, 0.5vw, 8px);
+            align-items: center;
+
+            &__icon {
+                width: 20px;
+                height: 20px;
+                color: var(--color-purple-50);
+
+                @include screens.min-lg {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+            &__content {
+                font-weight: 500;
+                color: var(--color-grey-30);
+                margin: 0;
+            }
+        }
+
+        &__vertical-ruler {
+            width: 2px;
+            height: 24px;
+            background-color: var(--color-peach-85);
+        }
+
+        @include screens.min-md { display: flex; }
+    }
+
+    &__copyright {
+        font-weight: 400;
+        color: var(--color-grey-50);
+    }
+}
