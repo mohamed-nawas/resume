@@ -1,0 +1,147 @@
+@use "../shared/media-queries" as screens;
+
+.rss-about {
+    background-color: var(--color-peach-92);
+    margin-top: clamp(0px, 6.5vw, 12px);
+    margin-bottom: clamp(60px, 15vw, 150px);
+
+    &__details-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(30px, 7.5vw, 80px);
+
+        &__banner-image {
+            width: 358px;
+            // height: auto;
+            height: 345px;
+            object-fit: cover;
+            // aspect-ratio: 1.038;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("/icons/profile-image__mobile.png");
+        }
+
+        &__content-container {
+            text-align: center;
+
+            &__slug {
+                background-color: var(--color-peach-96);
+                padding: 12px 16px;
+                border-radius: 6px;
+                font-weight: 500;
+                color: var(--color-grey-20);
+                margin-bottom: 14px;
+            }
+
+            &__title {
+                margin-bottom: 4px;
+                font-weight: 600;
+                color: var(--color-grey-10);
+            }
+
+            &__content {
+                font-weight: 400;
+                color: var(--color-grey-30);
+            }
+
+            &__status-container {
+                margin-top: 40px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                padding: 30px;
+                border-radius: 10px;
+                background-color: var(--color-peach-96);
+
+                &__item-container {
+                    flex: 0 1 70%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    &__count {
+                        font-weight: 700;
+                        color: var(--color-grey-20);
+                        &-sy { color: var(--color-purple-50); }
+                        font-size: 48px;
+                    }
+                    &__text {
+                        font-weight: 500;
+                        color: var(--color-grey-30);
+                    }
+                }
+
+                &__hr-line {
+                    height: 1px;
+                    // width: 298px;
+                    flex: 0 1 80%;
+                    background-color: var(--color-peach-90);
+                }
+            }
+        }
+    }
+
+    @include screens.min-md {
+        &__details-section {
+            flex-direction: row;
+
+            &__banner-image {
+                width: 615px;
+                height: 596px;
+                // aspect-ratio: 1.031;
+                background-image: url("/icons/profile-image__laptop.png");
+            }
+
+            &__content-container { 
+                text-align: left; 
+
+                &__status-container {
+                    background-color: transparent;
+                    justify-content: flex-start;
+                    padding: 16px 0;
+                    border-radius: 0;
+                    border-top: 1px solid var(--color-purple-50);
+                    border-bottom: 1px solid var(--color-purple-50);
+                    gap: 50px;
+
+                    &__item-container {
+                        flex: 0 0 auto;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+
+                    &__hr-line { display: none; }
+                }
+            }
+        }
+    }
+
+    @include screens.min-lg {
+        &__details-section {
+            &__banner-image {
+                width: 758px;
+                height: 596px;
+                // aspect-ratio: 1.272;
+                background-image: url("/icons/profile-image__desktop.png");
+            }
+
+            &__content-container {
+                &__slug {
+                    padding: 14px 18px;
+                    border-radius: 8px;
+                    margin-bottom: 20px;
+                }
+                &__title { margin-bottom: 10px; }
+                &__status-container {
+                    margin-top: 60px;
+                    padding: 20px 0;
+                    gap: 10vw;
+                }
+            }
+        }
+    }
+}
