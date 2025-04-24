@@ -89,7 +89,7 @@ function About() {
                         <div className="rss-about__timeline-section__content-container__line rss-about__timeline-section__content-container__line-blue" />
                         <p className="rss-about__timeline-section__content-container__time font-16-20">2018</p>
                         <div className="rss-about__timeline-section__content-container__line rss-about__timeline-section__content-container__line-blue" />
-                        {/* <h6 className="rss-about__timeline-section__content-container__title rss-about__timeline-section__content-container__title-last font-16-20">A World of Possibilities in 2018</h6> */}
+                        <h6 className="rss-about__timeline-section__content-container__title rss-about__timeline-section__content-container__title-last font-16-20">A World of Possibilities in 2018</h6>
                         <div className="rss-about__timeline-section__content-container__line-styled rss-about__timeline-section__content-container__line-styled-blue" />
                         <div className="rss-about__timeline-section__content-container__details-container-top">
                             <div>

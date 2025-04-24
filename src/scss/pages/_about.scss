@@ -430,6 +430,9 @@
                     width: 70px;
                     height: 70px;
                 }
+                @include screens.max-md {
+                    &-top__title { display: none; }
+                }
             }
         }
 
