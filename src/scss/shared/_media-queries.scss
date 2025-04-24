@@ -38,6 +38,10 @@ $screen-lg: 1920px;
     @media (max-width: #{$screen-sm - 1}) { @content; }
 }
 
+@mixin max-md {
+    @media (max-width: #{$screen-md - 1}) { @content; }
+}
+
 /* Media query range - sm */
 // @mixin min-sm-max-md {
 //     @media only screen and (min-width: $screen-sm) and (max-width: #{$screen-md - 1}) { @content; }
