@@ -146,14 +146,14 @@
     }
 
     &__timeline-section {
-        // border: 1px solid red;
+        // border: 2px solid yellow;
         margin-top: clamp(60px, 15vw, 150px);
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 60px;
 
-        @include screens.min-md { gap: clamp(60px, 4vw, 100px); }
+        @include screens.min-md { gap: clamp(60px, 4vw, 100px); margin-bottom: 275px; }
 
         &__heading-container {
             max-width: 800px;
@@ -412,7 +412,7 @@
             }
 
             &__details-container {
-                &-right, &-left {
+                &-right, &-left, &-top {
                     text-align: center;
                     display: flex;
                     flex-direction: column-reverse;
@@ -429,6 +429,93 @@
                 &__ico {
                     width: 70px;
                     height: 70px;
+                }
+            }
+        }
+
+        @include screens.min-md {
+            &__content-container {
+                // border: 3px dotted purple;
+                position: relative;
+
+                &__line { height: 150px; }
+                // &__line-styled-blue { display: none; }
+
+                &__title {
+                    position: absolute;
+                    white-space: nowrap;
+
+                    &-1 { top: 235px; left: 135px; }
+                    &-2 { top: 640px; right: 135px; }
+                    &-3 { top: 1045px; left: 135px; }
+                    &-4 { top: 1450px; right: 135px; }
+                    &-5 { top: 1855px; left: 135px; }
+                    // &-last { display: none; }
+                }
+                &__details-container {
+                    &-left, &-right, &-top {
+                        position: absolute;
+                        width: 565px;
+                        gap: clamp(24px, 1.5vw, 30px);
+                    }
+
+                    &-top {
+                        &__title { font-weight: 600; color: var(--color-grey-30); margin-bottom: clamp(10px, 2.5vw, 16px); }
+
+                        flex-direction: row-reverse;
+                        text-align: left;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: -10px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 0;
+                            height: 0;
+                            border-left: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            border-bottom: 10px solid var(--color-peach-96);
+                        }
+                    }
+                    &-right {
+                        flex-direction: row;
+                        text-align: right;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            right: -10px;
+                            transform: translateY(-50%);
+                            width: 0;
+                            height: 0;
+                            border-top: 10px solid transparent;
+                            border-bottom: 10px solid transparent;
+                            border-left: 10px solid var(--color-peach-96);
+                        }
+                    }
+                    &-left {
+                        flex-direction: row-reverse;
+                        text-align: left;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: -10px;
+                            transform: translateY(-50%);
+                            width: 0;
+                            height: 0;
+                            border-top: 10px solid transparent;
+                            border-bottom: 10px solid transparent;
+                            border-right: 10px solid var(--color-peach-96);
+                        }
+                    }
+
+                    &-right-1 { top: 140px; right: 135px; }
+                    &-left-1 { top: 540px; left: 135px; }
+                    &-right-2 { top: 940px; right: 135px; }
+                    &-left-2 { top: 1340px; left: 135px; }
+                    &-right-3 { top: 1740px; right: 135px; }
+                    &-top { top: 2340px; right: -239px; }
                 }
             }
         }
