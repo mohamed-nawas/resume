@@ -196,6 +196,8 @@
                 font-weight: 600;
                 color: var(--color-grey-30);
                 // margin-bottom: 50px;        // need to change from ui
+
+                @include screens.min-md { &-last { display: none; } }
             }
 
             &__line {
@@ -513,12 +515,12 @@
                         }
                     }
 
-                    &-right-1 { top: 140px; right: 135px; }
-                    &-left-1 { top: 540px; left: 135px; }
-                    &-right-2 { top: 940px; right: 135px; }
-                    &-left-2 { top: 1340px; left: 135px; }
-                    &-right-3 { top: 1740px; right: 135px; }
-                    &-top { top: 2340px; right: -239px; }
+                    &-right-1 { top: 163px; right: 135px; }
+                    &-left-1 { top: 565px; left: 135px; }
+                    &-right-2 { top: 968px; right: 135px; }
+                    &-left-2 { top: 1369px; left: 135px; }
+                    &-right-3 { top: 1773px; right: 135px; }
+                    &-top { top: 2363px; right: -239px; }
                 }
             }
         }
