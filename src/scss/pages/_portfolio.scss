@@ -175,6 +175,8 @@
                 gap: 70px; //18vw
                 align-items: center;
 
+                @include screens.min-md { display: none; }
+
                 &__line-container {
                     display: flex;
                     gap: 2px;
