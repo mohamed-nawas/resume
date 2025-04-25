@@ -276,6 +276,7 @@
         &__articles-container__title-container,
         &__case-studies-container__title-container {
             margin-bottom: clamp(20px, 5vw, 30px);
+            @include screens.min-md { display: flex; justify-content: space-between; }
 
             h3 {
                 font-weight: 600;
@@ -284,6 +285,7 @@
 
             &__arrow-container {
                 display: none;
+                @include screens.min-md { display: flex; }
             }
         }
 
