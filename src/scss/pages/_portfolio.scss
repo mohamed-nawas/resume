@@ -79,6 +79,7 @@
                     background-color: var(--color-peach-96);
                     border-radius: 10px;
                     padding: 30px;
+                    @include screens.min-md { text-align: left; }
 
                     &__title {
                         font-weight: 600;
