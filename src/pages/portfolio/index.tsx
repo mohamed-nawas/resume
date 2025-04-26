@@ -42,11 +42,36 @@ function Portfolio() {
                                 <div className="rss-portfolio__contents-container__projects-container__title-container__arrow-container">arrows mid</div>
                             </div>
                             <div className="rss-portfolio__contents-container__projects-container__hr-line" />
+
                             <div className="rss-portfolio__contents-container__projects-container__items-container">
                                 <div className="rss-portfolio__contents-container__projects-container__items-container__item">
-                                    <h4 className="rss-portfolio__contents-container__projects-container__items-container__item__title font-16-20">Charity Website</h4>
+                                    <h4 className="rss-portfolio__contents-container__projects-container__items-container__item__title font-16-20">Z-Aura Perfume</h4>
                                     <div className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container">
-                                        <img src={`${import.meta.env.BASE_URL}/images/charity-image-main.png`} alt="Charity Web Project Image" className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__image" />
+                                        <img src={`${import.meta.env.BASE_URL}/images/aura-image-main.png`} alt="Aura Big Image" className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__image" />
+                                        <div className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__expand-container">
+                                            <div className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__expand-container__arrow" />
+                                        </div>
+                                    </div>
+                                    <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container">
+                                        <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image">
+                                            <img src={`${import.meta.env.BASE_URL}/images/aura-image-sub.png`} alt="Aura Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/aura-image-sub.png`} alt="Aura Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/aura-image-sub.png`} alt="Aura Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/aura-image-sub.png`} alt="Aura Small Image" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="rss-portfolio__contents-container__projects-container__items-container__item">
+                                    <h4 className="rss-portfolio__contents-container__projects-container__items-container__item__title font-16-20">Forhelp Charity</h4>
+                                    <div className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container">
+                                        <img src={`${import.meta.env.BASE_URL}/images/charity-image-main.png`} alt="Charity Big Image" className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__image" />
                                         <div className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__expand-container">
                                             <div className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__expand-container__arrow" />
                                         </div>
@@ -66,7 +91,33 @@ function Portfolio() {
                                         </div>
                                     </div>
                                 </div>
+
+                                <div className="rss-portfolio__contents-container__projects-container__items-container__item">
+                                    <h4 className="rss-portfolio__contents-container__projects-container__items-container__item__title font-16-20">Skill Bridge</h4>
+                                    <div className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container">
+                                        <img src={`${import.meta.env.BASE_URL}/images/bridge-image-main.png`} alt="Bridge Big Image" className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__image" />
+                                        <div className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__expand-container">
+                                            <div className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__expand-container__arrow" />
+                                        </div>
+                                    </div>
+                                    <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container">
+                                        <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image">
+                                            <img src={`${import.meta.env.BASE_URL}/images/bridge-image-sub.png`} alt="Bridge Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/bridge-image-sub.png`} alt="Bridge Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/bridge-image-sub.png`} alt="Bridge Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/bridge-image-sub.png`} alt="Bridge Small Image" />
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+
                             <div className="rss-portfolio__contents-container__projects-container__arrows-container">
                                 <div className="rss-portfolio__contents-container__projects-container__arrows-container__arrow rss-portfolio__contents-container__projects-container__arrows-container__arrow-left" />
                                 <div className="rss-portfolio__contents-container__projects-container__arrows-container__line-container">
@@ -88,29 +139,79 @@ function Portfolio() {
                             </div>
                             <div className="rss-portfolio__contents-container__articles-container__hr-line" />
                             <div className="rss-portfolio__contents-container__articles-container__items-container">
+
                                 <div className="rss-portfolio__contents-container__articles-container__items-container__item">
-                                    <h4 className="rss-portfolio__contents-container__articles-container__items-container__item__title font-16-20">Fit Fusion</h4>
+                                    <h4 className="rss-portfolio__contents-container__articles-container__items-container__item__title font-16-20">Current Vandi</h4>
                                     <div className="rss-portfolio__contents-container__articles-container__items-container__item__banner-image-container">
-                                        <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-main.png`} alt="Fit Fusion" className="rss-portfolio__contents-container__articles-container__items-container__item__banner-image-container__image" />
+                                        <img src={`${import.meta.env.BASE_URL}/images/vandi-image-main.png`} alt="Vandi Big Image" className="rss-portfolio__contents-container__articles-container__items-container__item__banner-image-container__image" />
                                         <div className="rss-portfolio__contents-container__articles-container__items-container__item__banner-image-container__expand-container">
                                             <div className="rss-portfolio__contents-container__articles-container__items-container__item__banner-image-container__expand-container__arrow" />
                                         </div>
                                     </div>
                                     <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container">
                                         <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image">
-                                            <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-sub.png`} alt="Fit Fusion Small Image" />
+                                            <img src={`${import.meta.env.BASE_URL}/images/vandi-image-sub.png`} alt="Vandi Small Image" />
                                         </div>
                                         <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
-                                            <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-sub.png`} alt="Fit Fusion Small Image" />
+                                            <img src={`${import.meta.env.BASE_URL}/images/vandi-image-sub.png`} alt="Vandi Small Image" />
                                         </div>
                                         <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
-                                            <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-sub.png`} alt="Fit Fusion Small Image" />
+                                            <img src={`${import.meta.env.BASE_URL}/images/vandi-image-sub.png`} alt="Vandi Small Image" />
                                         </div>
                                         <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
-                                            <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-sub.png`} alt="Fit Fusion Small Image" />
+                                            <img src={`${import.meta.env.BASE_URL}/images/vandi-image-sub.png`} alt="Vandi Small Image" />
                                         </div>
                                     </div>
                                 </div>
+
+                                <div className="rss-portfolio__contents-container__articles-container__items-container__item">
+                                    <h4 className="rss-portfolio__contents-container__articles-container__items-container__item__title font-16-20">Fit Fusion Gym</h4>
+                                    <div className="rss-portfolio__contents-container__articles-container__items-container__item__banner-image-container">
+                                        <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-main.png`} alt="FitFusion Big Image" className="rss-portfolio__contents-container__articles-container__items-container__item__banner-image-container__image" />
+                                        <div className="rss-portfolio__contents-container__articles-container__items-container__item__banner-image-container__expand-container">
+                                            <div className="rss-portfolio__contents-container__articles-container__items-container__item__banner-image-container__expand-container__arrow" />
+                                        </div>
+                                    </div>
+                                    <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container">
+                                        <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image">
+                                            <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-sub.png`} alt="FitFusion Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-sub.png`} alt="FitFusion Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-sub.png`} alt="FitFusion Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-sub.png`} alt="FitFusion Small Image" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="rss-portfolio__contents-container__articles-container__items-container__item">
+                                    <h4 className="rss-portfolio__contents-container__articles-container__items-container__item__title font-16-20">DX Digital Agency</h4>
+                                    <div className="rss-portfolio__contents-container__articles-container__items-container__item__banner-image-container">
+                                        <img src={`${import.meta.env.BASE_URL}/images/dxdigital-image-main.png`} alt="DX Digital Big Image" className="rss-portfolio__contents-container__articles-container__items-container__item__banner-image-container__image" />
+                                        <div className="rss-portfolio__contents-container__articles-container__items-container__item__banner-image-container__expand-container">
+                                            <div className="rss-portfolio__contents-container__articles-container__items-container__item__banner-image-container__expand-container__arrow" />
+                                        </div>
+                                    </div>
+                                    <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container">
+                                        <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image">
+                                            <img src={`${import.meta.env.BASE_URL}/images/dxdigital-image-sub.png`} alt="DX Digital Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/dxdigital-image-sub.png`} alt="DX Digital Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/dxdigital-image-sub.png`} alt="DX Digital Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/dxdigital-image-sub.png`} alt="DX Digital Small Image" />
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                             <div className="rss-portfolio__contents-container__articles-container__arrows-container">
                                 <div className="rss-portfolio__contents-container__articles-container__arrows-container__arrow rss-portfolio__contents-container__articles-container__arrows-container__arrow-left" />
@@ -133,10 +234,59 @@ function Portfolio() {
                             </div>
                             <div className="rss-portfolio__contents-container__case-studies-container__hr-line" />
                             <div className="rss-portfolio__contents-container__case-studies-container__items-container">
+
+                                <div className="rss-portfolio__contents-container__case-studies-container__items-container__item">
+                                    <h4 className="rss-portfolio__contents-container__case-studies-container__items-container__item__title font-16-20">Little Learners</h4>
+                                    <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__banner-image-container">
+                                        <img src={`${import.meta.env.BASE_URL}/images/learners-image-main.png`} alt="Little Learners Big Image" className="rss-portfolio__contents-container__case-studies-container__items-container__item__banner-image-container__image" />
+                                        <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__banner-image-container__expand-container">
+                                            <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__banner-image-container__expand-container__arrow" />
+                                        </div>
+                                    </div>
+                                    <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container">
+                                        <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image">
+                                            <img src={`${import.meta.env.BASE_URL}/images/learners-image-sub.png`} alt="Little Learners Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/learners-image-sub.png`} alt="Little Learners Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/learners-image-sub.png`} alt="Little Learners Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/learners-image-sub.png`} alt="Little Learners Small Image" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="rss-portfolio__contents-container__case-studies-container__items-container__item">
+                                    <h4 className="rss-portfolio__contents-container__case-studies-container__items-container__item__title font-16-20">Stream Vibe</h4>
+                                    <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__banner-image-container">
+                                        <img src={`${import.meta.env.BASE_URL}/images/streamvibe-image-main.png`} alt="Stream Vibe Big Image" className="rss-portfolio__contents-container__case-studies-container__items-container__item__banner-image-container__image" />
+                                        <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__banner-image-container__expand-container">
+                                            <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__banner-image-container__expand-container__arrow" />
+                                        </div>
+                                    </div>
+                                    <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container">
+                                        <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image">
+                                            <img src={`${import.meta.env.BASE_URL}/images/streamvibe-image-sub.png`} alt="Stream Vibe Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/streamvibe-image-sub.png`} alt="Stream Vibe Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/streamvibe-image-sub.png`} alt="Stream Vibe Small Image" />
+                                        </div>
+                                        <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image-inactive">
+                                            <img src={`${import.meta.env.BASE_URL}/images/streamvibe-image-sub.png`} alt="Stream Vibe Small Image" />
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div className="rss-portfolio__contents-container__case-studies-container__items-container__item">
                                     <h4 className="rss-portfolio__contents-container__case-studies-container__items-container__item__title font-16-20">Your Bank</h4>
                                     <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__banner-image-container">
-                                        <img src={`${import.meta.env.BASE_URL}/images/yourbank-image-main.png`} alt="Your Bank" className="rss-portfolio__contents-container__case-studies-container__items-container__item__banner-image-container__image" />
+                                        <img src={`${import.meta.env.BASE_URL}/images/yourbank-image-main.png`} alt="Your Bank Big Image" className="rss-portfolio__contents-container__case-studies-container__items-container__item__banner-image-container__image" />
                                         <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__banner-image-container__expand-container">
                                             <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__banner-image-container__expand-container__arrow" />
                                         </div>
@@ -156,6 +306,7 @@ function Portfolio() {
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                             <div className="rss-portfolio__contents-container__case-studies-container__arrows-container">
                                 <div className="rss-portfolio__contents-container__case-studies-container__arrows-container__arrow rss-portfolio__contents-container__case-studies-container__arrows-container__arrow-left" />
@@ -170,6 +321,7 @@ function Portfolio() {
                                 <input type="button" value="View All Case Studies" />
                             </div>
                         </div>
+
                     </div>
 
                 </div>
