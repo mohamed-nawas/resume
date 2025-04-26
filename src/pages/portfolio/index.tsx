@@ -39,7 +39,10 @@ function Portfolio() {
                         <div className="rss-portfolio__contents-container__projects-container">
                             <div className="rss-portfolio__contents-container__projects-container__title-container">
                                 <h3 className="font-18-24">Projects</h3>
-                                <div className="rss-portfolio__contents-container__projects-container__title-container__arrow-container">arrows mid</div>
+                                <div className="rss-portfolio__contents-container__projects-container__title-container__arrow-container">
+                                    <div className="rss-portfolio__contents-container__projects-container__title-container__arrow-container__arrow rss-portfolio__contents-container__projects-container__title-container__arrow-container__arrow-left" />
+                                    <div className="rss-portfolio__contents-container__projects-container__title-container__arrow-container__arrow rss-portfolio__contents-container__projects-container__title-container__arrow-container__arrow-right" />
+                                </div>
                             </div>
                             <div className="rss-portfolio__contents-container__projects-container__hr-line" />
 
@@ -135,7 +138,10 @@ function Portfolio() {
                         <div className="rss-portfolio__contents-container__articles-container">
                             <div className="rss-portfolio__contents-container__articles-container__title-container">
                                 <h3 className="font-18-24">Articles</h3>
-                                <div className="rss-portfolio__contents-container__articles-container__title-container__arrow-container">arrows mid</div>
+                                <div className="rss-portfolio__contents-container__articles-container__title-container__arrow-container">
+                                    <div className="rss-portfolio__contents-container__articles-container__title-container__arrow-container__arrow rss-portfolio__contents-container__articles-container__title-container__arrow-container__arrow-left" />
+                                    <div className="rss-portfolio__contents-container__articles-container__title-container__arrow-container__arrow rss-portfolio__contents-container__articles-container__title-container__arrow-container__arrow-right" />
+                                </div>
                             </div>
                             <div className="rss-portfolio__contents-container__articles-container__hr-line" />
                             <div className="rss-portfolio__contents-container__articles-container__items-container">
@@ -230,7 +236,10 @@ function Portfolio() {
                         <div className="rss-portfolio__contents-container__case-studies-container">
                             <div className="rss-portfolio__contents-container__case-studies-container__title-container">
                                 <h3 className="font-18-24">Case Studies</h3>
-                                <div className="rss-portfolio__contents-container__case-studies-container__title-container__arrow-container">arrows mid</div>
+                                <div className="rss-portfolio__contents-container__case-studies-container__title-container__arrow-container">
+                                    <div className="rss-portfolio__contents-container__case-studies-container__title-container__arrow-container__arrow rss-portfolio__contents-container__case-studies-container__title-container__arrow-container__arrow-left" />
+                                    <div className="rss-portfolio__contents-container__case-studies-container__title-container__arrow-container__arrow rss-portfolio__contents-container__case-studies-container__title-container__arrow-container__arrow-right" />
+                                </div>
                             </div>
                             <div className="rss-portfolio__contents-container__case-studies-container__hr-line" />
                             <div className="rss-portfolio__contents-container__case-studies-container__items-container">
