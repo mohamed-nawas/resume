@@ -72,13 +72,18 @@
             &__items-container {
                 margin-top: clamp(24px, 6vw, 30px);
                 display: flex;
-
-                // gap: clamp(20px, 5vw, 30px); //**
+                justify-content: space-between;
+                overflow: hidden;
                 &__item {
-                    width: 100%;
+                    flex: 0 0 100%;
                     background-color: var(--color-peach-96);
                     border-radius: 10px;
                     padding: 30px;
+                    @include screens.min-md { 
+                        gap: clamp(20px, 1.38vw, 30px);
+                        text-align: left; 
+                        flex: 0 0 calc((100% - 2.76vw) / 3);
+                    }
 
                     &__title {
                         font-weight: 600;
@@ -174,6 +179,8 @@
                 justify-content: center;
                 gap: 70px; //18vw
                 align-items: center;
+
+                @include screens.min-md { display: none; }
 
                 &__line-container {
                     display: flex;
@@ -273,6 +280,7 @@
         &__articles-container__title-container,
         &__case-studies-container__title-container {
             margin-bottom: clamp(20px, 5vw, 30px);
+            @include screens.min-md { display: flex; justify-content: space-between; }
 
             h3 {
                 font-weight: 600;
@@ -281,6 +289,40 @@
 
             &__arrow-container {
                 display: none;
+                @include screens.min-md { 
+                    display: flex;
+                    gap: clamp(12px, 0.83vw, 16px);
+                    &__arrow {
+                        width: 40px;    //46px*
+                        height: 40px;   //46px*
+                        border-radius: 8px;
+                        background-color: var(--color-peach-95);
+                        border: 1px solid var(--color-peach-85);
+                        position: relative;
+                        &-left::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%) rotate(135deg);
+                            width: 13px;
+                            height: 13px;
+                            border-right: 2px solid var(--color-grey-20);
+                            border-bottom: 2px solid var(--color-grey-20);
+                        }
+                        &-right::after {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%) rotate(-45deg);
+                            width: 13px;
+                            height: 13px;
+                            border-right: 2px solid var(--color-grey-20);
+                            border-bottom: 2px solid var(--color-grey-20);
+                        }
+                    } 
+                }
             }
         }
 
