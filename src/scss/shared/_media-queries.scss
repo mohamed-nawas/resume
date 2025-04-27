@@ -17,6 +17,10 @@ $screen-lg: 1920px;
     @media (min-width: $screen-smtb) { @content; }
 }
 
+@mixin min-tb {
+    @media (min-width: $screen-tb) { @content; }
+}
+
 @mixin min-smd {
     @media (min-width: $screen-smd) { @content; }
 }
