@@ -244,7 +244,7 @@ function Portfolio() {
                             <div className="rss-portfolio__contents-container__articles-container__hr-line" />
                             <div className="swiper articles-swiper">
                                 <div className="rss-portfolio__contents-container__articles-container__items-container swiper-wrapper">
-                                    <div className="rss-portfolio__contents-container__articles-container__items-container__item swipter-slide">
+                                    <div className="rss-portfolio__contents-container__articles-container__items-container__item swiper-slide">
                                         <h4 className="rss-portfolio__contents-container__articles-container__items-container__item__title font-16-20">Current Vandi</h4>
                                         <div className="rss-portfolio__contents-container__articles-container__items-container__item__banner-image-container">
                                             {
