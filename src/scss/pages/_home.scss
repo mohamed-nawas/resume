@@ -179,6 +179,60 @@
         @include screens.min-lg { gap: 80px; }
     }
 
+    &__benefits-section {
+        margin-top: clamp(60px, 15vw, 240px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+
+        &__heading-container {
+            text-align: center;
+            &__title {
+                margin-bottom: clamp(2px, 0.5vw, 6px);
+                font-weight: 600;
+                color: var(--color-grey-20);
+            }
+            &__slug {
+                font-weight: 400;
+                color: var(--color-grey-30);
+            }
+        }
+
+        &__list-container {
+            display: flex;
+            gap: clamp(20px, 5vw, 30px);
+            flex-wrap: wrap;
+
+            &__item {
+                background-color: var(--color-peach-96);
+                border-radius: 12px;
+                padding: clamp(40px, 10vw, 50px);
+                display: flex;
+                flex-direction: column;
+                gap: clamp(24px, 6vw, 30px);
+                flex: 0 0 100%;
+
+                @include screens.min-md {
+                    flex: 1 0 calc((100% - (clamp(20px, 5vw, 30px) * 2)) / 3);
+                }
+
+                &__title {
+                    font-weight: 600;
+                    color: var(--color-grey-20);
+                }
+                &__slug {
+                    font-weight: 400;
+                    color: var(--color-grey-30);
+                }
+            }
+        }
+
+        @include screens.min-md { gap: 60px; }
+        @include screens.min-lg { gap: 80px; }
+    }
+
     @include screens.min-md {
         &__details-section {
             flex-direction: row-reverse;

@@ -92,6 +92,35 @@ function Home() {
             </div>
           </div>
 
+          <div className="rss-home__benefits-section">
+            <div className="rss-home__benefits-section__heading-container">
+              <h3 className="rss-home__benefits-section__heading-container__title font-28-48">Benefits</h3>
+              <p className="rss-home__benefits-section__heading-container__slug font-14-18">By choosing my web design service, you'll enjoy the following benefits</p>
+            </div>
+            <div className="rss-home__benefits-section__list-container">
+              <div className="rss-home__benefits-section__list-container__item">
+                <h5 className="rss-home__benefits-section__list-container__item__title font-18-24">Customized Designs Tailored to Your Brand</h5>
+                <p className="rss-home__benefits-section__list-container__item__slug font-14-18">I understand the importance of creating a unique and memorable brand identity. By collaborating closely with you, I ensure that your website reflects your brand's personality, values, and objectives. The result is a customized design that sets you apart from the competition and resonates with your target audience.</p>
+              </div>
+              <div className="rss-home__benefits-section__list-container__item">
+                <h5 className="rss-home__benefits-section__list-container__item__title font-18-24">Creative Excellence that Captivates Visitors</h5>
+                <p className="rss-home__benefits-section__list-container__item__slug font-14-18">With a keen eye for aesthetics and a passion for creativity, I excel in designing visually stunning and engaging websites. By combining beautiful visuals, captivating typography, and strategic use of color, I create an immersive and impactful user experience. Your website will leave a lasting impression on visitors, enhancing your brand's credibility and professionalism.</p>
+              </div>
+              <div className="rss-home__benefits-section__list-container__item">
+                <h5 className="rss-home__benefits-section__list-container__item__title font-18-24">User-Centric Approach for Optimal Experience</h5>
+                <p className="rss-home__benefits-section__list-container__item__slug font-14-18">I prioritize user experience (UX) design, placing your visitors at the center of the design process. By conducting in-depth research and employing user testing techniques, I ensure that your website is intuitive, easy to navigate, and seamlessly guides users towards their goals. The result is a satisfying user journey that increases engagement and conversions.</p>
+              </div>
+              <div className="rss-home__benefits-section__list-container__item">
+                <h5 className="rss-home__benefits-section__list-container__item__title font-18-24">Mobile-Friendly Designs for Broad Accessibilit</h5>
+                <p className="rss-home__benefits-section__list-container__item__slug font-14-18">In today's mobile-dominated landscape, having a responsive website is crucial. I specialize in creating mobile-friendly designs that adapt flawlessly across different devices and screen sizes. Your website will look and perform beautifully, whether accessed from a desktop, smartphone, or tablet, ensuring that you reach and engage your audience effectively.</p>
+              </div>
+              <div className="rss-home__benefits-section__list-container__item">
+                <h5 className="rss-home__benefits-section__list-container__item__title font-18-24">Expertise in Cutting-Edge Technologies</h5>
+                <p className="rss-home__benefits-section__list-container__item__slug font-14-18">With a strong command of HTML, CSS, JavaScript, and other front-end technologies, I possess the technical skills to bring your design concepts to life. From seamless animations to interactive elements, I leverage the latest web technologies to enhance user engagement and create a dynamic user experience.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
       <Footer />
