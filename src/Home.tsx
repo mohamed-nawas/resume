@@ -22,7 +22,7 @@ function Home() {
                     <p className="font-14-18">Book-Call</p>
                   </a>
                 </div>
-                <a href="/portfolio" className="rss-home__details-section__content-container__contact-container__link font-14-18">View Portfolio</a>
+                <a href="/projects" className="rss-home__details-section__content-container__contact-container__link font-14-18">View Portfolio</a>
               </div>
               <div className="rss-home__details-section__content-container__status-container">
                 <div className="rss-home__details-section__content-container__status-container__item-container rss-home__details-section__content-container__status-container__item-container-full">
