@@ -41,6 +41,57 @@ function Home() {
             </div>
           </div>
 
+          <div className="rss-home__skills-section">
+            <div className="rss-home__skills-section__heading-container">
+              <h3 className="rss-home__skills-section__heading-container__title font-28-48">Creative Skills</h3>
+              <p className="rss-home__skills-section__heading-container__slug font-14-18">As a web designer, I possess a diverse set of skills and expertise to bring your web design visions to life</p>
+            </div>
+            <div className="rss-home__skills-section__list-container">
+              <div className="rss-home__skills-section__list-container__item">
+                <div className="rss-home__skills-section__list-container__item__icon-container">
+                  <img src={process.env.NODE_ENV === 'production' ? `${import.meta.env.BASE_URL}/icons/web-design-ico.png` : 'icons/web-design-ico.png'} alt="web-design" />
+                </div>
+                <h5 className="rss-home__skills-section__list-container__item__title font-18-24">Web Design Principles</h5>
+                <p className="rss-home__skills-section__list-container__item__slug font-14-18">Proficiency in the fundamental principles of design, such as layout, color theory, typography, and visual hierarchy.</p>
+              </div>
+              <div className="rss-home__skills-section__list-container__item">
+                <div className="rss-home__skills-section__list-container__item__icon-container">
+                  <img src={process.env.NODE_ENV === 'production' ? `${import.meta.env.BASE_URL}/icons/ui-design-ico.png` : 'icons/ui-design-ico.png'} alt="ui-design" />
+                </div>
+                <h5 className="rss-home__skills-section__list-container__item__title font-18-24">User Interface - UI Design</h5>
+                <p className="rss-home__skills-section__list-container__item__slug font-14-18">Ability to create visually appealing and intuitive user interfaces that enhance user experience and engagement.</p>
+              </div>
+              <div className="rss-home__skills-section__list-container__item">
+                <div className="rss-home__skills-section__list-container__item__icon-container">
+                  <img src={process.env.NODE_ENV === 'production' ? `${import.meta.env.BASE_URL}/icons/ux-design-ico.png` : 'icons/ux-design-ico.png'} alt="ux-design" />
+                </div>
+                <h5 className="rss-home__skills-section__list-container__item__title font-18-24">User Experience - UX Design</h5>
+                <p className="rss-home__skills-section__list-container__item__slug font-14-18">Understanding of user behavior and psychology to design seamless and enjoyable user experiences that meet user needs and goals.</p>
+              </div>
+              <div className="rss-home__skills-section__list-container__item">
+                <div className="rss-home__skills-section__list-container__item__icon-container">
+                  <img src={process.env.NODE_ENV === 'production' ? `${import.meta.env.BASE_URL}/icons/responsive-design-ico.png` : 'icons/responsive-design-ico.png'} alt="responsive-design" />
+                </div>
+                <h5 className="rss-home__skills-section__list-container__item__title font-18-24">Responsive Web Design</h5>
+                <p className="rss-home__skills-section__list-container__item__slug font-14-18">Knowledge of designing websites that adapt and function seamlessly across various devices and screen sizes.</p>
+              </div>
+              <div className="rss-home__skills-section__list-container__item">
+                <div className="rss-home__skills-section__list-container__item__icon-container">
+                  <img src={process.env.NODE_ENV === 'production' ? `${import.meta.env.BASE_URL}/icons/wireframing-ico.png` : 'icons/wireframing-ico.png'} alt="wireframing" />
+                </div>
+                <h5 className="rss-home__skills-section__list-container__item__title font-18-24">Wireframing and Prototyping</h5>
+                <p className="rss-home__skills-section__list-container__item__slug font-14-18">Ability to create wireframes and interactive prototypes to visualize and test website layouts and functionality.</p>
+              </div>
+              <div className="rss-home__skills-section__list-container__item">
+                <div className="rss-home__skills-section__list-container__item__icon-container">
+                  <img src={process.env.NODE_ENV === 'production' ? `${import.meta.env.BASE_URL}/icons/optimization-ico.png` : 'icons/optimization-ico.png'} alt="optimization" />
+                </div>
+                <h5 className="rss-home__skills-section__list-container__item__title font-18-24">Mobile-Friendly Optimization</h5>
+                <p className="rss-home__skills-section__list-container__item__slug font-14-18">Proficiency in the fundamental principles of design, such as layout, color theory, typography, and visual hierarchy.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
       <Footer />
