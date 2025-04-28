@@ -13,8 +13,8 @@ export default function Routes() {
         // to keep the UI in sync with the URL
         <HashRouter>
             <Switch>
-                <Route exact path="/"><Redirect to="/resume" /></Route>
-                <Route exact path="/resume" component={App} />
+                {/* <Route exact path="/"><Redirect to="/resume" /></Route> */}
+                <Route exact path="/" component={App} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/projects" component={Portfolio} />
                 <Route exact path="/contact" component={Contact} />
@@ -27,7 +27,6 @@ export default function Routes() {
                 <Route exact path="/about" component={About} />
                 <Route exact path="/projects" component={Portfolio} />
                 <Route exact path="/contact" component={Contact} />
-                {/* <Route path="/login" component={Auth} /> */}
             </Switch>
         </BrowserRouter>
     )
