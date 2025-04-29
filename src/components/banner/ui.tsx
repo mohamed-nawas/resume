@@ -1,11 +1,13 @@
 import * as React from 'react';
 
-const BannerUI: React.FC<BannerUIProps> = ({ containerRef, children, iconPath, iconAlt, contentTitle, contentSlug }) => {
+const BannerUI: React.FC<BannerUIProps> = ({ containerRef, children, iconPath, iconAlt, 
+    contentTitle, contentSlug }) => {
     return (
         <div ref={containerRef} className="rss-banner">
             {
                 process.env.NODE_ENV === "production" ? (
-                    <img src={`${import.meta.env.BASE_URL}/${iconPath}`} alt={iconAlt} className="rss-banner__ico" />
+                    <img src={`${import.meta.env.BASE_URL}/${iconPath}`} alt={iconAlt} 
+                    className="rss-banner__ico" />
                 ) : (
                     <img src={iconPath} alt={iconAlt} className="rss-banner__ico" />
                 )

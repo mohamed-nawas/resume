@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { items } from '../../data/faq';
 
-const FAQUI: React.FC<FAQUIProps> = ({ containerRef, title, slug, containerHelpIconPath, containerHelpIconAlt, containerHelpTextTitle, containerHelpTextSlug, containerHelpBtnValue }) => {
+const FAQUI: React.FC<FAQUIProps> = ({ containerRef, title, slug, containerHelpIconPath, 
+    containerHelpIconAlt, containerHelpTextTitle, containerHelpTextSlug, 
+    containerHelpBtnValue }) => {
     return (
         <div ref={containerRef} className="rss-faq">
             <h2 className="rss-faq__title font-28-48">{title}</h2>
@@ -11,7 +13,6 @@ const FAQUI: React.FC<FAQUIProps> = ({ containerRef, title, slug, containerHelpI
                     {items.map((item, index) => (
                         <div className="rss-faq__container__faq-container__item" key={index}>
                             <div className="rss-faq__container__faq-container__item__text-container">
-                                {/* <h4 className={`${containerFaqItemTextTitleClassName} active font-16-20`}>{item.title}</h4> */}
                                 <h4 className="rss-faq__container__faq-container__item__text-container__title font-16-20">{item.title}</h4>
                                 <p className="rss-faq__container__faq-container__item__text-container__slug font-14-18">{item.slug}</p>
                             </div>

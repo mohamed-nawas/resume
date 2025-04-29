@@ -1,11 +1,12 @@
 interface DynamicGridProps {
   children: React.ReactNode;
-  gap: number; // gap in px
-  className?: string; // container classes
+  gap?: number;
+  className?: string;
 }
 
 interface DynamicGridUIProps {
   children: React.ReactNode;
   containerRef: React.RefObject<HTMLDivElement>;
+  gap?: number;
   className?: string;
 }

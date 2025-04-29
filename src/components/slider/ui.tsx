@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-const SliderUI: React.FC<SliderUIProps> = ({ containerRef, sliderTitle, swiperClassName, sliderBtnText, data }) => {
+const SliderUI: React.FC<SliderUIProps> = ({ containerRef, sliderTitle, swiperClassName, 
+    sliderBtnText, data }) => {
     return (
         <div ref={containerRef} className="rss-slider">
             <div className="rss-slider__title-container">
@@ -14,7 +15,7 @@ const SliderUI: React.FC<SliderUIProps> = ({ containerRef, sliderTitle, swiperCl
             <div className={`swiper ${swiperClassName}`}>
                 <div className="rss-slider__items-container swiper-wrapper">
                     {data.map((item, index) => (
-                        <div className="rss-slider__items-container__item swiper-slide">
+                        <div className="rss-slider__items-container__item swiper-slide" key={index}>
                             <h4 className="rss-slider__items-container__item__title font-16-20">{item.title}</h4>
                             <div className="rss-slider__items-container__item__banner-image-container">
                                 {
