@@ -5,9 +5,8 @@ import DynamicGridUI from "./ui";
 const DynamicGrid: React.FC<DynamicGridProps> = ({ children, gap = 14, className = "" }) => {
   const containerRef = React.useRef<HTMLDivElement | null>(null);
   useDynamicGrid(containerRef, children, gap);
-
   return (
-    <DynamicGridUI containerRef={containerRef} className={className} gap={gap}>
+    <DynamicGridUI containerRef={containerRef} className={className}>
       {children}
     </DynamicGridUI>
   );

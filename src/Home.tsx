@@ -1,5 +1,6 @@
 import Header from "./components/header";
 import Footer from "./components/footer";
+import FAQ from "./components/faq";
 
 function Home() {
 
@@ -293,7 +294,7 @@ function Home() {
               <div className="rss-home__portfolio-section__arrows-container__arrow rss-home__portfolio-section__arrows-container__arrow-left works-swiper-button-prev swiper-button-prev"></div>
               <div className="rss-home__portfolio-section__arrows-container__line-container">
                 <div className="rss-home__portfolio-section__arrows-container__line-container__item" />
-                <div className="rss-home__portfolio-section__arrows-container__line-container__item rss-portfolio__contenthome__portfolio-section__line-container__item-active" />
+                <div className="rss-home__portfolio-section__arrows-container__line-container__item rss-home__portfolio-section__arrows-container__line-container__item-active" />
                 <div className="rss-home__portfolio-section__arrows-container__line-container__item" />
               </div>
               <div className="rss-home__portfolio-section__arrows-container__arrow rss-home__portfolio-section__arrows-container__arrow-right works-swiper-button-next swiper-button-next"></div>
@@ -443,101 +444,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="rss-home__faq-section">
-            <h2 className="rss-home__faq-section__title font-28-48">Frequently Asked Questions</h2>
-            <p className="rss-home__faq-section__slug font-14-18">Here are answers to some common questions</p>
-            <div className="rss-home__faq-section__container">
-              <div className="rss-home__faq-section__container__faq-container">
-                <div className="rss-home__faq-section__container__faq-container__item">
-                  <div className="rss-home__faq-section__container__faq-container__item__text-container">
-                    <h4 className="rss-home__faq-section__container__faq-container__item__text-container__title active font-16-20">Can you work with clients remotely?</h4>
-                    <p className="rss-home__faq-section__container__faq-container__item__text-container__slug font-14-18">Absolutely!. I have experience working with clients from all around the world. Through effective communication channels such as email, video calls, and project management tools. I ensure seamless collaboration regardless of geographical location.</p>
-                  </div>
-                  <div className="rss-home__faq-section__container__faq-container__item__icon-container">
-                    {
-                      process.env.NODE_ENV === "production" ? (
-                        <img src={`${import.meta.env.BASE_URL}/icons/cross-ico.png`} alt="Cross Icon" className="rss-home__faq-section__container__faq-container__item__icon-container__icon" />
-                      ) : (
-                        <img src='icons/cross-ico.png' alt="Cross Icon" className="rss-home__faq-section__container__faq-container__item__icon-container__icon" />
-                      )
-                    }
-                  </div>
-                </div>
-                <div className="rss-home__faq-section__container__faq-container__item">
-                  <div className="rss-home__faq-section__container__faq-container__item__text-container">
-                    <h4 className="rss-home__faq-section__container__faq-container__item__text-container__title font-16-20">How long does it typically take to complete a web design project?</h4>
-                  </div>
-                  <div className="rss-home__faq-section__container__faq-container__item__icon-container">
-                    {
-                      process.env.NODE_ENV === "production" ? (
-                        <img src={`${import.meta.env.BASE_URL}/icons/plus-ico.png`} alt="Plus Icon" className="rss-home__faq-section__container__faq-container__item__icon-container__icon" />
-                      ) : (
-                        <img src='icons/plus-ico.png' alt="Plus Icon" className="rss-home__faq-section__container__faq-container__item__icon-container__icon" />
-                      )
-                    }
-                  </div>
-                </div>
-                <div className="rss-home__faq-section__container__faq-container__item">
-                  <div className="rss-home__faq-section__container__faq-container__item__text-container">
-                    <h4 className="rss-home__faq-section__container__faq-container__item__text-container__title font-16-20">Do you offer website maintenance services?</h4>
-                  </div>
-                  <div className="rss-home__faq-section__container__faq-container__item__icon-container">
-                    {
-                      process.env.NODE_ENV === "production" ? (
-                        <img src={`${import.meta.env.BASE_URL}/icons/plus-ico.png`} alt="Plus Icon" className="rss-home__faq-section__container__faq-container__item__icon-container__icon" />
-                      ) : (
-                        <img src='icons/plus-ico.png' alt="Plus Icon" className="rss-home__faq-section__container__faq-container__item__icon-container__icon" />
-                      )
-                    }
-                  </div>
-                </div>
-                <div className="rss-home__faq-section__container__faq-container__item">
-                  <div className="rss-home__faq-section__container__faq-container__item__text-container">
-                    <h4 className="rss-home__faq-section__container__faq-container__item__text-container__title font-16-20">Can you optimize my website for search engines?</h4>
-                  </div>
-                  <div className="rss-home__faq-section__container__faq-container__item__icon-container">
-                    {
-                      process.env.NODE_ENV === "production" ? (
-                        <img src={`${import.meta.env.BASE_URL}/icons/plus-ico.png`} alt="Plus Icon" className="rss-home__faq-section__container__faq-container__item__icon-container__icon" />
-                      ) : (
-                        <img src='icons/plus-ico.png' alt="Plus Icon" className="rss-home__faq-section__container__faq-container__item__icon-container__icon" />
-                      )
-                    }
-                  </div>
-                </div>
-                <div className="rss-home__faq-section__container__faq-container__item">
-                  <div className="rss-home__faq-section__container__faq-container__item__text-container">
-                    <h4 className="rss-home__faq-section__container__faq-container__item__text-container__title font-16-20">Can you integrate third-party tools or platforms into my website?</h4>
-                  </div>
-                  <div className="rss-home__faq-section__container__faq-container__item__icon-container">
-                    {
-                      process.env.NODE_ENV === "production" ? (
-                        <img src={`${import.meta.env.BASE_URL}/icons/plus-ico.png`} alt="Plus Icon" className="rss-home__faq-section__container__faq-container__item__icon-container__icon" />
-                      ) : (
-                        <img src='icons/plus-ico.png' alt="Plus Icon" className="rss-home__faq-section__container__faq-container__item__icon-container__icon" />
-                      )
-                    }
-                  </div>
-                </div>
-              </div>
-              <div className="rss-home__faq-section__container__help-container">
-                <div className="rss-home__faq-section__container__help-container__ico-container">
-                  {
-                    process.env.NODE_ENV === "production" ? (
-                      <img src={`${import.meta.env.BASE_URL}/icons/star-ico.png`} alt="Star Icon" className="rss-home__faq-section__container__help-container__ico-container__icon" />
-                    ) : (
-                      <img src='icons/star-ico.png' alt="Star Icon" className="rss-home__faq-section__container__help-container__ico-container__icon" />
-                    )
-                  }
-                </div>
-                <div className="rss-home__faq-section__container__help-container__text-container">
-                  <h4 className="rss-home__faq-section__container__help-container__text-container__title font-18-24">Still have any questions?</h4>
-                  <p className="rss-home__faq-section__container__help-container__text-container__slug font-14-18">Let's collaborate to create an exceptional website that sets you apart from the competition. Contact me today to discuss you web design needs and bring your digital vision to life!</p>
-                </div>
-                <input type="button" value="Contact Me" className="rss-contact__faq__container__help-container__submit-btn" />
-              </div>
-            </div>
-          </div>
+          <FAQ title="Frequently Asked Questions" slug="Here are answers to some common questions" containerHelpBtnValue="Contact Me" containerHelpIconPath="icons/star-ico.png" containerHelpIconAlt="Star Icon" containerHelpTextTitle="Still have any Questions ?" containerHelpTextSlug="Let's collaborate to create an exceptional website that sets you apart from the competition. Contact me today to discuss your web design needs and bring your digital vision to life!" />
 
         </div>
       </section>

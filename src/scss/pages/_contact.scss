@@ -2,60 +2,11 @@
 
 .rss-contact {
     background-color: var(--color-peach-92);
-
-    &__banner {
-        background-color: var(--color-peach-96);
-        margin-top: 30px;
-        border-radius: 10px;
-        padding: 40px 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 30px;
-
-        &__ico {
-            width: clamp(52px, 4%, 66px);
-            aspect-ratio: 1;
-            border-radius: 6px;
-        }
-
-        &__content {
-            &__title {
-                color: var(--color-grey-20);
-                font-weight: 600;
-            }
-
-            &__slug {
-                color: var(--color-grey-30);
-                font-weight: 400;
-            }
-        }
-
-        &__list-container {
-            &__item {
-                display: flex;
-                border-radius: 6px;
-                border: 1px solid var(--color-peach-90);
-                // width: 298px;
-                min-width: 258px;
-                // max-width: 298px;
-                height: 44px;
-                flex: 0 auto;
-                justify-content: center;
-                align-items: center;
-                gap: 4px;
-
-                p {
-                    margin: 0;
-                    font-weight: 500;
-                }
-            }
-        }
-    }
+    margin-top: clamp(30px, 7.5vw, 100px);
+    margin-bottom: clamp(60px, 15vw, 100px);
 
     &__form-container {
-        margin-top: 30px;
+        margin-top: clamp(40px, 10vw, 100px);
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -226,127 +177,6 @@
         }
     }
 
-    &__faq {
-        margin-top: clamp(30px, 7.5vw, 150px);
-        margin-bottom: clamp(60px, 15vw, 150px);
-        text-align: center;
-
-        &__title {
-            font-weight: 600;
-            color: var(--color-grey-20);
-        }
-        &__slug {
-            color: var(--color-grey-30);
-            font-weight: 400;
-        }
-
-        &__container > * {
-
-            background-color: var(--color-peach-96);
-            border-radius: 10px;
-            width: 100%;
-        }
-        &__container {
-            margin-top: clamp(60px, 4vw, 80px);
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            gap: 30px;
-
-            &__faq-container { 
-                padding: clamp(20px, 5vw, 50px); 
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-
-                &__item {
-                    padding: 20px 24px;
-                    display: flex;
-                    gap: 24px;
-                    border-radius: 6px;
-                    background-color: var(--color-peach-92);
-
-                    &__text-container {
-                        display: flex;
-                        flex-direction: column;
-                        text-align: left;
-                        gap: 16px;
-
-                        &__title {
-                            font-weight: 500;
-                            color: var(--color-grey-20);
-                        }
-
-                        &__slug {
-                            font-weight: 400;
-                            color: var(--color-grey-30);
-                        }
-                    }
-
-                    &__icon-container {
-                        width: 46px;
-                        height: 46px;
-                        display: grid;
-                        place-content: center;
-                        border-radius: 8px;
-                        border: 1px solid var(--color-peach-85);
-
-                        &__icon {
-                            width: 34px;
-                            height: 34px;
-                        }
-                    }
-                }
-            }
-
-            &__help-container {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                align-items: center; 
-                padding: clamp(30px, 7.5vw, 50px); 
-
-                &__ico-container {
-                    display: grid;
-                    place-content: center;
-                    width: 48px;
-                    height: 48px;
-                    background-color: var(--color-purple-50);
-                    border-radius: 6px;
-
-                    &__icon {
-                        width: 24px;
-                        height: 24px;
-                    }
-                }
-
-                &__text-container {
-
-                    &__title {
-                        margin-bottom: 6px;
-                        font-weight: 600;
-                        color: var(--color-grey-20);
-                    }
-    
-                    &__slug {
-                        font-weight: 400;
-                        color: var(--color-grey-30);
-                    }
-                }
-
-                &__submit-btn {
-                    border-radius: 6px;
-                    border-color: transparent;
-                    background-color: var(--color-purple-50);
-                    color: var(--color-peach-99);
-                    padding: 14px 20px;
-                    font-weight: 500;
-                    font-size: clamp(14px, 3.5vw, 18px);
-                }
-            }
-        }
-    }
-
     @include screens.max-sm {
         &__form-container {
             &__form { flex: 0 1 calc(100%); }
@@ -378,11 +208,6 @@
     }
 
     @include screens.min-md {
-        &__banner {
-            margin-top: clamp(60px, 4vw, 100px);
-            padding: clamp(60px, 4vw, 80px) clamp(30px, 2vw, 40px);
-        }
-
         &__form-container {
             flex-direction: row-reverse;
 
@@ -393,23 +218,5 @@
                 &__profiles { align-items: flex-start; }
             }
         }
-
-        &__faq__container { 
-            &__faq-container { flex: 0 1 calc((100% - 30px) * 2/3); }
-            &__help-container { flex: 0 1 calc((100% - 30px) * 1/3); }
-
-            &__help-container {
-                text-align: left;
-                align-items: flex-start;
-            }
-        }
-    }
-
-    @include screens.min-lg { 
-        &__faq__container { 
-            gap: 50px; 
-            &__faq-container { flex: 0 1 calc((100% - 50px) * 2/3); }
-            &__help-container { flex: 0 1 calc((100% - 50px) * 1/3); }
-        } 
     }
 }
