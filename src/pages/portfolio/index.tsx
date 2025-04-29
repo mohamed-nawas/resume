@@ -1,3 +1,4 @@
+import Banner from "../../components/banner";
 import DynamicGrid from "../../components/dynamic_grid";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
@@ -10,36 +11,26 @@ function Portfolio() {
             <section className="rss-portfolio">
                 <div className="container-fluid">
 
-                    <div className="rss-portfolio__banner">
-                        {
-                            process.env.NODE_ENV === "production" ? (
-                                <img src={`${import.meta.env.BASE_URL}/icons/starrs-ico.png`} alt="Stars Icon" className="rss-portfolio__banner__ico" />
-                            ) : (
-                                <img src='icons/starrs-ico.png' alt="Stars Icon" className="rss-portfolio__banner__ico" />
-                            )
-                        }
-                        <div className="rss-portfolio__banner__content">
-                            <h2 className="rss-portfolio__banner__content__title font-28-48">My Creative Portfolios</h2>
-                            <p className="rss-portfolio__banner__content__slug font-14-20">Here's what some of my satisfied clients have to say about my work</p>
-                        </div>
-                        <DynamicGrid className="rss-portfolio__banner__list-container" gap={14}>
+                    <Banner iconPath="icons/starrs-ico.png" iconAlt="Stars Icon" contentTitle="My Creative Portfolios"  contentSlug="Here's what some of my satisfied clients have to say about my work">
+                        <DynamicGrid className="rss-banner__list-container" gap={14}>
                             {items.map((item, index) => (
                                 <div
                                     key={index}
-                                    className="rss-portfolio__banner__list-container__item"
+                                    className="rss-banner__list-container__item"
                                 >
                                     <img
                                         src={item.icon}
                                         alt={item.alt}
-                                        className="rss-portfolio__banner__list-container__item__ico"
+                                        className="rss-banner__list-container__item__ico"
                                     />
-                                    <p className="rss-portfolio__banner__list-container__item__content font-14-18">
+                                    <p className="rss-banner__list-container__item__content font-14-18">
                                         {item.text}
                                     </p>
                                 </div>
                             ))}
                         </DynamicGrid>
-                    </div>
+                    </Banner>
+
                     <div className="rss-portfolio__contents-container">
 
                         <div className="rss-portfolio__contents-container__projects-container">
@@ -71,40 +62,40 @@ function Portfolio() {
                                         </div>
                                         <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container">
                                             <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/aura-image-sub.png`} alt="Aura Small Image" />
-                                                ) : (
-                                                    <img src='images/aura-image-sub.png' alt="Aura Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/aura-image-sub.png`} alt="Aura Small Image" />
+                                                    ) : (
+                                                        <img src='images/aura-image-sub.png' alt="Aura Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/aura-image-sub.png`} alt="Aura Small Image" />
-                                                ) : (
-                                                    <img src='images/aura-image-sub.png' alt="Aura Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/aura-image-sub.png`} alt="Aura Small Image" />
+                                                    ) : (
+                                                        <img src='images/aura-image-sub.png' alt="Aura Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/aura-image-sub.png`} alt="Aura Small Image" />
-                                                ) : (
-                                                    <img src='images/aura-image-sub.png' alt="Aura Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/aura-image-sub.png`} alt="Aura Small Image" />
+                                                    ) : (
+                                                        <img src='images/aura-image-sub.png' alt="Aura Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/aura-image-sub.png`} alt="Aura Small Image" />
-                                                ) : (
-                                                    <img src='images/aura-image-sub.png' alt="Aura Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/aura-image-sub.png`} alt="Aura Small Image" />
+                                                    ) : (
+                                                        <img src='images/aura-image-sub.png' alt="Aura Small Image" />
+                                                    )
+                                                }
                                             </div>
                                         </div>
                                     </div>
@@ -112,53 +103,53 @@ function Portfolio() {
                                     <div className="rss-portfolio__contents-container__projects-container__items-container__item swiper-slide">
                                         <h4 className="rss-portfolio__contents-container__projects-container__items-container__item__title font-16-20">Forhelp Charity</h4>
                                         <div className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container">
-                                        {
-                                            process.env.NODE_ENV === "production" ? (
-                                                <img src={`${import.meta.env.BASE_URL}/images/charity-image-main.png`} alt="Charity Big Image" className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__image" />
-                                            ) : (
-                                                <img src='images/charity-image-main.png' alt="Charity Big Image" className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__image" />
-                                            )
-                                        }
+                                            {
+                                                process.env.NODE_ENV === "production" ? (
+                                                    <img src={`${import.meta.env.BASE_URL}/images/charity-image-main.png`} alt="Charity Big Image" className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__image" />
+                                                ) : (
+                                                    <img src='images/charity-image-main.png' alt="Charity Big Image" className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__image" />
+                                                )
+                                            }
                                             <div className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__expand-container">
                                                 <div className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__expand-container__arrow" />
                                             </div>
                                         </div>
                                         <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container">
                                             <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/charity-image-sub.png`} alt="Charity Small Image" />
-                                                ) : (
-                                                    <img src='images/charity-image-sub.png' alt="Charity Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/charity-image-sub.png`} alt="Charity Small Image" />
+                                                    ) : (
+                                                        <img src='images/charity-image-sub.png' alt="Charity Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/charity-image-sub.png`} alt="Charity Small Image" />
-                                                ) : (
-                                                    <img src='images/charity-image-sub.png' alt="Charity Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/charity-image-sub.png`} alt="Charity Small Image" />
+                                                    ) : (
+                                                        <img src='images/charity-image-sub.png' alt="Charity Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/charity-image-sub.png`} alt="Charity Small Image" />
-                                                ) : (
-                                                    <img src='images/charity-image-sub.png' alt="Charity Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/charity-image-sub.png`} alt="Charity Small Image" />
+                                                    ) : (
+                                                        <img src='images/charity-image-sub.png' alt="Charity Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/charity-image-sub.png`} alt="Charity Small Image" />
-                                                ) : (
-                                                    <img src='images/charity-image-sub.png' alt="Charity Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/charity-image-sub.png`} alt="Charity Small Image" />
+                                                    ) : (
+                                                        <img src='images/charity-image-sub.png' alt="Charity Small Image" />
+                                                    )
+                                                }
                                             </div>
                                         </div>
                                     </div>
@@ -166,53 +157,53 @@ function Portfolio() {
                                     <div className="rss-portfolio__contents-container__projects-container__items-container__item swiper-slide">
                                         <h4 className="rss-portfolio__contents-container__projects-container__items-container__item__title font-16-20">Skill Bridge</h4>
                                         <div className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container">
-                                        {
-                                            process.env.NODE_ENV === "production" ? (
-                                                <img src={`${import.meta.env.BASE_URL}/images/bridge-image-main.png`} alt="Bridge Big Image" className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__image" />
-                                            ) : (
-                                                <img src='images/bridge-image-main.png' alt="Bridge Big Image" className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__image" />
-                                            )
-                                        }
+                                            {
+                                                process.env.NODE_ENV === "production" ? (
+                                                    <img src={`${import.meta.env.BASE_URL}/images/bridge-image-main.png`} alt="Bridge Big Image" className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__image" />
+                                                ) : (
+                                                    <img src='images/bridge-image-main.png' alt="Bridge Big Image" className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__image" />
+                                                )
+                                            }
                                             <div className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__expand-container">
                                                 <div className="rss-portfolio__contents-container__projects-container__items-container__item__banner-image-container__expand-container__arrow" />
                                             </div>
                                         </div>
                                         <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container">
                                             <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/bridge-image-sub.png`} alt="Bridge Small Image" />
-                                                ) : (
-                                                    <img src='images/bridge-image-sub.png' alt="Bridge Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/bridge-image-sub.png`} alt="Bridge Small Image" />
+                                                    ) : (
+                                                        <img src='images/bridge-image-sub.png' alt="Bridge Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/bridge-image-sub.png`} alt="Bridge Small Image" />
-                                                ) : (
-                                                    <img src='images/bridge-image-sub.png' alt="Bridge Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/bridge-image-sub.png`} alt="Bridge Small Image" />
+                                                    ) : (
+                                                        <img src='images/bridge-image-sub.png' alt="Bridge Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/bridge-image-sub.png`} alt="Bridge Small Image" />
-                                                ) : (
-                                                    <img src='images/bridge-image-sub.png' alt="Bridge Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/bridge-image-sub.png`} alt="Bridge Small Image" />
+                                                    ) : (
+                                                        <img src='images/bridge-image-sub.png' alt="Bridge Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image rss-portfolio__contents-container__projects-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/bridge-image-sub.png`} alt="Bridge Small Image" />
-                                                ) : (
-                                                    <img src='images/bridge-image-sub.png' alt="Bridge Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/bridge-image-sub.png`} alt="Bridge Small Image" />
+                                                    ) : (
+                                                        <img src='images/bridge-image-sub.png' alt="Bridge Small Image" />
+                                                    )
+                                                }
                                             </div>
                                         </div>
                                     </div>
@@ -260,40 +251,40 @@ function Portfolio() {
                                         </div>
                                         <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container">
                                             <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/vandi-image-sub.png`} alt="Vandi Small Image" />
-                                                ) : (
-                                                    <img src='images/vandi-image-sub.png' alt="Vandi Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/vandi-image-sub.png`} alt="Vandi Small Image" />
+                                                    ) : (
+                                                        <img src='images/vandi-image-sub.png' alt="Vandi Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/vandi-image-sub.png`} alt="Vandi Small Image" />
-                                                ) : (
-                                                    <img src='images/vandi-image-sub.png' alt="Vandi Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/vandi-image-sub.png`} alt="Vandi Small Image" />
+                                                    ) : (
+                                                        <img src='images/vandi-image-sub.png' alt="Vandi Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/vandi-image-sub.png`} alt="Vandi Small Image" />
-                                                ) : (
-                                                    <img src='images/vandi-image-sub.png' alt="Vandi Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/vandi-image-sub.png`} alt="Vandi Small Image" />
+                                                    ) : (
+                                                        <img src='images/vandi-image-sub.png' alt="Vandi Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/vandi-image-sub.png`} alt="Vandi Small Image" />
-                                                ) : (
-                                                    <img src='images/vandi-image-sub.png' alt="Vandi Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/vandi-image-sub.png`} alt="Vandi Small Image" />
+                                                    ) : (
+                                                        <img src='images/vandi-image-sub.png' alt="Vandi Small Image" />
+                                                    )
+                                                }
                                             </div>
                                         </div>
                                     </div>
@@ -314,40 +305,40 @@ function Portfolio() {
                                         </div>
                                         <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container">
                                             <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-sub.png`} alt="FitFusion Small Image" />
-                                                ) : (
-                                                    <img src='images/fitfusion-image-sub.png' alt="FitFusion Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-sub.png`} alt="FitFusion Small Image" />
+                                                    ) : (
+                                                        <img src='images/fitfusion-image-sub.png' alt="FitFusion Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-sub.png`} alt="FitFusion Small Image" />
-                                                ) : (
-                                                    <img src='images/fitfusion-image-sub.png' alt="FitFusion Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-sub.png`} alt="FitFusion Small Image" />
+                                                    ) : (
+                                                        <img src='images/fitfusion-image-sub.png' alt="FitFusion Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-sub.png`} alt="FitFusion Small Image" />
-                                                ) : (
-                                                    <img src='images/fitfusion-image-sub.png' alt="FitFusion Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-sub.png`} alt="FitFusion Small Image" />
+                                                    ) : (
+                                                        <img src='images/fitfusion-image-sub.png' alt="FitFusion Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-sub.png`} alt="FitFusion Small Image" />
-                                                ) : (
-                                                    <img src='images/fitfusion-image-sub.png' alt="FitFusion Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/fitfusion-image-sub.png`} alt="FitFusion Small Image" />
+                                                    ) : (
+                                                        <img src='images/fitfusion-image-sub.png' alt="FitFusion Small Image" />
+                                                    )
+                                                }
                                             </div>
                                         </div>
                                     </div>
@@ -368,40 +359,40 @@ function Portfolio() {
                                         </div>
                                         <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container">
                                             <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/dxdigital-image-sub.png`} alt="DX Digital Small Image" />
-                                                ) : (
-                                                    <img src='images/dxdigital-image-sub.png' alt="DX Digital Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/dxdigital-image-sub.png`} alt="DX Digital Small Image" />
+                                                    ) : (
+                                                        <img src='images/dxdigital-image-sub.png' alt="DX Digital Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/dxdigital-image-sub.png`} alt="DX Digital Small Image" />
-                                                ) : (
-                                                    <img src='images/dxdigital-image-sub.png' alt="DX Digital Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/dxdigital-image-sub.png`} alt="DX Digital Small Image" />
+                                                    ) : (
+                                                        <img src='images/dxdigital-image-sub.png' alt="DX Digital Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/dxdigital-image-sub.png`} alt="DX Digital Small Image" />
-                                                ) : (
-                                                    <img src='images/dxdigital-image-sub.png' alt="DX Digital Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/dxdigital-image-sub.png`} alt="DX Digital Small Image" />
+                                                    ) : (
+                                                        <img src='images/dxdigital-image-sub.png' alt="DX Digital Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image rss-portfolio__contents-container__articles-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/dxdigital-image-sub.png`} alt="DX Digital Small Image" />
-                                                ) : (
-                                                    <img src='images/dxdigital-image-sub.png' alt="DX Digital Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/dxdigital-image-sub.png`} alt="DX Digital Small Image" />
+                                                    ) : (
+                                                        <img src='images/dxdigital-image-sub.png' alt="DX Digital Small Image" />
+                                                    )
+                                                }
                                             </div>
                                         </div>
                                     </div>
@@ -457,31 +448,31 @@ function Portfolio() {
                                                 }
                                             </div>
                                             <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/learners-image-sub.png`} alt="Little Learners Small Image" />
-                                                ) : (
-                                                    <img src='images/learners-image-sub.png' alt="Little Learners Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/learners-image-sub.png`} alt="Little Learners Small Image" />
+                                                    ) : (
+                                                        <img src='images/learners-image-sub.png' alt="Little Learners Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/learners-image-sub.png`} alt="Little Learners Small Image" />
-                                                ) : (
-                                                    <img src='images/learners-image-sub.png' alt="Little Learners Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/learners-image-sub.png`} alt="Little Learners Small Image" />
+                                                    ) : (
+                                                        <img src='images/learners-image-sub.png' alt="Little Learners Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/learners-image-sub.png`} alt="Little Learners Small Image" />
-                                                ) : (
-                                                    <img src='images/learners-image-sub.png' alt="Little Learners Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/learners-image-sub.png`} alt="Little Learners Small Image" />
+                                                    ) : (
+                                                        <img src='images/learners-image-sub.png' alt="Little Learners Small Image" />
+                                                    )
+                                                }
                                             </div>
                                         </div>
                                     </div>
@@ -502,40 +493,40 @@ function Portfolio() {
                                         </div>
                                         <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container">
                                             <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/streamvibe-image-sub.png`} alt="Stream Vibe Small Image" />
-                                                ) : (
-                                                    <img src='images/streamvibe-image-sub.png' alt="Stream Vibe Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/streamvibe-image-sub.png`} alt="Stream Vibe Small Image" />
+                                                    ) : (
+                                                        <img src='images/streamvibe-image-sub.png' alt="Stream Vibe Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/streamvibe-image-sub.png`} alt="Stream Vibe Small Image" />
-                                                ) : (
-                                                    <img src='images/streamvibe-image-sub.png' alt="Stream Vibe Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/streamvibe-image-sub.png`} alt="Stream Vibe Small Image" />
+                                                    ) : (
+                                                        <img src='images/streamvibe-image-sub.png' alt="Stream Vibe Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/streamvibe-image-sub.png`} alt="Stream Vibe Small Image" />
-                                                ) : (
-                                                    <img src='images/streamvibe-image-sub.png' alt="Stream Vibe Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/streamvibe-image-sub.png`} alt="Stream Vibe Small Image" />
+                                                    ) : (
+                                                        <img src='images/streamvibe-image-sub.png' alt="Stream Vibe Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/streamvibe-image-sub.png`} alt="Stream Vibe Small Image" />
-                                                ) : (
-                                                    <img src='images/streamvibe-image-sub.png' alt="Stream Vibe Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/streamvibe-image-sub.png`} alt="Stream Vibe Small Image" />
+                                                    ) : (
+                                                        <img src='images/streamvibe-image-sub.png' alt="Stream Vibe Small Image" />
+                                                    )
+                                                }
                                             </div>
                                         </div>
                                     </div>
@@ -556,40 +547,40 @@ function Portfolio() {
                                         </div>
                                         <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container">
                                             <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/yourbank-image-sub.png`} alt="Your Bank Small Image" />
-                                                ) : (
-                                                    <img src='images/yourbank-image-sub.png' alt="Your Bank Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/yourbank-image-sub.png`} alt="Your Bank Small Image" />
+                                                    ) : (
+                                                        <img src='images/yourbank-image-sub.png' alt="Your Bank Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/yourbank-image-sub.png`} alt="Your Bank Small Image" />
-                                                ) : (
-                                                    <img src='images/yourbank-image-sub.png' alt="Your Bank Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/yourbank-image-sub.png`} alt="Your Bank Small Image" />
+                                                    ) : (
+                                                        <img src='images/yourbank-image-sub.png' alt="Your Bank Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/yourbank-image-sub.png`} alt="Your Bank Small Image" />
-                                                ) : (
-                                                    <img src='images/yourbank-image-sub.png' alt="Your Bank Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/yourbank-image-sub.png`} alt="Your Bank Small Image" />
+                                                    ) : (
+                                                        <img src='images/yourbank-image-sub.png' alt="Your Bank Small Image" />
+                                                    )
+                                                }
                                             </div>
                                             <div className="rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image rss-portfolio__contents-container__case-studies-container__items-container__item__image-list-container__image-inactive">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/images/yourbank-image-sub.png`} alt="Your Bank Small Image" />
-                                                ) : (
-                                                    <img src='images/yourbank-image-sub.png' alt="Your Bank Small Image" />
-                                                )
-                                            }
+                                                {
+                                                    process.env.NODE_ENV === "production" ? (
+                                                        <img src={`${import.meta.env.BASE_URL}/images/yourbank-image-sub.png`} alt="Your Bank Small Image" />
+                                                    ) : (
+                                                        <img src='images/yourbank-image-sub.png' alt="Your Bank Small Image" />
+                                                    )
+                                                }
                                             </div>
                                         </div>
                                     </div>

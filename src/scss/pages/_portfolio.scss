@@ -5,63 +5,11 @@
     margin-top: clamp(30px, 7.5vw, 100px);
     margin-bottom: clamp(60px, 15vw, 100px);
 
-    &__banner {
-        background-color: var(--color-peach-96);
-        border-radius: 10px; //**
-        padding: 40px 30px; //**
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 30px; //**
-        margin-bottom: 60px; //**
-
-        &__ico {
-            width: clamp(52px, 4%, 66px);
-            aspect-ratio: 1;
-            border-radius: 6px; //**
-        }
-
-        &__content {
-            &__title {
-                color: var(--color-grey-20);
-                font-weight: 600;
-                margin-bottom: 4px; //**
-            }
-
-            &__slug {
-                color: var(--color-grey-30);
-                font-weight: 400;
-            }
-        }
-
-        &__list-container {
-            gap: 14px; //**
-
-            &__item {
-                display: flex;
-                border-radius: 6px; //**
-                border: 1px solid var(--color-peach-90);
-                min-width: 258px;
-                height: 44px;
-                flex: 0 auto;
-                justify-content: center;
-                align-items: center;
-                gap: 4px; //**v
-
-                p {
-                    color: var(--color-grey-20);
-                    margin: 0;
-                    font-weight: 500;
-                }
-            }
-        }
-    }
-
     &__contents-container {
         display: flex;
         flex-direction: column;
         gap: 60px;
+        margin-top: clamp(60px, 15vw, 100px);
 
         &__projects-container,
         &__articles-container,
