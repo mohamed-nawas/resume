@@ -1,6 +1,7 @@
 import Header from "./components/header";
 import Footer from "./components/footer";
 import FAQ from "./components/faq";
+import Review from "./components/review";
 
 function Home() {
 
@@ -304,145 +305,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="rss-home__review-section">
-            <h3 className="rss-home__review-section__title font-38-48">What My Clients say About Me</h3>
-            <p className="rss-home__review-section__slug font-16-18">Here's what some of my satisfied clients have to say about my work</p>
-            <div className="rss-home__review-section__total-container">
-              <h6 className="font-16-20">37 Total Reviews</h6>
-              <div className="rss-home__review-section__total-container__arrow-container">
-                <div className="rss-home__review-section__total-container__arrow-container__arrow rss-home__review-section__total-container__arrow-container__arrow-left swiper-button-prev" />
-                <div className="rss-home__review-section__total-container__arrow-container__arrow rss-home__review-section__total-container__arrow-container__arrow-right swiper-button-next" />
-              </div>
-            </div>
-            <div className="rss-home__review-section__hr-line" />
-            <div className="swiper review-swiper">
-              <div className="rss-home__review-section__review-items-container swiper-wrapper">
-                <div className="rss-home__review-section__review-items-container__item swiper-slide">
-                  <div className="rss-home__review-section__review-items-container__item__header-container">
-                    <div className="rss-home__review-section__review-items-container__item__header-container__info-container">
-                      <h6 className="rss-home__review-section__review-items-container__item__header-container__info-container__title font-16-20">Sarah Thompson</h6>
-                      <p className="rss-home__review-section__review-items-container__item__header-container__info-container__slug font-14-18">produce-ui.com</p>
-                    </div>
-                    <div className="rss-home__review-section__review-items-container__item__header-container__profile-container">
-                      <div className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container">
-                        {
-                          process.env.NODE_ENV === "production" ? (
-                            <img src={`${import.meta.env.BASE_URL}/icons/linkedin-filled-ico.png`} alt="Linkedin Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          ) : (
-                            <img src='icons/linkedin-filled-ico.png' alt="Linkedin Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          )
-                        }
-                      </div>
-                      <div className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container">
-                        {
-                          process.env.NODE_ENV === "production" ? (
-                            <img src={`${import.meta.env.BASE_URL}/icons/facebook-filled-ico.png`} alt="Facebook Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          ) : (
-                            <img src='icons/facebook-filled-ico.png' alt="Facebook Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          )
-                        }
-                      </div>
-                      <div className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container">
-                        {
-                          process.env.NODE_ENV === "production" ? (
-                            <img src={`${import.meta.env.BASE_URL}/icons/twitter-filled-ico.png`} alt="Twitter Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          ) : (
-                            <img src='icons/twitter-filled-ico.png' alt="Twitter Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          )
-                        }
-                      </div>
-                    </div>
-                  </div>
-                  <p className="rss-home__review-section__review-items-container__item__content font-16-18">Jeffery Cannon is an incredibly talented web designer. His attention to detail and creative flair are unmatched. He took my website from ordinary to extraordinary, capturing the essence of my brand perfectly. Working with Jeffery was a breeze, as he listened to my needs and provided expert guidance throughout the design process. I highly recommend Jeffery for anyone looking to elevate their online presence.</p>
-                </div>
-                <div className="rss-home__review-section__review-items-container__item swiper-slide">
-                  <div className="rss-home__review-section__review-items-container__item__header-container">
-                    <div className="rss-home__review-section__review-items-container__item__header-container__info-container">
-                      <h6 className="rss-home__review-section__review-items-container__item__header-container__info-container__title font-16-20">Emily Roberts</h6>
-                      <p className="rss-home__review-section__review-items-container__item__header-container__info-container__slug font-14-18">produce-ui.com</p>
-                    </div>
-                    <div className="rss-home__review-section__review-items-container__item__header-container__profile-container">
-                      <div className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container">
-                        {
-                          process.env.NODE_ENV === "production" ? (
-                            <img src={`${import.meta.env.BASE_URL}/icons/linkedin-filled-ico.png`} alt="Linkedin Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          ) : (
-                            <img src='icons/linkedin-filled-ico.png' alt="Linkedin Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          )
-                        }
-                      </div>
-                      <div className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container">
-                        {
-                          process.env.NODE_ENV === "production" ? (
-                            <img src={`${import.meta.env.BASE_URL}/icons/facebook-filled-ico.png`} alt="Facebook Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          ) : (
-                            <img src='icons/facebook-filled-ico.png' alt="Facebook Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          )
-                        }
-                      </div>
-                      <div className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container">
-                        {
-                          process.env.NODE_ENV === "production" ? (
-                            <img src={`${import.meta.env.BASE_URL}/icons/twitter-filled-ico.png`} alt="Twitter Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          ) : (
-                            <img src='icons/twitter-filled-ico.png' alt="Twitter Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          )
-                        }
-                      </div>
-                    </div>
-                  </div>
-                  <p className="rss-home__review-section__review-items-container__item__content font-16-18">I am thrilled with the website that Jeffery Cannon designed for my business. His ability to translate my vision into a visually stunning and user-friendly website was impressive. Jeffery's expertise in web design and user experience truly shines through in his work. He was responsive, professional, and delivered the project on time. I couldn't be happier with the outcome and highly recommend Jeffery to anyone in need of a top-notch web designer.</p>
-                </div>
-                <div className="rss-home__review-section__review-items-container__item swiper-slide">
-                  <div className="rss-home__review-section__review-items-container__item__header-container">
-                    <div className="rss-home__review-section__review-items-container__item__header-container__info-container">
-                      <h6 className="rss-home__review-section__review-items-container__item__header-container__info-container__title font-16-20">Laura Adams</h6>
-                      <p className="rss-home__review-section__review-items-container__item__header-container__info-container__slug font-14-18">produce-ui.com</p>
-                    </div>
-                    <div className="rss-home__review-section__review-items-container__item__header-container__profile-container">
-                      <div className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container">
-                        {
-                          process.env.NODE_ENV === "production" ? (
-                            <img src={`${import.meta.env.BASE_URL}/icons/linkedin-filled-ico.png`} alt="Linkedin Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          ) : (
-                            <img src='icons/linkedin-filled-ico.png' alt="Linkedin Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          )
-                        }
-                      </div>
-                      <div className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container">
-                        {
-                          process.env.NODE_ENV === "production" ? (
-                            <img src={`${import.meta.env.BASE_URL}/icons/facebook-filled-ico.png`} alt="Facebook Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          ) : (
-                            <img src='icons/facebook-filled-ico.png' alt="Facebook Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          )
-                        }
-                      </div>
-                      <div className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container">
-                        {
-                          process.env.NODE_ENV === "production" ? (
-                            <img src={`${import.meta.env.BASE_URL}/icons/twitter-filled-ico.png`} alt="Twitter Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          ) : (
-                            <img src='icons/twitter-filled-ico.png' alt="Twitter Icon" className="rss-home__review-section__review-items-container__item__header-container__profile-container__item-container__item" />
-                          )
-                        }
-                      </div>
-                    </div>
-                  </div>
-                  <p className="rss-home__review-section__review-items-container__item__content font-16-18">I had the pleasure of collaborating with Jeffery Cannon on a web design project, and I am beyond impressed with the results. Jeffery's creativity and technical expertise transformed our website into a visually stunning and highly functional platform. His understanding of user experience design and attention to detail made a significant impact on our website's performance and user engagement. Jeffery's professionalism, timely delivery.</p>
-                </div>
-              </div>
-            </div>
-            <div className="rss-home__review-section__arrows-container">
-              <div className="rss-home__review-section__arrows-container__arrow rss-home__review-section__arrows-container__arrow-left review-swiper-button-prev swiper-button-prev"></div>
-              <div className="rss-home__review-section__arrows-container__line-container">
-                <div className="rss-home__review-section__arrows-container__line-container__item" />
-                <div className="rss-home__review-section__arrows-container__line-container__item rss-home__review-section__arrows-container__line-container__item-active" />
-                <div className="rss-home__review-section__arrows-container__line-container__item" />
-              </div>
-              <div className="rss-home__review-section__arrows-container__arrow rss-home__review-section__arrows-container__arrow-right review-swiper-button-next swiper-button-next"></div>
-            </div>
-          </div>
+          <Review title="What My Clients say About Me" slug="Here's what some of my satisfied clients have to say about my work" count="37 Total Reviews" />
 
           <FAQ title="Frequently Asked Questions" slug="Here are answers to some common questions" containerHelpBtnValue="Contact Me" containerHelpIconPath="icons/star-ico.png" containerHelpIconAlt="Star Icon" containerHelpTextTitle="Still have any Questions ?" containerHelpTextSlug="Let's collaborate to create an exceptional website that sets you apart from the competition. Contact me today to discuss your web design needs and bring your digital vision to life!" />
 
