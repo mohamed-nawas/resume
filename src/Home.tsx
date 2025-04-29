@@ -293,7 +293,7 @@ function Home() {
               <div className="rss-home__portfolio-section__arrows-container__arrow rss-home__portfolio-section__arrows-container__arrow-left works-swiper-button-prev swiper-button-prev"></div>
               <div className="rss-home__portfolio-section__arrows-container__line-container">
                 <div className="rss-home__portfolio-section__arrows-container__line-container__item" />
-                <div className="rss-home__portfolio-section__arrows-container__line-container__item rss-portfolio__contenthome__portfolio-section__line-container__item-active" />
+                <div className="rss-home__portfolio-section__arrows-container__line-container__item rss-home__portfolio-section__arrows-container__line-container__item-active" />
                 <div className="rss-home__portfolio-section__arrows-container__line-container__item" />
               </div>
               <div className="rss-home__portfolio-section__arrows-container__arrow rss-home__portfolio-section__arrows-container__arrow-right works-swiper-button-next swiper-button-next"></div>
