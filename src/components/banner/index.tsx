@@ -5,9 +5,7 @@ const Banner: React.FC<BannerProps> = ({ children, iconPath, iconAlt, contentTit
     const containerRef = React.useRef<HTMLDivElement | null>(null);
 
     return (
-        <BannerUI containerRef={containerRef} iconPath={iconPath} iconAlt={iconAlt} contentTitle={contentTitle} contentSlug={contentSlug}>
-            {children}
-        </BannerUI>
+        <BannerUI containerRef={containerRef} iconPath={iconPath} iconAlt={iconAlt} contentTitle={contentTitle} contentSlug={contentSlug}>{children}</BannerUI>
     );
 }
 

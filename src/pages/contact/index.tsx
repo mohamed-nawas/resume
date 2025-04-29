@@ -3,7 +3,7 @@ import DynamicGrid from "../../components/dynamic_grid";
 import FAQ from "../../components/faq";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
-import { items } from "../../data/features";
+import { items } from "../../data/banner-features";
 
 function Contact() {
     return (
