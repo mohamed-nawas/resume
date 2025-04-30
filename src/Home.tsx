@@ -3,8 +3,13 @@ import Footer from "./components/footer";
 import FAQ from "./components/faq";
 import Review from "./components/review";
 import Works from "./components/works";
+import { items as projects } from "./data/projects";
+import { items as articles } from "./data/articles";
+import { items as cases } from "./data/case-studies";
+import shuffleArray from "./utils/array-shuffle";
 
 function Home() {
+  const works = shuffleArray([...projects, ...articles, ...cases]);
 
   return (
     <>
@@ -124,7 +129,7 @@ function Home() {
             </div>
           </div>
 
-          <Works title="My Works" slug="Here's what some of my satisfied clients have to say about my work" />
+          <Works title="My Works" slug="Here's what some of my satisfied clients have to say about my work" items={[works]} />
 
           <Review title="What My Clients say About Me" slug="Here's what some of my satisfied clients have to say about my work" count="37 Total Reviews" />
 
