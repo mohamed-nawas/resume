@@ -100,3 +100,7 @@ window.addEventListener('resize', () => {
     }
   });
 });
+
+
+// console.log('Swiper items:', document.querySelectorAll('.swiper-slide').length);
+console.log('Swiper items:', document.querySelectorAll('.rss-review__review-items-container__column .swiper-slide').length);

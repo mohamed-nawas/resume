@@ -80,35 +80,32 @@
     }
 
     &__review-items-container {
-        margin-top: clamp(24px, 6vw, 30px);
         display: flex;
         justify-content: space-between;
-
-        @include screens.min-tb {
+        align-items: stretch;
+        margin-top: clamp(24px, 6vw, 30px);
+        overflow: hidden;
+        @include screens.min-smd {
             gap: clamp(10px, 1.3vw, 20px);
         }
-
         @include screens.min-md {
             gap: clamp(20px, 1.38vw, 30px);
         }
 
-        overflow: hidden;
-
         &__item {
+            display: flex !important;
+            flex-direction: column;
             flex: 0 0 100%;
-
-            @include screens.min-tb {
-                text-align: left;
-                flex: 0 0 calc((100% - 1.3vw) / 2);
-            }
-
+            gap: clamp(24px, 1.5vw, 30px);
             background-color: var(--color-peach-96);
             border-radius: 10px;
             padding: clamp(40px, 2.5vw, 50px);
-            display: flex;
-            flex-direction: column;
             gap: clamp(24px, 1.5vw, 30px);
 
+            @include screens.min-smd {
+                text-align: left;
+                flex: 0 0 calc((100% - 1.3vw) / 2);
+            }
             @include screens.min-md {
                 flex: 0 0 calc((100% - 2.76vw) / 3);
             }
@@ -119,6 +116,7 @@
                 justify-content: space-between;
 
                 &__info-container {
+                    text-align: left;
                     &__title {
                         font-weight: 500;
                         color: var(--color-grey-20);
@@ -136,23 +134,25 @@
                     gap: clamp(8px, 0.5vw, 10px);
 
                     &__item-container {
-                        width: clamp(44px, 3vw, 52px);
-                        height: clamp(44px, 3vw, 52px);
                         display: grid;
                         place-items: center;
-                        border-radius: 8px;
                         border: 1px solid var(--color-peach-90);
+                        border-radius: 8px;
+                        width: clamp(44px, 3vw, 52px);
+                        height: clamp(44px, 3vw, 52px);
 
                         &__item {
+                            color: var(--color-purple-50);
                             width: clamp(24px, 1.5vw, 28px);
                             height: clamp(24px, 1.5vw, 28px);
-                            color: var(--color-purple-50);
                         }
                     }
                 }
             }
 
             &__content {
+                text-align: left;
+                flex: 1;
                 font-weight: 400;
                 color: var(--color-grey-30);
             }

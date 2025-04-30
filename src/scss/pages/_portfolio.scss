@@ -12,20 +12,3 @@
         margin-top: clamp(60px, 15vw, 100px);
     }
 }
-
-.swiper {
-    &-button-prev, &-button-next { 
-        color: transparent;
-        top: unset; 
-        left: unset; 
-        right: unset; 
-        bottom: unset;
-        transform: unset;
-        margin: unset; 
-        z-index: unset;
-    }
-    &-button-prev { margin-right: clamp(12px, 0.83vw, 16px);}
-    &-items-wrapper {
-        @include screens.max-md { display: flex; justify-content: center; }
-    }
-}
