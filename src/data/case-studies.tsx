@@ -1,20 +1,20 @@
 export const items = [
     {
-        title: "Little Learners",
-        mainImgPath: "images/learners-image-main.png",
-        subImgPath: "images/learners-image-sub.png",
-        imgAlt: "Little Learners Image",
+        title: "Bravo Destinations",
+        mainImgPath: "images/bravo-image.jpg",
+        subImgPath: "images/bravo-image.jpg",
+        imgAlt: "Bravo Destinations Image",
     },
     {
-        title: "Stream Vibe",
-        mainImgPath: "images/streamvibe-image-main.png",
-        subImgPath: "images/streamvibe-image-sub.png",
-        imgAlt: "Stream Vibe Image",
+        title: "Radient Locale",
+        mainImgPath: "images/radient-image.jpg",
+        subImgPath: "images/radient-image.jpg",
+        imgAlt: "Radient Locale Image",
     },
     {
-        title: "Your Bank",
-        mainImgPath: "images/yourbank-image-main.png",
-        subImgPath: "images/yourbank-image-sub.png",
-        imgAlt: "Your Bank Image",
+        title: "Flat Loops",
+        mainImgPath: "images/flat-image.jpg",
+        subImgPath: "images/flat-image.jpg",
+        imgAlt: "Flat Loops Image",
     }
 ];

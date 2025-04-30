@@ -1,23 +1,25 @@
 import * as React from 'react';
 import { items } from '../../data/reviews';
+import ReviewSwiper from '../../slider-scripts/ReviewSwiper';
 
 const ReviewUI: React.FC<ReviewUIProps> = ({ containerRef, title, slug, count }) => {
     return (
         <div ref={containerRef} className="rss-review">
-            <h3 className="rss-review__title font-38-48">{title}</h3>
+            <h3 className="rss-review__title font-28-48">{title}</h3>
             <p className="rss-review__slug font-16-18">{slug}</p>
             <div className="rss-review__total-container">
                 <h6 className="font-16-20">{count}</h6>
                 <div className="rss-review__total-container__arrow-container">
-                    <div className="rss-review__total-container__arrow-container__arrow rss-review__total-container__arrow-container__arrow-left swiper-button-prev" />
-                    <div className="rss-review__total-container__arrow-container__arrow rss-review__total-container__arrow-container__arrow-right swiper-button-next" />
+                    <div className="rss-review__total-container__arrow-container__arrow rss-review__total-container__arrow-container__arrow-left review-swiper-button-prev swiper-button-prev" />
+                    <div className="rss-review__total-container__arrow-container__arrow rss-review__total-container__arrow-container__arrow-right review-swiper-button-next swiper-button-next" />
                 </div>
             </div>
             <div className="rss-review__hr-line" />
-            <div className="swiper review-swiper">
-                <div className="rss-review__review-items-container swiper-wrapper">
+
+            <ReviewSwiper>
+                <div className="swiper-wrapper rss-review__review-items-container">
                     {items.map((item, index) => (
-                        <div className="rss-review__review-items-container__item swiper-slide" key={index}>
+                        <div className="swiper-slide rss-review__review-items-container__item" key={index}>
                             <div className="rss-review__review-items-container__item__header-container">
                                 <div className="rss-review__review-items-container__item__header-container__info-container">
                                     <h6 className="rss-review__review-items-container__item__header-container__info-container__title font-16-20">{item.name}</h6>
@@ -63,7 +65,8 @@ const ReviewUI: React.FC<ReviewUIProps> = ({ containerRef, title, slug, count })
                         </div>
                     ))}
                 </div>
-            </div>
+            </ReviewSwiper>
+
             <div className="rss-review__arrows-container">
                 <div className="rss-review__arrows-container__arrow rss-review__arrows-container__arrow-left review-swiper-button-prev swiper-button-prev"></div>
                 <div className="rss-review__arrows-container__line-container">

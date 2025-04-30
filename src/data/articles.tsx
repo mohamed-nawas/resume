@@ -1,20 +1,20 @@
 export const items = [
     {
-        title: "Current Vandi",
-        mainImgPath: "images/vandi-image-main.png",
-        subImgPath: "images/vandi-image-sub.png",
-        imgAlt: "Vandi Image",
+        title: "Royal Hotel",
+        mainImgPath: "images/royal-hotel-image.jpg",
+        subImgPath: "images/royal-hotel-image.jpg",
+        imgAlt: "Royal Hotel Image",
     },
     {
-        title: "Fit Fusion Gym",
-        mainImgPath: "images/fitfusion-image-main.png",
-        subImgPath: "images/fitfusion-image-sub.png",
-        imgAlt: "FitFusion Image",
+        title: "Infinity Digital Agency",
+        mainImgPath: "images/infinity-image.jpg",
+        subImgPath: "images/infinity-image.jpg",
+        imgAlt: "Infinity Image",
     },
     {
-        title: "DX Digital Agency",
-        mainImgPath: "images/dxdigital-image-main.png",
-        subImgPath: "images/dxdigital-image-sub.png",
-        imgAlt: "DX Digital Image",
+        title: "Loco Travels",
+        mainImgPath: "images/loco-image.jpg",
+        subImgPath: "images/loco-image.jpg",
+        imgAlt: "Loco Travelling Image",
     }
 ];

@@ -1,20 +1,20 @@
 export const items = [
     {
-        title: "Z-Aura Perfume",
-        mainImgPath: "images/aura-image-main.png",
-        subImgPath: "images/aura-image-sub.png",
-        imgAlt: "Aura Image",
+        title: "Aura Travels",
+        mainImgPath: "images/travel-image.jpg",
+        subImgPath: "images/travel-image.jpg",
+        imgAlt: "Aura Travels Image",
     },
     {
-        title: "Forhelp Charity",
-        mainImgPath: "images/charity-image-main.png",
-        subImgPath: "images/charity-image-sub.png",
-        imgAlt: "Charity Image",
+        title: "Parler Restaurant",
+        mainImgPath: "images/parler-image.jpg",
+        subImgPath: "images/parler-image.jpg",
+        imgAlt: "Parler Resturant Image",
     },
     {
-        title: "Skill Bridge",
-        mainImgPath: "images/bridge-image-main.png",
-        subImgPath: "images/bridge-image-sub.png",
-        imgAlt: "Bridge Image",
+        title: "Design School",
+        mainImgPath: "images/design-school-image.jpg",
+        subImgPath: "images/design-school-image.jpg",
+        imgAlt: "Design School Image",
     }
 ];
