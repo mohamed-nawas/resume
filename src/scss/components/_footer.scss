@@ -9,10 +9,16 @@
     align-items: center;
     text-align: center;
 
-    & > * { 
-        width: calc(100% - 40px); 
-        @include screens.min-sm { width: calc(100% - clamp(40px, 10.25vw, 80px)); }
-        @include screens.min-md { width: calc(100% - clamp(80px, 5.55vw, 100px)); }
+    &>* {
+        width: calc(100% - 40px);
+
+        @include screens.min-sm {
+            width: calc(100% - clamp(40px, 10.25vw, 80px));
+        }
+
+        @include screens.min-md {
+            width: calc(100% - clamp(80px, 5.55vw, 100px));
+        }
     }
 
     &__brand-container {
@@ -22,7 +28,9 @@
         align-items: center;
         justify-content: center;
 
-        @include screens.min-smtb { justify-content: space-between; }
+        @include screens.min-smtb {
+            justify-content: space-between;
+        }
 
         &__title {
             font-weight: 600;
@@ -54,8 +62,8 @@
         }
     }
 
-    &__info-container { 
-        display: none; 
+    &__info-container {
+        display: none;
         justify-content: center;
         align-items: center;
         padding: clamp(22px, 1.5vw, 24px) clamp(28px, 2vw, 32px);
@@ -79,6 +87,7 @@
                     height: 24px;
                 }
             }
+
             &__content {
                 font-weight: 500;
                 color: var(--color-grey-30);
@@ -92,11 +101,43 @@
             background-color: var(--color-peach-85);
         }
 
-        @include screens.min-md { display: flex; }
+        @include screens.min-md {
+            display: flex;
+        }
     }
 
     &__copyright {
         font-weight: 400;
         color: var(--color-grey-50);
     }
+}
+
+#rss-footer__back-to-top-container__button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 50;
+
+    &::after {
+        content: "↑";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: var(--color-purple-50);
+        opacity: 0.5;
+        color: #fff;
+        font-size: 24px;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease;
+    }
+
+    :hover::after { opacity: 1; }
 }
