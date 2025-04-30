@@ -1,13 +1,10 @@
 import * as React from 'react';
-import { items as projects } from '../../data/projects';
-import { items as articles } from '../../data/articles';
-import { items as cases } from '../../data/case-studies';
 import WorksSwiper from '../../slider-scripts/WorksSwiper';
 import shuffleArray from '../../utils/array-shuffle';
 
-const works = [...projects, ...articles, ...cases];
+const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) => {
+    const works = [...items.flat()];
 
-const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug }) => {
     return (
         <div ref={containerRef} className="rss-works">
             <h3 className="rss-works__title font-28-48">{title}</h3>

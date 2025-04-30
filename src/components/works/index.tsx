@@ -1,10 +1,10 @@
 import * as React from 'react';
 import WorksUI from './ui';
 
-const Works: React.FC<WorksProps> = ({ title, slug }) => {
+const Works: React.FC<WorksProps> = ({ title, slug, items }) => {
     const containerRef = React.useRef<HTMLDivElement | null>(null);
     return (
-        <WorksUI containerRef={containerRef} title={title} slug={slug} />
+        <WorksUI containerRef={containerRef} title={title} slug={slug} items={items} />
     );
 }
 
