@@ -109,6 +109,10 @@ function Footer() {
             </div>
 
             <p className="rss-footer__copyright font-12-16">Copyright &#169; 2024 Mohamed Nawas. All rights reserved.</p>
+            
+            <div id="rss-footer__back-to-top-container">
+                <button id="rss-footer__back-to-top-container__button" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}></button>
+            </div>
         </footer>
     )
 }
