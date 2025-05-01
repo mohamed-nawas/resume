@@ -81,7 +81,13 @@ const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) =
             </div>
 
             <div className="rss-works__view-btn">
-              <input type="button" value="View All" />
+                {
+                    process.env.NODE_ENV === 'production' ? (
+                        <a href="/resume/#/projects"><input type="button" value="View All" /></a>
+                    ) : (
+                        <a href="/projects"><input type="button" value="View All" /></a>
+                    )
+                }
             </div>
         </div>
     );

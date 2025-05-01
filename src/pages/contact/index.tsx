@@ -33,7 +33,7 @@ function Contact() {
                     </Banner>
 
                     <div className="rss-contact__form-container">
-                        <div className="rss-contact__form-container__form">
+                        <div className="rss-contact__form-container__form" id="form">
                             <input type="text" className="rss-contact__form-container__form__input font-14-18" placeholder="First Name" />
                             <input type="text" className="rss-contact__form-container__form__input font-14-18" placeholder="Last Name" />
                             <input type="email" className="rss-contact__form-container__form__input font-14-18" placeholder="Email" />
