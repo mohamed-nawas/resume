@@ -2,13 +2,11 @@ import * as React from 'react';
 import { useState } from 'react';
 import { items } from '../../data/faq';
 
-const FAQUI: React.FC<FAQUIProps> = ({ containerRef, title, slug, containerHelpIconPath, containerHelpIconAlt, containerHelpTextTitle, containerHelpTextSlug, containerHelpBtnValue }) => {
-    const [closedIndex, setClosedIndex] = useState<number>(0)
-
-    const toggleItem = (index: number) => {
-        setClosedIndex(index);
-    };
-
+const FAQUI: React.FC<FAQUIProps> = ({ containerRef, title, slug, containerHelpIconPath, containerHelpIconAlt, 
+    containerHelpTextTitle, containerHelpTextSlug, containerHelpBtnValue }) => {
+    const [closedIndex, setClosedIndex] = useState<number>(0);
+    const toggleItem = (index: number) => setClosedIndex(index);
+    
     return (
         <div ref={containerRef} className="rss-faq">
             <h2 className="rss-faq__title font-28-48">{title}</h2>
@@ -63,7 +61,13 @@ const FAQUI: React.FC<FAQUIProps> = ({ containerRef, title, slug, containerHelpI
                         <h4 className="rss-faq__container__help-container__text-container__title font-18-24">{containerHelpTextTitle}</h4>
                         <p className="rss-faq__container__help-container__text-container__slug font-14-18">{containerHelpTextSlug}</p>
                     </div>
-                    <input type="button" value={containerHelpBtnValue} className="rss-faq__container__help-container__submit-btn" />
+                    {
+                        process.env.NODE_ENV === "production" ? (
+                            <a href='/resume/#/contact#form'><input type="button" value={containerHelpBtnValue} className="rss-faq__container__help-container__submit-btn" /></a>
+                        ) : (
+                            <a href='/contact#form'><input type="button" value={containerHelpBtnValue} className="rss-faq__container__help-container__submit-btn" /></a>
+                        )
+                    }
                 </div>
             </div>
         </div>

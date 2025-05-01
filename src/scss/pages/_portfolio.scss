@@ -19,7 +19,6 @@
                     font-weight: 600;
                     color: var(--color-grey-20);
                     font-size: clamp(18px, 4.5vw, 24px);
-                    // border: 1px solid blue;
 
                     &::after {
                         content: "";
@@ -44,7 +43,6 @@
                 }
 
                 & > *:nth-child(4) {
-                    // border: 1px solid red;
                     display: flex;
                     position: absolute;
                     margin-top: -8px;

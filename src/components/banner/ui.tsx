@@ -1,7 +1,6 @@
 import * as React from 'react';
 
-const BannerUI: React.FC<BannerUIProps> = ({ containerRef, children, iconPath, iconAlt, 
-    contentTitle, contentSlug }) => {
+const BannerUI: React.FC<BannerUIProps> = ({ containerRef, children, iconPath, iconAlt, contentTitle, contentSlug }) => {
     return (
         <div ref={containerRef} className="rss-banner">
             {

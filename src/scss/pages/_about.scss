@@ -4,6 +4,7 @@
     background-color: var(--color-peach-92);
     margin-top: clamp(0px, 6.5vw, 12px);
     margin-bottom: clamp(60px, 15vw, 150px);
+    margin-bottom: clamp(60px, 15vw, 200px); //margin max increase due to content position absolute
 
     &__details-section {
         display: flex;
@@ -12,7 +13,8 @@
         gap: clamp(30px, 7.5vw, 80px);
 
         &__banner-image {
-            height: 345px;
+            width: 92vw;
+            max-width: 500px;
             object-fit: cover;
             aspect-ratio: 1.038;
             position: relative;
@@ -147,7 +149,7 @@
         align-items: center;
         gap: 60px;
 
-        @include screens.min-md { gap: clamp(60px, 4vw, 100px); margin-bottom: 275px; }
+        @include screens.min-smd2 { gap: clamp(60px, 4vw, 100px); margin-bottom: 275px; }
 
         &__heading-container {
             max-width: 800px;
@@ -189,7 +191,7 @@
                 font-weight: 600;
                 color: var(--color-grey-30);
 
-                @include screens.min-md { &-last { display: none; } }
+                @include screens.min-smd2 { &-last { display: none; } }
             }
 
             &__line {
@@ -422,13 +424,13 @@
                     width: 70px;
                     height: 70px;
                 }
-                @include screens.max-md {
+                @include screens.max-smd2 {
                     &-top__title { display: none; }
                 }
             }
         }
 
-        @include screens.min-md {
+        @include screens.min-smd2 {
             &__content-container {
                 position: relative;
 
@@ -447,7 +449,8 @@
                 &__details-container {
                     &-left, &-right, &-top {
                         position: absolute;
-                        width: 565px;
+                        width: 535px;
+                        max-width: 650px;
                         gap: clamp(24px, 1.5vw, 30px);
                     }
 
@@ -501,13 +504,32 @@
                             border-right: 10px solid var(--color-peach-96);
                         }
                     }
+                }
+            }
+        }
 
-                    &-right-1 { top: 163px; right: 135px; }
-                    &-left-1 { top: 565px; left: 135px; }
-                    &-right-2 { top: 968px; right: 135px; }
-                    &-left-2 { top: 1369px; left: 135px; }
-                    &-right-3 { top: 1773px; right: 135px; }
-                    &-top { top: 2363px; right: -239px; }
+        @include screens.min-smd2-max-lg {
+            &__content-container {
+                &__details-container {
+                    &-right-1 { top: 100px; right: calc(135px + (100vw - 1366px) * 0.45); }
+                    &-left-1 { top: 550px; left: calc(135px + (100vw - 1366px) * 0.45); }
+                    &-right-2 { top: 930px; right: calc(135px + (100vw - 1366px) * 0.45); }
+                    &-left-2 { top: 1330px; left: calc(135px + (100vw - 1366px) * 0.45); }
+                    &-right-3 { top: 1710px; right: calc(135px + (100vw - 1366px) * 0.45); }
+                    &-top { top: 2363px; right: -222px; }
+                }
+            }
+        }
+
+        @include screens.min-lg {
+            &__content-container {
+                &__details-container {
+                    &-right-1 { top: 100px; right: 385px }
+                    &-left-1 { top: 550px; left: 385px }
+                    &-right-2 { top: 930px; right: 385px }
+                    &-left-2 { top: 1330px; left: 385px }
+                    &-right-3 { top: 1710px; right: 385px }
+                    &-top { top: 2363px; right: -222px; }
                 }
             }
         }
