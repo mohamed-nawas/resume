@@ -4,6 +4,7 @@ $screen-sm: 390px;
 $screen-smtb: 565px;    // temporary break point for footer aligning
 $screen-tb: 768px;      // temporary break point for bootstrap
 $screen-smd: 960px;     // breakpoint to make transition of contact page form area smooth from sm to md
+$screen-smd2: 1366px;   // breakpoint to make transition of about page timeline area smooth from sm to md
 $screen-md: 1440px;
 $screen-lg: 1920px;
 
@@ -25,6 +26,10 @@ $screen-lg: 1920px;
     @media (min-width: $screen-smd) { @content; }
 }
 
+@mixin min-smd2 {
+    @media (min-width: $screen-smd2) { @content; }
+}
+
 @mixin min-md {
     @media (min-width: $screen-md) { @content; }
 }
@@ -42,6 +47,10 @@ $screen-lg: 1920px;
     @media (max-width: #{$screen-sm - 1}) { @content; }
 }
 
+@mixin max-smd2 {
+    @media (max-width: #{$screen-smd2 - 1}) { @content; }
+}
+
 @mixin max-md {
     @media (max-width: #{$screen-md - 1}) { @content; }
 }
@@ -54,6 +63,10 @@ $screen-lg: 1920px;
 // @mixin min-sm-max-lg {
 //     @media only screen and (min-width: $screen-sm) and (max-width: #{$screen-lg - 1}) { @content; }
 // }
+
+@mixin min-smd2-max-lg {
+    @media only screen and (min-width: $screen-smd2) and (max-width: #{$screen-lg - 1}) { @content; }
+}
 
 // /* Media query range - md */
 // @mixin min-md-max-lg {

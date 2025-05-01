@@ -2,13 +2,11 @@ import * as React from 'react';
 import { useState } from 'react';
 import { items } from '../../data/faq';
 
-const FAQUI: React.FC<FAQUIProps> = ({ containerRef, title, slug, containerHelpIconPath, containerHelpIconAlt, containerHelpTextTitle, containerHelpTextSlug, containerHelpBtnValue }) => {
-    const [closedIndex, setClosedIndex] = useState<number>(0)
-
-    const toggleItem = (index: number) => {
-        setClosedIndex(index);
-    };
-
+const FAQUI: React.FC<FAQUIProps> = ({ containerRef, title, slug, containerHelpIconPath, containerHelpIconAlt, 
+    containerHelpTextTitle, containerHelpTextSlug, containerHelpBtnValue }) => {
+    const [closedIndex, setClosedIndex] = useState<number>(0);
+    const toggleItem = (index: number) => setClosedIndex(index);
+    
     return (
         <div ref={containerRef} className="rss-faq">
             <h2 className="rss-faq__title font-28-48">{title}</h2>

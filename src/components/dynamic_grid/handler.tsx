@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 
-const useDynamicGrid = ( containerRef: React.RefObject<HTMLDivElement>, 
-  children: React.ReactNode, gap: number ) => {
+const useDynamicGrid = ( containerRef: React.RefObject<HTMLDivElement>, children: React.ReactNode, gap: number ) => {
   const adjustRowWidths = () => {
     const container = containerRef.current;
     if (!container) return;
