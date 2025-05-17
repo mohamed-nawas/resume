@@ -66,6 +66,7 @@
             &__banner-image-container {
                 // border: 1px solid green; // for debugging
                 height: calc((100% - (clamp(20px, 5vw, 30px)) * 2) * 0.7);
+                // width: 76.5625vw;
                 position: relative;
                 width: 100%;
 
