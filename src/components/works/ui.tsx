@@ -5,9 +5,11 @@ import ImagePopupPortal from '../img-popup-portal';
 
 const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) => {
     const works = [...items.flat()];
+    const shuffledWorks = React.useMemo(() => shuffleArray(works), []);
     const isProd = process.env.NODE_ENV === 'production';
     const basePath = import.meta.env.BASE_URL;
     const [popupImg, setPopupImg] = React.useState<string | null>(null);
+    const [activeImages, setActiveImages] = React.useState<{ [id: string]: string }>({});
 
     return (
 
@@ -19,45 +21,46 @@ const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) =
 
             <WorksSwiper>
                 <div className="swiper-wrapper rss-works__items-container">
-                    {shuffleArray(works).map((item, index) => (
-                        <div className="swiper-slide rss-works__items-container__item" key={index}>
-                            <h4 className="rss-works__items-container__item__title font-16-20">{item.title}</h4>
-                            <div className="rss-works__items-container__item__banner-image-container">
-                                {
-                                    <img className='rss-works__items-container__item__banner-image-container__image' alt={item.imgAlt} src={isProd ? `${basePath}/${item.mainImgPath}` : `${item.mainImgPath}`} />
-                                }
-                                <div className="rss-works__items-container__item__banner-image-container__expand-container" onClick={() => setPopupImg(isProd ? `${basePath}/${item.mainImgPath}` : item.mainImgPath)}>
-                                    <div className="rss-works__items-container__item__banner-image-container__expand-container__arrow" />
+                    {shuffledWorks.map((item) => {
+                        const activeImageSrc = activeImages[item.id] || (isProd ? `${basePath}/${item.mainImgPath}` : item.mainImgPath);
+                        return (
+                            <div className="swiper-slide rss-works__items-container__item" key={item.id}>
+                                <h4 className="rss-works__items-container__item__title font-16-20">{item.title}</h4>
+                                <div className="rss-works__items-container__item__banner-image-container">
+                                    <img
+                                        className='rss-works__items-container__item__banner-image-container__image'
+                                        alt={item.imgAlt}
+                                        src={activeImageSrc}
+                                    />
+                                    <div
+                                        className="rss-works__items-container__item__banner-image-container__expand-container"
+                                        onClick={() => setPopupImg(activeImageSrc)} // <- expands active image now
+                                    >
+                                        <div className="rss-works__items-container__item__banner-image-container__expand-container__arrow" />
+                                    </div>
+                                </div>
+                                <div className="rss-works__items-container__item__image-list-container">
+                                    {
+                                        item.subImgsPath.map((imgPath, index) => {
+                                            const thumbnailSrc = isProd ? `${basePath}/${imgPath}` : imgPath;
+                                            const isActive = activeImageSrc === thumbnailSrc;
+                                            return (
+                                                <div
+                                                className={`rss-works__items-container__item__image-list-container__image${!isActive ? ' rss-works__items-container__item__image-list-container__image-inactive' : ''}`}
+                                                    key={index}
+                                                    onClick={() => {
+                                                        setActiveImages((prev) => ({...prev, [item.id]: thumbnailSrc}));
+                                                    }}
+                                                >
+                                                    <img src={thumbnailSrc} alt={item.imgAlt} />
+                                                </div>
+                                            )
+                                        })
+                                    }
                                 </div>
                             </div>
-                            <div className="rss-works__items-container__item__image-list-container">
-                                {
-                                    item.subImgsPath.map((imgPath, index) => (
-                                        <div
-                                            className={`rss-works__items-container__item__image-list-container__image${index !== 0 ? ' rss-works__items-container__item__image-list-container__image-inactive' : ''}`}
-                                            key={index}
-                                            onClick={(e) => {
-                                                const currentImgDiv = e.currentTarget;
-                                                const parent = currentImgDiv.parentElement;
-                                                if (parent) {
-                                                    const allItems = parent.querySelectorAll('.rss-works__items-container__item__image-list-container__image');
-                                                    allItems.forEach(el => {
-                                                        el.classList.add('rss-works__items-container__item__image-list-container__image-inactive');
-                                                    });
-                                                    currentImgDiv.classList.remove('rss-works__items-container__item__image-list-container__image-inactive');
-                                                    const itemContainer = parent.closest('.rss-works__items-container__item');
-                                                    const mainImg = itemContainer?.querySelector('.rss-works__items-container__item__banner-image-container__image') as HTMLImageElement;
-                                                    if (mainImg) { mainImg.src = currentImgDiv.querySelector('img')?.src || mainImg.src }
-                                                }
-                                            }}
-                                        >
-                                            <img src={isProd ? `${basePath}/${imgPath}` : imgPath} alt={item.imgAlt} />
-                                        </div>
-                                    ))
-                                }
-                            </div>
-                        </div>
-                    ))}
+                        )
+                    })}
                 </div>
             </WorksSwiper>
 
