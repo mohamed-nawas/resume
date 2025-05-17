@@ -1,20 +1,20 @@
 export const items = [
     {
-        title: "Bravo Destinations",
-        mainImgPath: "images/bravo-image.jpg",
-        subImgsPath: ["images/bravo-image.jpg", "images/bravo-image.jpg", "images/bravo-image.jpg", "images/bravo-image.jpg"],
-        imgAlt: "Bravo Destinations Image",
+        title: "Swivel Group",
+        mainImgPath: "images/swivel-group-image-1.png",
+        subImgsPath: ["images/swivel-group-image-1.png", "images/swivel-group-image-2.png", "images/swivel-group-image-3.png", "images/swivel-group-image-4.png"],
+        imgAlt: "Swivel Group Image",
     },
     {
-        title: "Radient Locale",
-        mainImgPath: "images/radient-image.jpg",
-        subImgsPath: ["images/radient-image.jpg", "images/radient-image.jpg", "images/radient-image.jpg", "images/radient-image.jpg"],
-        imgAlt: "Radient Locale Image",
+        title: "Swivel Group",
+        mainImgPath: "images/swivel-group-image-1.png",
+        subImgsPath: ["images/swivel-group-image-1.png", "images/swivel-group-image-2.png", "images/swivel-group-image-3.png", "images/swivel-group-image-4.png"],
+        imgAlt: "Swivel Group Image",
     },
     {
-        title: "Flat Loops",
-        mainImgPath: "images/flat-image.jpg",
-        subImgsPath: ["images/flat-image.jpg", "images/flat-image.jpg", "images/flat-image.jpg", "images/flat-image.jpg"],
-        imgAlt: "Flat Loops Image",
+        title: "Swivel Group",
+        mainImgPath: "images/swivel-group-image-1.png",
+        subImgsPath: ["images/swivel-group-image-1.png", "images/swivel-group-image-2.png", "images/swivel-group-image-3.png", "images/swivel-group-image-4.png"],
+        imgAlt: "Swivel Group Image",
     }
 ];
