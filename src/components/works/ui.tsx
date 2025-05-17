@@ -1,14 +1,19 @@
 import * as React from 'react';
 import WorksSwiper from '../../slider-scripts/WorksSwiper';
 import shuffleArray from '../../utils/array-shuffle';
+import ImagePopupPortal from '../img-popup-portal';
 
 const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) => {
     const works = [...items.flat()];
     const isProd = process.env.NODE_ENV === 'production';
     const basePath = import.meta.env.BASE_URL;
+    const [popupImg, setPopupImg] = React.useState<string | null>(null);
 
     return (
+
         <div ref={containerRef} className="rss-works">
+            {popupImg && <ImagePopupPortal src={popupImg} onClose={() => setPopupImg(null)} />}
+
             <h3 className="rss-works__title font-28-48">{title}</h3>
             <p className="rss-works__slug font-14-18">{slug}</p>
 
@@ -21,7 +26,7 @@ const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) =
                                 {
                                     <img className='rss-works__items-container__item__banner-image-container__image' alt={item.imgAlt} src={isProd ? `${basePath}/${item.mainImgPath}` : `${item.mainImgPath}`} />
                                 }
-                                <div className="rss-works__items-container__item__banner-image-container__expand-container">
+                                <div className="rss-works__items-container__item__banner-image-container__expand-container" onClick={() => setPopupImg(isProd ? `${basePath}/${item.mainImgPath}` : item.mainImgPath)}>
                                     <div className="rss-works__items-container__item__banner-image-container__expand-container__arrow" />
                                 </div>
                             </div>
@@ -67,7 +72,7 @@ const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) =
             </div>
 
             <div className="rss-works__view-btn">
-                { isProd ? <a href='/resume/#/projects'><input type='button' value='View All' /></a> : <a href='/projects'><input type='button' value='View All' /></a> }
+                {isProd ? <a href='/resume/#/projects'><input type='button' value='View All' /></a> : <a href='/projects'><input type='button' value='View All' /></a>}
             </div>
         </div>
     );
