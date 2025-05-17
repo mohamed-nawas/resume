@@ -4,6 +4,8 @@ import shuffleArray from '../../utils/array-shuffle';
 
 const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) => {
     const works = [...items.flat()];
+    const isProd = process.env.NODE_ENV === 'production';
+    const basePath = import.meta.env.BASE_URL;
 
     return (
         <div ref={containerRef} className="rss-works">
@@ -17,53 +19,37 @@ const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) =
                             <h4 className="rss-works__items-container__item__title font-16-20">{item.title}</h4>
                             <div className="rss-works__items-container__item__banner-image-container">
                                 {
-                                    process.env.NODE_ENV === "production" ? (
-                                        <img src={`${import.meta.env.BASE_URL}/${item.mainImgPath}`} alt={item.imgAlt} className="rss-works__items-container__item__banner-image-container__image" />
-                                    ) : (
-                                        <img src={`${item.subImgPath}`} alt={item.imgAlt} className="rss-works__items-container__item__banner-image-container__image" />
-                                    )
+                                    <img className='rss-works__items-container__item__banner-image-container__image' alt={item.imgAlt} src={isProd ? `${basePath}/${item.mainImgPath}` : `${item.mainImgPath}`} />
                                 }
                                 <div className="rss-works__items-container__item__banner-image-container__expand-container">
                                     <div className="rss-works__items-container__item__banner-image-container__expand-container__arrow" />
                                 </div>
                             </div>
                             <div className="rss-works__items-container__item__image-list-container">
-                                <div className="rss-works__items-container__item__image-list-container__image">
-                                    {
-                                        process.env.NODE_ENV === "production" ? (
-                                            <img src={`${import.meta.env.BASE_URL}/${item.subImgPath}`} alt={item.imgAlt} />
-                                        ) : (
-                                            <img src={`${item.subImgPath}`} alt={item.imgAlt} />
-                                        )
-                                    }
-                                </div>
-                                <div className="rss-works__items-container__item__image-list-container__image rss-works__items-container__item__image-list-container__image-inactive">
-                                    {
-                                        process.env.NODE_ENV === "production" ? (
-                                            <img src={`${import.meta.env.BASE_URL}/${item.subImgPath}`} alt={item.imgAlt} />
-                                        ) : (
-                                            <img src={`${item.subImgPath}`} alt={item.imgAlt} />
-                                        )
-                                    }
-                                </div>
-                                <div className="rss-works__items-container__item__image-list-container__image rss-works__items-container__item__image-list-container__image-inactive">
-                                    {
-                                        process.env.NODE_ENV === "production" ? (
-                                            <img src={`${import.meta.env.BASE_URL}/${item.subImgPath}`} alt={item.imgAlt} />
-                                        ) : (
-                                            <img src={`${item.subImgPath}`} alt={item.imgAlt} />
-                                        )
-                                    }
-                                </div>
-                                <div className="rss-works__items-container__item__image-list-container__image rss-works__items-container__item__image-list-container__image-inactive">
-                                    {
-                                        process.env.NODE_ENV === "production" ? (
-                                            <img src={`${import.meta.env.BASE_URL}/${item.subImgPath}`} alt={item.imgAlt} />
-                                        ) : (
-                                            <img src={`${item.subImgPath}`} alt={item.imgAlt} />
-                                        )
-                                    }
-                                </div>
+                                {
+                                    item.subImgsPath.map((imgPath, index) => (
+                                        <div
+                                            className={`rss-works__items-container__item__image-list-container__image${index !== 0 ? ' rss-works__items-container__item__image-list-container__image-inactive' : ''}`}
+                                            key={index}
+                                            onClick={(e) => {
+                                                const currentImgDiv = e.currentTarget;
+                                                const parent = currentImgDiv.parentElement;
+                                                if (parent) {
+                                                    const allItems = parent.querySelectorAll('.rss-works__items-container__item__image-list-container__image');
+                                                    allItems.forEach(el => {
+                                                        el.classList.add('rss-works__items-container__item__image-list-container__image-inactive');
+                                                    });
+                                                    currentImgDiv.classList.remove('rss-works__items-container__item__image-list-container__image-inactive');
+                                                    const itemContainer = parent.closest('.rss-works__items-container__item');
+                                                    const mainImg = itemContainer?.querySelector('.rss-works__items-container__item__banner-image-container__image') as HTMLImageElement;
+                                                    if (mainImg) { mainImg.src = currentImgDiv.querySelector('img')?.src || mainImg.src }
+                                                }
+                                            }}
+                                        >
+                                            <img src={isProd ? `${basePath}/${imgPath}` : imgPath} alt={item.imgAlt} />
+                                        </div>
+                                    ))
+                                }
                             </div>
                         </div>
                     ))}
@@ -81,13 +67,7 @@ const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) =
             </div>
 
             <div className="rss-works__view-btn">
-                {
-                    process.env.NODE_ENV === 'production' ? (
-                        <a href="/resume/#/projects"><input type="button" value="View All" /></a>
-                    ) : (
-                        <a href="/projects"><input type="button" value="View All" /></a>
-                    )
-                }
+                { isProd ? <a href='/resume/#/projects'><input type='button' value='View All' /></a> : <a href='/projects'><input type='button' value='View All' /></a> }
             </div>
         </div>
     );
