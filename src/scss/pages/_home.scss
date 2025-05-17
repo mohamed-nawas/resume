@@ -12,7 +12,8 @@
         gap: clamp(30px, 7.5vw, 80px);
 
         &__banner-image {
-            width: 92vw;
+            // width: 92vw;
+            width: 100%;
             max-width: 500px;
             object-fit: cover;
             aspect-ratio: 1.038;
@@ -280,8 +281,9 @@
             flex-direction: row-reverse;
 
             &__banner-image {
-                height: 596px;
+                // height: 596px;
                 aspect-ratio: 1.031;
+                max-width: unset;
                 background-image: url("/icons/profile-image__laptop.png");
             }
         }
@@ -290,7 +292,7 @@
     @include screens.min-lg {
         &__details-section {
             &__banner-image {
-                height: 596px;
+                // height: 596px;
                 aspect-ratio: 1.272;
                 background-image: url("/icons/profile-image__desktop.png");
             }
