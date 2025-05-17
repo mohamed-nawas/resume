@@ -1,0 +1,131 @@
+@use "../shared/media-queries" as screens;
+
+.rss-works-detail {
+    margin-top: clamp(30px, 4.16vw, 100px);
+    margin-bottom: clamp(60px, 6.94vw, 100px);
+    &__hero-section {
+        position: relative;
+        margin-bottom: 30px;
+        background-image: var(--bg-detail-hero);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        aspect-ratio: 2.29;
+        border-radius: 15px;
+        display: grid;
+        place-content: center;
+        text-align: center;
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: var(--color-grey-10);
+            opacity: 0.15;
+        }
+        &__title {
+            font-weight: 700;
+            color: var(--color-purple-50);
+            text-shadow: 1px 2px 3px var(--color-purple-50);
+        }
+        &__slug {
+            font-weight: 700;
+            color: var(--color-absolute-white);
+            text-shadow: 1px 2px 3px var(--color-grey-10);
+            -webkit-text-stroke: 1px var(--color-grey-10);
+        }
+    }
+    &__overview-section {
+        margin-bottom: 30px;
+        &__title { margin-bottom: 20px; font-weight: 700; }
+        &__about {
+            list-style-type: none;
+            &__role {
+                margin-bottom: 15px; 
+                span { float: right; } 
+            }
+            &__team-size { 
+                margin-bottom: 15px;
+                span { float: right; } 
+            }
+            &__tools {
+                margin-bottom: 15px;
+                display: flex; 
+                flex-wrap: wrap;
+                row-gap: 10px;
+                justify-content: space-between;
+                align-items: center;
+                &__list { 
+                    list-style-type: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    &__item {
+                        border: 2px solid var(--color-purple-50);
+                        color: var(--color-purple-50);
+                        background-color: var(--color-absolute-white);
+                        padding: 10px;
+                        border-radius: 4px;
+                    } 
+                } 
+            }
+        }
+        &__description {}
+    }
+    &__gallery-section {
+        margin-bottom: 30px;
+        &>:first-child {
+            margin: 0;
+            &>:not(:nth-child(3)) { display: none; }
+        }
+    }
+    &__details-section {
+        margin-bottom: 30px;
+        &__title { margin-bottom: 20px; font-weight: 700; }
+        &__container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            &>* { 
+                flex: 0 0 calc((100% - 20px) / 2); 
+                @include screens.max-sm { flex: 0 0 100%; }
+                &>:first-child { margin-bottom: 10px; } 
+                &>:last-child { list-style-position: inside; list-style-type: georgian; }
+            }
+        }
+    }
+    &__cta-section {
+        display: flex;
+        gap: 10%;
+        align-items: center;
+        &>* { 
+            flex: 0 0 45%; 
+            display: grid;
+            place-items: center;
+            padding: 15px 0;
+            border-radius: 6px;
+        }
+        &__btn-container {
+            border: 2px solid var(--color-purple-50);
+            background-color: var(--color-purple-50);
+            a { text-decoration: none; &:link, &:visited { color: var(--color-absolute-white); } &:hover, &:active { color: var(--color-absolute-white); } }
+            &__btn {
+                color: var(--color-absolute-white);
+                font-weight: 700;
+            }
+            &-shallow {
+                background-color: var(--color-absolute-white);
+                a { &:link, &:visited { color: var(--color-purple-50); } &:hover, &:active { color: var(--color-purple-50); } }
+                &__btn {
+                    color: var(--color-purple-50);
+                    font-weight: 700;
+                }
+            }
+        }
+        @include screens.max-sm {
+            flex-direction: column;
+            gap: 20px;
+            &>* { flex: 0 0 100%; width: 100%; }
+        }
+    }
+}

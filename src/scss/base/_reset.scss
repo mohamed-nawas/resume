@@ -1,3 +1,8 @@
+@keyframes fadeSlideIn {
+    0% { opacity: 0; transform: translateY(10px) scale(0.98); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,4 +23,7 @@ body {
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
+    animation: fadeSlideIn 1.5s cubic-bezier(.68, -0.55, .27, 1.55) both;
 }
+
+span, li, a { animation: fadeSlideIn 1.5s cubic-bezier(.68, -0.55, .27, 1.55) both; }
