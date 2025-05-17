@@ -14,6 +14,6 @@ interface WorksUIProps {
 interface WorkItems {
     title: string;
     mainImgPath: string;
-    subImgPath: string;
+    subImgsPath: string[];
     imgAlt: string;
 }
