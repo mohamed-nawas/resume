@@ -37,10 +37,11 @@
             & > * {
                 display: flex;
                 flex-direction: column;
-                & > * { 
+                & > * {
                     &:first-child { text-align: left; position: relative; } 
-                    &:last-child { display: none; } 
+                    // &:last-child { display: none; } 
                 }
+                &:not(:last-child) { &>*:nth-child(5) { display: none; } }
 
                 & > *:nth-child(4) {
                     display: flex;
