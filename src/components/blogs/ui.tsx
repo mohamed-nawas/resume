@@ -2,8 +2,6 @@ import * as React from 'react';
 import BlogsSwiper from '../../slider-scripts/BlogsSwiper';
 
 const BlogsUI: React.FC<BlogsUIProps> = ({ containerRef, blogs }) => {
-    const isProd = process.env.NODE_ENV === 'production';
-    const basePath = import.meta.env.BASE_URL;
     return (
         <div ref={containerRef} className="rss-blogs">
             <h3 className="rss-blogs__title font-28-48">Blogs</h3>
@@ -13,7 +11,7 @@ const BlogsUI: React.FC<BlogsUIProps> = ({ containerRef, blogs }) => {
                         <div className="swiper-slide rss-blogs__items-container__item" key={item.id}>
                             <div className="rss-blogs__items-container__item__img-container">
                                 <img
-                                    src={item.cover_image ? isProd ? `${basePath}/${item.cover_image}` : item.cover_image : 'images/order-uk-1.png'} alt={item.title} className="rss-blogs__items-container__item__img-container__img" />
+                                    src={item.cover_image ? item.cover_image : 'images/order-uk-1.png'} alt={item.title} className="rss-blogs__items-container__item__img-container__img" />
                             </div>
                             <div className="rss-blogs__items-container__item__content">
                                 <h4 className="rss-blogs__items-container__item__content__title font-16-20">{item.title}</h4>
