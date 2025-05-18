@@ -10,7 +10,7 @@ const ImgSliderUI: React.FC<ImgSliderUIProps> = ({ containerRef, data }) => {
                 <div className="swiper-wrapper rss-slider__items-container">
                     {data.map((item, index) => (
                         <div className="swiper-slide rss-slider__items-container__item" key={index}>
-                            <img className='rss-slider__items-container__item__image' alt="Order UK" src={isProd ? `${basePath}/${item}` : item}
+                            <img className='rss-slider__items-container__item__image' alt={item.alt} src={isProd ? `${basePath}/${item.src}` : item.src}
                             />
                         </div>
                     ))}
