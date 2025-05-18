@@ -3,9 +3,9 @@ import Footer from "./components/footer";
 import FAQ from "./components/faq";
 import Review from "./components/review";
 import Works from "./components/works";
-import { items as projects } from "./data/projects";
-import { items as articles } from "./data/articles";
-import { items as cases } from "./data/case-studies";
+import { items as projects } from "./data/professional-projects";
+import { items as articles } from "./data/personal-projects";
+import { items as cases } from "./data/blogs";
 import shuffleArray from "./utils/array-shuffle";
 
 function Home() {
