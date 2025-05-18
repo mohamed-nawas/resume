@@ -5,8 +5,9 @@ import Header from "../../components/header";
 import { items } from "../../data/banner-projects";
 import { items as projects } from "../../data/professional-projects";
 import { items as articles } from "../../data/personal-projects";
-import { items as cases } from "../../data/blogs";
+import { items as blogs } from "../../data/blogs";
 import Works from "../../components/works";
+import Blogs from "../../components/blogs";
 
 function Portfolio() {
     return (
@@ -38,7 +39,8 @@ function Portfolio() {
                     <div className="rss-portfolio__contents-container">
                         <Works title="Professional Projects" slug="" items={[projects]} />
                         <Works title="Personal Projects" slug="" items={[articles]} />
-                        <Works title="Blogs" slug="" items={[cases]} />
+                        {/* <Works title="Blogs" slug="" items={[cases]} /> */}
+                        <Blogs blogs={blogs} />
                     </div>
 
                 </div>

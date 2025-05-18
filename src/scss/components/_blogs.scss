@@ -1,0 +1,69 @@
+@use "../shared/media-queries" as screens;
+
+.rss-blogs {
+    &__title {
+        font-weight: 600;
+        color: var(--color-grey-20);
+        margin-bottom: clamp(40px, 10vw, 80px);
+    }
+    &__items-container {
+        margin-top: clamp(24px, 6vw, 30px);
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            flex: 0 0 100%;
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(10px, 3vw, 20px);
+            background-color: var(--color-peach-96);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            height: 100%;
+            min-height: 500px;
+            @include screens.min-tb { flex: 0 0 calc((100% - 1.3vw) / 2); }
+            @include screens.min-md { flex: 0 0 calc((100% - 2.76vw) / 3); }
+            &__img-container {
+                border: 1px solid var(--color-peach-90);
+                // height: calc((100% - (clamp(20px, 5vw, 30px)) * 2) * 0.7);
+                width: 100%;
+                height: 350px;
+                @include screens.max-md { height: 250px; }
+                @include screens.max-tb { height: 300px; }
+                overflow: hidden;
+                border-radius: clamp(8px, 2vw, 12px);
+                &__img {
+                    border-radius: clamp(8px, 2vw, 12px);
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &__content {
+                display: flex;
+                flex-direction: column;
+                gap: clamp(8px, 2vw, 12px);
+                flex-grow: 1;
+                justify-content: space-between;
+                &__title { 
+                    color: var(--color-grey-20); 
+                    font-weight: 700; 
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+                &__description { 
+                    color: var(--color-grey-20); 
+                    font-weight: 500; 
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

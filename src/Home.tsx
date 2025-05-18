@@ -5,11 +5,10 @@ import Review from "./components/review";
 import Works from "./components/works";
 import { items as projects } from "./data/professional-projects";
 import { items as articles } from "./data/personal-projects";
-import { items as cases } from "./data/blogs";
 import shuffleArray from "./utils/array-shuffle";
 
 function Home() {
-  const works = shuffleArray([...projects, ...articles, ...cases]);
+  const works = shuffleArray([...projects, ...articles]);
 
   return (
     <>
