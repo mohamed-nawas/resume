@@ -5,6 +5,7 @@ import Contact from "../pages/contact";
 import About from "../pages/about";
 import Portfolio from "../pages/portfolio";
 import Detail from "../pages/detail";
+import NotFound from '../pages/NotFound';
 
 
 const isProd = import.meta.env.PROD;
@@ -22,6 +23,7 @@ export default function Routes() {
             <Route exact path="/projects" component={Portfolio} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/detail" component={Detail} />
+            <Route path="*" component={NotFound} />
         </Switch>
     ));
 }

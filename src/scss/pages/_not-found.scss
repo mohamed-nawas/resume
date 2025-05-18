@@ -1,0 +1,11 @@
+@use "../shared/media-queries" as screens;
+
+.rss-notfound {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    &__title {
+        font-weight: 700;
+        color: var(--color-purple-50);
+    }
+}
