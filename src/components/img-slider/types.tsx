@@ -1,8 +1,13 @@
 interface ImgSliderProps {
-    data: string[];
+    data: ImgProps[];
 }
 
 interface ImgSliderUIProps {
     containerRef: React.RefObject<HTMLDivElement>;
-    data: string[];
+    data: ImgProps[];
+}
+
+interface ImgProps {
+    src: string;
+    alt: string;
 }

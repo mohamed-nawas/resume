@@ -6,7 +6,7 @@ type Project = {
     teamSize: string;
     tools: string[];
     description: string;
-    images: string[];
+    images: ImgProps[];
     problems: string[];
     decisions: string[];
     challenges: string[];
