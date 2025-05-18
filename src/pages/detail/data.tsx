@@ -40,7 +40,7 @@ const Projects: Record<string, Project> = {
             'Successfully delivered multiple enterprise-level applications',
             'Enhanced client satisfaction through timely and efficient project execution'
         ],
-        demo: 'https://www.swiveltech.io/',
+        demo: 'https://www.swiveltech.io',
         repo: ''
     },
     'offshore-safety': {
@@ -75,7 +75,7 @@ const Projects: Record<string, Project> = {
         'Enhanced user experience leading to a 30% increase in online inquiries',
         'Streamlined custom order process, reducing client onboarding time by 25%'
       ],
-      demo: 'https://wordpress-830411-4513052.cloudwaysapps.com/',
+      demo: 'https://offshoresafetyservices.com.au',
       repo: ''
     },
     'personal-website': {
@@ -117,7 +117,7 @@ const Projects: Record<string, Project> = {
       mainImg: 'images/swivel-group-image-1.png',
       title: "Swivel Group",
       slug: "Global Software Consultancy | Frontend",
-      role: "Frontend Developer",
+      role: "Frontend Engineer",
       teamSize: "5+ Developers",
       tools: ["React", "Strapi", "AWS", "Docker", "Figma", "Jira", "MySQL"],
       description: "Swivel Group is an Australian-based global software consultancy specializing in building and implementing custom solutions for businesses to innovate, scale, and compete at a global standard. Established in 2019, Swivel Group has rapidly expanded with over 160 employees across multiple offices in Australia, Sri Lanka, and Vietnam. The company offers services in software development, digital strategy, and finance management, operating globally across industries",
@@ -145,8 +145,43 @@ const Projects: Record<string, Project> = {
         'Successfully delivered multiple enterprise-level applications',
         'Enhanced client satisfaction through timely and efficient project execution'
       ],
-      demo: 'https://swivelgroup.com.au/',
+      demo: 'https://swivelgroup.com.au',
       repo: ''
+    },
+    'fitness-care': {
+      mainImg: 'images/fitness-care-image-1.png',
+      title: "Fitness Care",
+      slug: "Health & Wellness | Fullstack",
+      role: "Fullstack Engineer",
+      teamSize: "Solo Project",
+      tools: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Figma", "Jira"],
+      description: "Fitness Care is a comprehensive web application designed to assist users in managing their health and fitness goals. The platform offers features such as workout tracking, nutrition planning, progress monitoring, and personalized recommendations. Built with a modern tech stack, Fitness Care aims to provide an intuitive and engaging experience for users seeking to improve their physical well-being.",
+      images: [
+        {src: 'images/fitness-care-1.png', alt: 'Fitness Care'},
+        {src: 'images/fitness-care-2.png', alt: 'Fitness Care'},
+        {src: 'images/fitness-care-3.png', alt: 'Fitness Care'},
+        {src: 'images/fitness-care-4.png', alt: 'Fitness Care'},
+        {src: 'images/fitness-care-5.png', alt: 'Fitness Care'},
+        {src: 'images/fitness-care-6.png', alt: 'Fitness Care'}
+      ],
+      problems: [
+        'Designing a user-friendly interface for diverse user demographics',
+        'Integrating personalized workout and nutrition plans effectively'
+      ],
+      decisions: [
+        'Utilized a modular component-based architecture for scalability',
+        'Implemented a RESTful API with Node.js and Express for backend services'
+      ],
+      challenges: [
+        'Ensuring data synchronization between frontend and backend',
+        'Optimizing performance for real-time data updates and notifications'
+      ],
+      outcomes: [
+        'Achieved a responsive design compatible with various devices',
+        'Enhanced user engagement through personalized features and notifications'
+      ],
+      demo: 'https://mohamed-nawas.github.io/fitness-care/',
+      repo: 'https://github.com/mohamed-nawas/fitness-care'
     },
 }
 
