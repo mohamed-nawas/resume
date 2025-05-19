@@ -1,0 +1,73 @@
+@use "../shared/media-queries" as screens;
+
+.rss-blog-detail {
+    // border: 1px solid black;
+    margin-top: clamp(30px, 4.16vw, 100px);
+    margin-bottom: clamp(60px, 6.94vw, 100px);
+    &>* {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(10px, 1.3vw, 25px);
+    }
+    &__container {
+        // border: 1px solid orange;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__tags-container {
+            // border: 1px solid yellow;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: flex-start;
+            align-items: center;
+            &__item {
+                // border: 1px solid gold;
+                background-color: rgba(128, 128, 128, 0.2);
+                padding: 5px 10px;
+                border-radius: 6px;
+                &__tag {
+                    font-weight: 500;
+                    color: var(--color-grey-10);
+                }
+            }
+        }
+        &__date {
+            // border: 1px solid green;
+            font-weight: 400;
+            color: var(--color-grey-30);
+        }
+    }
+    &__title {
+        // border: 1px solid blue;
+        text-align: center;
+        font-weight: 600;
+        color: var(--color-purple-50);
+    }
+    &__img {
+        border: 1px solid var(--color-peach-85);
+        margin: 0 auto;
+        width: 60%;
+        object-fit: cover;
+        border-radius: clamp(10px, 1.3vw, 25px);
+    }
+    &__body {
+        // border: 1px solid purple;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        p { font-size: clamp(14px, 3.5vw, 18px); }
+        h2 { font-size: clamp(18px, 4.5vw, 24px); }
+        h3 { font-size: clamp(16px, 4vw, 20px); }
+        h4 { font-size: clamp(16px, 4vw, 18px); }
+        ol, ul { li { white-space: normal; word-wrap: break-word; overflow-wrap: break-word; } }
+        ol { font-size: clamp(14px, 3.5vw, 18px); list-style-type: lower-greek; }
+        ul { font-size: clamp(12px, 3vw, 16px); list-style-type: disc; }
+        .highlight {
+            .highlight__panel { display: none; }
+        }
+        &>* { margin-bottom: clamp(10px, 1.3vw, 25px); }
+    }
+}
