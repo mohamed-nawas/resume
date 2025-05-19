@@ -32,7 +32,7 @@ export default function ReviewSwiper({ children }: { children: React.ReactNode }
         const swiperInstance = new Swiper(swiperRef.current, {
             loop: shouldLoop,
             autoplay: shouldAutoplay ? {
-                delay: 5000,
+                delay: 15000,
                 disableOnInteraction: true,
                 reverseDirection: true,
             } : false,

@@ -16,7 +16,7 @@ function Portfolio() {
             <section className="rss-portfolio">
                 <div className="container-fluid">
 
-                    <Banner iconPath="icons/starrs-ico.png" iconAlt="Stars Icon" contentTitle="My Creative Portfolios"  contentSlug="Here's what some of my satisfied clients have to say about my work">
+                    <Banner iconPath="icons/starrs-ico.png" iconAlt="Stars Icon" contentTitle="My Works"  contentSlug="Some of my best works and technical blogs">
                         <DynamicGrid className="rss-banner__list-container" gap={14}>
                             {items.map((item, index) => (
                                 <div

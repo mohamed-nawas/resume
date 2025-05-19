@@ -20,7 +20,7 @@ function Home() {
             <div className="rss-home__details-section__banner-image" />
             <div className="rss-home__details-section__content-container">
               <h4 className="rss-home__details-section__content-container__slug font-18-28">Hello There &#129303;</h4>
-              <h2 className="rss-home__details-section__content-container__title font-38-58">Nawas - Full Stack Dev Here</h2>
+              <h2 className="rss-home__details-section__content-container__title font-38-58">Nawaz - Full Stack Dev Here</h2>
               <p className="rss-home__details-section__content-container__content font-14-18">A dedicated full-stack developer experienced in building robust and user-friendly web solutions. My expertise spans from crafting engaging user interfaces to developing powerful server-side logic and managing databases and deployments. Browse my portfolio to see what I can do</p>
               <div className="rss-home__details-section__content-container__contact-container">
                 <div className="rss-home__details-section__content-container__contact-container__btn">
@@ -145,7 +145,7 @@ function Home() {
 
           <Works title="Featured Works" slug="Here's are some of my featured works" items={[works]} />
 
-          <Review title="Recommendations" slug="Here's what some of my satisfied clients have to say about my work" count="17 Total Reviews" />
+          <Review title="Recommendations" slug="Here's what some of my satisfied clients have to say about my work" count="3 Total Reviews" />
 
           <FAQ title="Frequently Asked Questions" slug="Here are answers to some common questions" containerHelpBtnValue="Contact Me" containerHelpIconPath="icons/star-ico.png" containerHelpIconAlt="Star Icon" containerHelpTextTitle="Let's Discuss Your Project" containerHelpTextSlug="Have a web development project in mind? I'm eager to learn more and discuss how my skills can contribute to your success. Reach out to start the conversation!" />
 
