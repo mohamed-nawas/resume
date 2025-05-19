@@ -5,6 +5,8 @@
         font-weight: 600;
         color: var(--color-grey-20);
         margin-bottom: clamp(40px, 10vw, 80px);
+        text-align: center;
+        @include screens.min-md { text-align: left; }
     }
     &__items-container {
         margin-top: clamp(24px, 6vw, 30px);
