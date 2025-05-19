@@ -7,8 +7,6 @@ function BlogDetail() {
     const location = useLocation();
     const idParam = location.search.startsWith('?') ? location.search.slice(1) : location.search;
     const id = idParam ? Number(idParam) : null;
-    const isProd = process.env.NODE_ENV === 'production';
-    const basePath = import.meta.env.BASE_URL;
 
     const blog = id !== null && !isNaN(id) ? Blogs[id] : null;
     return (
