@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import Swiper from 'swiper';
 import 'swiper/css';
-// import { Autoplay } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 
 // function calculateSpaceBetween() {
 //     const width = window.innerWidth;
@@ -15,16 +15,29 @@ export default function ReviewSwiper({ children }: { children: React.ReactNode }
 
     useEffect(() => {
         if (!swiperRef.current) return;
-        // Swiper.use([Autoplay]);
+
+        const wrapper = swiperRef.current.querySelector('.swiper-wrapper');
+        const slides = wrapper?.querySelectorAll('.swiper-slide') || [];
+        const slideCount = slides.length;
+        const width = window.innerWidth;
+        let shouldLoop = false;
+        let shouldAutoplay = false;
+
+        if (slideCount > 3) { shouldLoop = true; shouldAutoplay = true; }
+        else if (slideCount === 3 && width < 1440) {  shouldLoop = true; shouldAutoplay = true; }
+        else if (slideCount === 2 && width < 768) {  shouldLoop = true; shouldAutoplay = true; }
+
+        Swiper.use([Autoplay]);
 
         const swiperInstance = new Swiper(swiperRef.current, {
-            loop: true,
+            loop: shouldLoop,
+            autoplay: shouldAutoplay ? {
+                delay: 5000,
+                disableOnInteraction: true,
+                reverseDirection: true,
+            } : false,
             slidesPerView: 'auto',
-            // autoplay: {
-            //     delay: 5000,
-            //     disableOnInteraction: false,
-            // },
-            // spaceBetween: calculateSpaceBetween(),
+            spaceBetween: 10,
             pagination: {
                 el: '.review-swiper-pagination',
                 clickable: true,
@@ -36,17 +49,9 @@ export default function ReviewSwiper({ children }: { children: React.ReactNode }
             scrollbar: {
                 el: '.review-swiper-scrollbar',
             },
-            // breakpoints: {
-            //     768: { slidesPerView: 2 },
-            //     1440: { slidesPerView: 3 },
-            // },
         });
 
-        const resizeHandler = () => {
-            // swiperInstance.params.spaceBetween = calculateSpaceBetween();
-            swiperInstance.update();
-        };
-
+        const resizeHandler = () => swiperInstance.update();
         window.addEventListener('resize', resizeHandler);
         return () => {
             window.removeEventListener('resize', resizeHandler);

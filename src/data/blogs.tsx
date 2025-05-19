@@ -6,6 +6,12 @@ export const items = [
         cover_image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fvsdghellsvrluw6pjqg6.png"
     },
     {
+        id: 2492409,
+        title: 'Kubernetes at Home: Set Up Your Own Cluster Using Vagrant & Ansible',
+        description: "TL;DR: Learn how to build a lightweight Kubernetes cluster on your local machine using Vagrant,...",
+        cover_image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fflva26aw2y9yrce6bds4.png"
+    },
+    {
         id: 2469183,
         title: 'How to Self-Host Coolify on Your VPS: A Complete Guide',
         description: "Deploying applications can be a complex process, especially if you're managing multiple projects....",
@@ -17,10 +23,4 @@ export const items = [
         description: "\"Storybook for Component-Driven Development: A Comprehensive Guide\" - Learn how Storybook simplifies...",
         cover_image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F4xoz500ldeh74izz9tom.png"
     },
-    // {
-    //     id: 2464114,
-    //     title: 'What is Docker and Why Should You Care?',
-    //     description: "Look, I get it. When I started out 3 years ago, I was all about getting my apps online the quickest...",
-    //     cover_image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fmolguglmxtwi7xqud2ox.png"
-    // },
 ];

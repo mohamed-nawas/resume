@@ -11,7 +11,7 @@
     &__items-container {
         margin-top: clamp(24px, 6vw, 30px);
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         &__item {
             flex: 0 0 100%;
             display: flex !important;
@@ -25,8 +25,10 @@
             text-align: center;
             height: 100%;
             min-height: 500px;
-            @include screens.min-tb { flex: 0 0 calc((100% - 1.3vw) / 2); }
-            @include screens.min-md { flex: 0 0 calc((100% - 2.76vw) / 3); }
+            // @include screens.min-tb { flex: 0 0 calc((100% - 1.3vw) / 2); }
+            @include screens.min-tb { flex: 0 0 50%; }
+            // @include screens.min-md { flex: 0 0 calc((100% - 2.76vw) / 3); }
+            @include screens.min-md { flex: 0 0 33.33%; }
             &__img-container {
                 border: 1px solid var(--color-peach-90);
                 // height: calc((100% - (clamp(20px, 5vw, 30px)) * 2) * 0.7);

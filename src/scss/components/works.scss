@@ -20,16 +20,16 @@
     &__items-container {
         margin-top: clamp(24px, 6vw, 30px);
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         overflow: hidden;
 
-        @include screens.min-tb {
-            gap: clamp(10px, 1.3vw, 20px);
-        }
+        // @include screens.min-tb {
+        //     gap: clamp(10px, 1.3vw, 20px);
+        // }
 
-        @include screens.min-md {
-            gap: clamp(20px, 1.38vw, 30px);
-        }
+        // @include screens.min-md {
+        //     gap: clamp(20px, 1.38vw, 30px);
+        // }
 
         &__item {
             flex: 0 0 100%;
@@ -40,7 +40,7 @@
             border-radius: 10px;
             padding: 30px;
             transition: transform 0.5s ease-in-out,
-                box-shadow 0.5s ease-in-out;
+            box-shadow 0.5s ease-in-out;
             position: relative;
             z-index: 0;
 
@@ -52,11 +52,13 @@
 
             @include screens.min-tb {
                 text-align: left;
-                flex: 0 0 calc((100% - 1.3vw) / 2);
+                // flex: 0 0 calc((100% - 1.3vw) / 2);
+                flex: 0 0 50%;
             }
 
             @include screens.min-md {
-                flex: 0 0 calc((100% - 2.76vw) / 3);
+                // flex: 0 0 calc((100% - 2.76vw) / 3);
+                flex: 0 0 33.33%;
             }
 
             &__title {
