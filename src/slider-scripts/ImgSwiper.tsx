@@ -1,25 +1,36 @@
 import { useEffect, useRef } from 'react';
 import Swiper from 'swiper';
 import 'swiper/css';
-// import { Autoplay } from 'swiper/modules';
-
-// function calculateSpaceBetween() {
-//     const width = window.innerWidth;
-//     if (width >= 1440) return Math.max(20, Math.min((width * 1.38) / 100, 30));
-//     else if (width >= 768) return Math.max(10, Math.min((width * 1.3) / 100, 20));
-//     else return 10;
-// }
+import { Autoplay } from 'swiper/modules';
 
 export default function ImgSwiper({ children }: { children: React.ReactNode }) {
     const swiperRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         if (!swiperRef.current) return;
-        // Swiper.use([Autoplay]);
+
+        const wrapper = swiperRef.current.querySelector('.swiper-wrapper');
+        const slides = wrapper?.querySelectorAll('.swiper-slide') || [];
+        const slideCount = slides.length;
+        const width = window.innerWidth;
+        let shouldLoop = false;
+        let shouldAutoplay = false;
+
+        if (slideCount > 3) { shouldLoop = true; shouldAutoplay = true; }
+        else if (slideCount === 3 && width < 1440) {  shouldLoop = true; shouldAutoplay = true; }
+        else if (slideCount === 2 && width < 768) {  shouldLoop = true; shouldAutoplay = true; }
+        
+        Swiper.use([Autoplay]);
 
         const swiperInstance = new Swiper(swiperRef.current, {
-            loop: true,
-            slidesPerView: 'auto'
+            loop: shouldLoop,
+            autoplay: shouldAutoplay ? {
+                delay: 5000,
+                disableOnInteraction: true,
+                reverseDirection: true,
+            } : false,
+            slidesPerView: 'auto',
+            spaceBetween: 10,
         });
 
         const resizeHandler = () => swiperInstance.update();

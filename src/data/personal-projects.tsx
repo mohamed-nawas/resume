@@ -10,7 +10,7 @@ export const items = [
         id: 'article-002',
         title: "Fitness Care",
         mainImgPath: "images/fitness-care-image-1.png",
-        subImgsPath: ["images/fitness-care-image-1.png", "images/fitness-care-image-1.png", "images/fitness-care-image-1.png", "images/fitness-care-image-1.png"],
+        subImgsPath: ["images/fitness-care-image-1.png", "images/fitness-care-image-2.png", "images/fitness-care-image-1.png", "images/fitness-care-image-2.png"],
         imgAlt: "Fitness Care Image",
     },
     {

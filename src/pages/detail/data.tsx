@@ -87,12 +87,14 @@ const Projects: Record<string, Project> = {
       tools: ["HTML", "CSS", "JavaScript", "GitHub Pages", "Figma"],
       description: "This personal website serves as a digital portfolio showcasing my skills, projects, and experiences as a Fullstack Developer. Built using HTML, CSS, and JavaScript, the site is hosted on GitHub Pages, providing a seamless and accessible platform for potential employers and collaborators to explore my work. The design emphasizes simplicity and user experience, reflecting my commitment to clean and effective web development practices.",
       images: [
-        {src: 'images/personal-webs-1.png', alt: 'Personal Website'},
-        {src: 'images/personal-webs-2.png', alt: 'Personal Website'},
-        {src: 'images/personal-webs-3.png', alt: 'Personal Website'},
-        {src: 'images/personal-webs-4.png', alt: 'Personal Website'},
-        {src: 'images/personal-webs-5.png', alt: 'Personal Website'},
-        {src: 'images/personal-webs-6.png', alt: 'Personal Website'}
+        {src: 'images/personal-web-1.png', alt: 'Personal Website'},
+        {src: 'images/personal-web-2.png', alt: 'Personal Website'},
+        {src: 'images/personal-web-3.png', alt: 'Personal Website'},
+        {src: 'images/personal-web-4.png', alt: 'Personal Website'},
+        {src: 'images/personal-web-5.png', alt: 'Personal Website'},
+        {src: 'images/personal-web-6.png', alt: 'Personal Website'},
+        {src: 'images/personal-web-7.png', alt: 'Personal Website'},
+        {src: 'images/personal-web-8.png', alt: 'Personal Website'}
       ],
       problems: [
         'Creating a responsive design that adapts to various screen sizes',
@@ -127,7 +129,11 @@ const Projects: Record<string, Project> = {
         {src: 'images/swivel-group-3.png', alt: 'Swivel Group'},
         {src: 'images/swivel-group-4.png', alt: 'Swivel Group'},
         {src: 'images/swivel-group-5.png', alt: 'Swivel Group'},
-        {src: 'images/swivel-group-6.png', alt: 'Swivel Group'}
+        {src: 'images/swivel-group-6.png', alt: 'Swivel Group'},
+        {src: 'images/swivel-group-7.png', alt: 'Swivel Group'},
+        {src: 'images/swivel-group-8.png', alt: 'Swivel Group'},
+        {src: 'images/swivel-group-9.png', alt: 'Swivel Group'},
+        {src: 'images/swivel-group-10.png', alt: 'Swivel Group'},
       ],
       problems: [
         'Developing scalable solutions for diverse industries',
@@ -160,9 +166,6 @@ const Projects: Record<string, Project> = {
         {src: 'images/fitness-care-1.png', alt: 'Fitness Care'},
         {src: 'images/fitness-care-2.png', alt: 'Fitness Care'},
         {src: 'images/fitness-care-3.png', alt: 'Fitness Care'},
-        {src: 'images/fitness-care-4.png', alt: 'Fitness Care'},
-        {src: 'images/fitness-care-5.png', alt: 'Fitness Care'},
-        {src: 'images/fitness-care-6.png', alt: 'Fitness Care'}
       ],
       problems: [
         'Designing a user-friendly interface for diverse user demographics',
