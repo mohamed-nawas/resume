@@ -1,39 +1,39 @@
 import { useEffect, useRef } from 'react';
 import Swiper from 'swiper';
 import 'swiper/css';
-
-// function calculateSpaceBetween() {
-//     const width = window.innerWidth;
-//     if (width >= 1440) return Math.max(20, Math.min((width * 1.38) / 100, 30));
-//     if (width >= 768) return Math.max(10, Math.min((width * 1.3) / 100, 20));
-//     else return 10;
-// }
+import { Autoplay } from 'swiper/modules';
 
 export default function BlogsSwiper({ children }: { children: React.ReactNode }) {
     const swiperRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         if (!swiperRef.current) return;
-        // const spaceBetweenValue = calculateSpaceBetween();
-        // document.documentElement.style.setProperty('--swiper-slide-gap', `${spaceBetweenValue}px`);
+
+        const wrapper = swiperRef.current.querySelector('.swiper-wrapper');
+        const slides = wrapper?.querySelectorAll('.swiper-slide') || [];
+        const slideCount = slides.length;
+        const width = window.innerWidth;
+        let shouldLoop = false;
+        let shouldAutoplay = false;
+
+        if (slideCount > 3) { shouldLoop = true; shouldAutoplay = true; }
+        else if (slideCount === 3 && width < 1440) {  shouldLoop = true; shouldAutoplay = true; }
+        else if (slideCount === 2 && width < 768) {  shouldLoop = true; shouldAutoplay = true; }
+
+        Swiper.use([Autoplay]);
 
         const swiperInstance = new Swiper(swiperRef.current, {
-            loop: true,
-            slidesPerView: 'auto'
-            // spaceBetween: spaceBetweenValue,
-            // slidesPerView: 1,
-            // breakpoints: {
-                // 768: { slidesPerView: 2 },
-                // 1440: { slidesPerView: 3 },
-            // }
+            loop: shouldLoop,
+            autoplay: shouldAutoplay ? {
+                delay: 5000,
+                disableOnInteraction: true,
+                reverseDirection: true,
+            } : false,
+            slidesPerView: 'auto',
+            spaceBetween: 10,
         });
 
-        const resizeHandler = () => {
-            // const newSpaceBetween = calculateSpaceBetween();
-            // swiperInstance.params.spaceBetween = newSpaceBetween;
-            // document.documentElement.style.setProperty('--swiper-slide-gap', `${newSpaceBetween}px`);
-            swiperInstance.update();
-        }
+        const resizeHandler = () => swiperInstance.update();
         window.addEventListener('resize', resizeHandler);
         return () => {
             window.removeEventListener('resize', resizeHandler);
