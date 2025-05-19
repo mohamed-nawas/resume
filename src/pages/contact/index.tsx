@@ -12,7 +12,7 @@ function Contact() {
             <section className="rss-contact">
                 <div className="container-fluid">
 
-                    <Banner iconPath="icons/chat-ico.png" iconAlt="Chat Icon" contentTitle="We'd love to here from you." contentSlug="Here's what some of my clients have to say about my work">
+                    <Banner iconPath="icons/chat-ico.png" iconAlt="Chat Icon" contentTitle="We'd love to here from you" contentSlug="Reach out — I’m excited to hear what you’re working on">
                         <DynamicGrid className="rss-banner__list-container" gap={14}>
                             {items.map((item, index) => (
                                 <div

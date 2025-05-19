@@ -13,7 +13,7 @@ function About() {
                         <div className="rss-about__details-section__banner-image" />
                         <div className="rss-about__details-section__content-container">
                             <h4 className="rss-about__details-section__content-container__slug font-14-24">Crafting Robust and Scalable Web Solutions</h4>
-                            <h2 className="rss-about__details-section__content-container__title font-38-58">Mohamed Nawas</h2>
+                            <h2 className="rss-about__details-section__content-container__title font-38-58">Mohamed Nawaz</h2>
                             <p className="rss-about__details-section__content-container__content font-14-18">A versatile web developer passionate about building efficient, scalable, and high-quality web applications. With a strong foundation in both front-end and back-end technologies, I am committed to delivering robust solutions tailored to meet specific needs. I thrive on solving complex challenges and collaborating effectively to bring digital visions to life</p>
                             <div className="rss-about__details-section__content-container__status-container">
                                 <div className="rss-about__details-section__content-container__status-container__item-container">

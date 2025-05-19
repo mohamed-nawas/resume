@@ -2,7 +2,7 @@ function Footer() {
     return (
         <footer className="rss-footer">
             <div className="rss-footer__brand-container">
-                <h5 className="rss-footer__brand-container__title font-18-24">Mohamed Nawas.</h5>
+                <h5 className="rss-footer__brand-container__title font-18-24">Mohamed Nawaz</h5>
                 {
                     process.env.NODE_ENV === "production" ? (
                         <div className="rss-footer__brand-container__link-container">
@@ -10,13 +10,13 @@ function Footer() {
                                 <p className="rss-footer__brand-container__link-container__link font-14-18">Home</p>
                             </a>
                             <a href="/resume/#/about">
-                                <p className="rss-footer__brand-container__link-container__link font-14-18">About Me</p>
+                                <p className="rss-footer__brand-container__link-container__link font-14-18">About</p>
                             </a>
                             <a href="/resume/#/projects">
-                                <p className="rss-footer__brand-container__link-container__link font-14-18">Portfolio</p>
+                                <p className="rss-footer__brand-container__link-container__link font-14-18">Works</p>
                             </a>
                             <a href="/resume/#/contact">
-                                <p className="rss-footer__brand-container__link-container__link font-14-18">Contact Me</p>
+                                <p className="rss-footer__brand-container__link-container__link font-14-18">Contact</p>
                             </a>
                         </div>
                     ) : (
@@ -25,13 +25,13 @@ function Footer() {
                                 <p className="rss-footer__brand-container__link-container__link font-14-18">Home</p>
                             </a>
                             <a href="/about">
-                                <p className="rss-footer__brand-container__link-container__link font-14-18">About Me</p>
+                                <p className="rss-footer__brand-container__link-container__link font-14-18">About</p>
                             </a>
                             <a href="/projects">
-                                <p className="rss-footer__brand-container__link-container__link font-14-18">Portfolio</p>
+                                <p className="rss-footer__brand-container__link-container__link font-14-18">Works</p>
                             </a>
                             <a href="/contact">
-                                <p className="rss-footer__brand-container__link-container__link font-14-18">Contact Me</p>
+                                <p className="rss-footer__brand-container__link-container__link font-14-18">Contact</p>
                             </a>
                         </div>
                     )
@@ -108,7 +108,7 @@ function Footer() {
                 </div>
             </div>
 
-            <p className="rss-footer__copyright font-12-16">Copyright &#169; 2024 Mohamed Nawas. All rights reserved.</p>
+            <p className="rss-footer__copyright font-12-16">Copyright &#169; 2024 Mohamed Nawaz. All rights reserved.</p>
             
             <div id="rss-footer__back-to-top-container">
                 <button id="rss-footer__back-to-top-container__button" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}></button>
