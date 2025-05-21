@@ -24,8 +24,8 @@ const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) =
                     {shuffledWorks.map((item) => {
                         const activeImageSrc = activeImages[item.id] || (isProd ? `${basePath}/${item.mainImgPath}` : item.mainImgPath);
                         return (
-                            <div className="swiper-slide rss-works__items-container__item" key={item.id}>
-                                <a href={isProd ? `/resume/#/detail?${item.title.trim().toLowerCase().replace(/\s+/g, '-')}` : `/detail?${item.title.trim().toLowerCase().replace(/\s+/g, '-')}`}><h4 className="rss-works__items-container__item__title font-16-20">{item.title}</h4></a>
+                            <a href={isProd ? `/resume/#/detail?${item.title.trim().toLowerCase().replace(/\s+/g, '-')}` : `/detail?${item.title.trim().toLowerCase().replace(/\s+/g, '-')}`} className="swiper-slide rss-works__items-container__item" key={item.id}>
+                                <h4 className="rss-works__items-container__item__title font-16-20">{item.title}</h4>
                                 <div className="rss-works__items-container__item__banner-image-container">
                                     <img
                                         className='rss-works__items-container__item__banner-image-container__image'
@@ -58,7 +58,7 @@ const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) =
                                         })
                                     }
                                 </div>
-                            </div>
+                            </a>
                         )
                     })}
                 </div>
