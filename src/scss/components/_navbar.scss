@@ -1,4 +1,5 @@
 @use "../shared/media-queries" as screens;
+@use "../base/animations" as animations;
 
 .rss-header {
     position: fixed;
@@ -25,6 +26,11 @@
             color: var(--color-purple-50);
             height: auto;
             padding-top: 10px;
+            opacity: 0;
+            -webkit-animation: #{animations.fade-in-up-logo-animation()};
+            -moz-animation: #{animations.fade-in-up-logo-animation()};
+            -ms-animation: #{animations.fade-in-up-logo-animation()};
+            animation: #{animations.fade-in-up-logo-animation()};
         }
     
         a { padding: 0; }
@@ -40,6 +46,41 @@
                 height: 46px;
                 border-radius: 6px;
                 padding: 12px 18px;
+                &:nth-child(1) {
+                    opacity: 0;
+                    -webkit-animation: #{animations.slide-in-right-nav-item-1-animation()};
+                    -moz-animation: #{animations.slide-in-right-nav-item-1-animation()};
+                    -ms-animation: #{animations.slide-in-right-nav-item-1-animation()};
+                    animation: #{animations.slide-in-right-nav-item-1-animation()};
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                    -webkit-animation: #{animations.slide-in-right-nav-item-2-animation()};
+                    -moz-animation: #{animations.slide-in-right-nav-item-2-animation()};
+                    -ms-animation: #{animations.slide-in-right-nav-item-2-animation()};
+                    animation: #{animations.slide-in-right-nav-item-2-animation()};
+                }
+                &:nth-child(3) {
+                    opacity: 0;
+                    -webkit-animation: #{animations.slide-in-right-nav-item-3-animation()};
+                    -moz-animation: #{animations.slide-in-right-nav-item-3-animation()};
+                    -ms-animation: #{animations.slide-in-right-nav-item-3-animation()};
+                    animation: #{animations.slide-in-right-nav-item-3-animation()};
+                }
+                &:nth-child(4) {
+                    opacity: 0;
+                    -webkit-animation: #{animations.slide-in-right-nav-item-4-animation()};
+                    -moz-animation: #{animations.slide-in-right-nav-item-4-animation()};
+                    -ms-animation: #{animations.slide-in-right-nav-item-4-animation()};
+                    animation: #{animations.slide-in-right-nav-item-4-animation()};
+                }
+                &:nth-child(5) {
+                    opacity: 0;
+                    -webkit-animation: #{animations.slide-in-right-nav-item-5-animation()};
+                    -moz-animation: #{animations.slide-in-right-nav-item-5-animation()};
+                    -ms-animation: #{animations.slide-in-right-nav-item-5-animation()};
+                    animation: #{animations.slide-in-right-nav-item-5-animation()};
+                }
 
                 &:hover { background-color: var(--color-peach-95); }
     

@@ -1,4 +1,5 @@
 @use "../shared/media-queries" as screens;
+@use "../base/animations" as animations;
 
 .rss-home {
     background-color: var(--color-peach-92);
@@ -22,6 +23,11 @@
             background-position: center;
             background-repeat: no-repeat;
             background-image: url("/icons/profile-image__mobile.png");
+            opacity: 0;
+            -webkit-animation: #{animations.fade-in-up-pop-animation()};
+            -moz-animation: #{animations.fade-in-up-pop-animation()};
+            -ms-animation: #{animations.fade-in-up-pop-animation()};
+            animation: #{animations.fade-in-up-pop-animation()};
         }
 
         &__content-container {
@@ -40,17 +46,32 @@
                 font-weight: 500;
                 color: var(--color-grey-30);
                 margin-bottom: 14px;
+                opacity: 0;
+                -webkit-animation: #{animations.fade-in-up-text-animation()};
+                -moz-animation: #{animations.fade-in-up-text-animation()};
+                -ms-animation: #{animations.fade-in-up-text-animation()};
+                animation: #{animations.fade-in-up-text-animation()}
             }
 
             &__title {
                 margin-bottom: 4px;
                 font-weight: 600;
                 color: var(--color-grey-10);
+                opacity: 0;
+                -webkit-animation: #{animations.fade-in-up-heading-animation()};
+                -moz-animation: #{animations.fade-in-up-heading-animation()};
+                -ms-animation: #{animations.fade-in-up-heading-animation()};
+                animation: #{animations.fade-in-up-heading-animation()}
             }
 
             &__content {
                 font-weight: 400;
                 color: var(--color-grey-30);
+                opacity: 0;
+                -webkit-animation: #{animations.fade-in-up-paragraph-animation()};
+                -moz-animation: #{animations.fade-in-up-paragraph-animation()};
+                -ms-animation: #{animations.fade-in-up-paragraph-animation()};
+                animation: #{animations.fade-in-up-paragraph-animation()}
             }
 
             &__contact-container {
@@ -65,6 +86,11 @@
                 }
 
                 &__btn {
+                    opacity: 0;
+                    -webkit-animation: #{animations.fade-in-up-pop-cta-animation()};
+                    -moz-animation: #{animations.fade-in-up-pop-cta-animation()};
+                    -ms-animation: #{animations.fade-in-up-pop-cta-animation()};
+                    animation: #{animations.fade-in-up-pop-cta-animation()};
                     &>* {
                         display: flex;
                         gap: 8px;
@@ -86,6 +112,11 @@
                 &__link {
                     color: var(--color-grey-10);
                     font-weight: 500;
+                    opacity: 0;
+                    -webkit-animation: #{animations.fade-in-up-cta-animation()};
+                    -moz-animation: #{animations.fade-in-up-cta-animation()};
+                    -ms-animation: #{animations.fade-in-up-cta-animation()};
+                    animation: #{animations.fade-in-up-cta-animation()};
                 }
             }
 
@@ -111,6 +142,27 @@
                     align-items: center;
                     padding: clamp(16px, 4vw, 80px) clamp(18px, 4.5vw, 50px);
                     border-radius: 8px;
+                    &:nth-child(1) {
+                        opacity: 0;
+                        -webkit-animation: #{animations.fade-in-up-status-1-animation()};
+                        -moz-animation: #{animations.fade-in-up-status-1-animation()};
+                        -ms-animation: #{animations.fade-in-up-status-1-animation()};
+                        animation: #{animations.fade-in-up-status-1-animation()};
+                    }
+                    &:nth-child(2) {
+                        opacity: 0;
+                        -webkit-animation: #{animations.fade-in-up-status-2-animation()};
+                        -moz-animation: #{animations.fade-in-up-status-2-animation()};
+                        -ms-animation: #{animations.fade-in-up-status-2-animation()};
+                        animation: #{animations.fade-in-up-status-2-animation()};
+                    }
+                    &:nth-child(3) {
+                        opacity: 0;
+                        -webkit-animation: #{animations.fade-in-up-status-3-animation()};
+                        -moz-animation: #{animations.fade-in-up-status-3-animation()};
+                        -ms-animation: #{animations.fade-in-up-status-3-animation()};
+                        animation: #{animations.fade-in-up-status-3-animation()};
+                    }
                     @include screens.min-md {
                         flex: 0 1 calc(100% / 3);
                         align-items: flex-start;
