@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import Swiper from 'swiper';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
+import { blogs as blogsBreakpoints } from "../data/swiper-space-between-breakpoints";
 
 export default function BlogsSwiper({ children }: { children: React.ReactNode }) {
     const swiperRef = useRef<HTMLDivElement | null>(null);
@@ -30,7 +31,7 @@ export default function BlogsSwiper({ children }: { children: React.ReactNode })
                 reverseDirection: true,
             } : false,
             slidesPerView: 'auto',
-            spaceBetween: 10,
+            breakpoints: blogsBreakpoints,
         });
 
         const resizeHandler = () => swiperInstance.update();

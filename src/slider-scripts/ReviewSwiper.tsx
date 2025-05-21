@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import Swiper from 'swiper';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
+import { review as reviewBreakpoints } from '../data/swiper-space-between-breakpoints';
 
 // function calculateSpaceBetween() {
 //     const width = window.innerWidth;
@@ -37,7 +38,7 @@ export default function ReviewSwiper({ children }: { children: React.ReactNode }
                 reverseDirection: true,
             } : false,
             slidesPerView: 'auto',
-            spaceBetween: 10,
+            breakpoints: reviewBreakpoints,
             pagination: {
                 el: '.review-swiper-pagination',
                 clickable: true,

@@ -85,12 +85,12 @@
         align-items: stretch;
         margin-top: clamp(24px, 6vw, 30px);
         overflow: hidden;
-        @include screens.min-smd {
-            gap: clamp(10px, 1.3vw, 20px);
-        }
-        @include screens.min-md {
-            gap: clamp(20px, 1.38vw, 30px);
-        }
+        // @include screens.min-smd {
+        //     gap: clamp(10px, 1.3vw, 20px);
+        // }
+        // @include screens.min-md {
+        //     gap: clamp(20px, 1.38vw, 30px);
+        // }
 
         &__item {
             display: flex !important;
@@ -104,12 +104,12 @@
 
             @include screens.min-smd {
                 text-align: left;
-                // flex: 0 0 calc((100% - 1.3vw) / 2);
-                flex: 0 0 50%;
+                flex: 0 0 calc((100% - 1.3vw) / 2);
+                // flex: 0 0 50%;
             }
             @include screens.min-md {
-                // flex: 0 0 calc((100% - 2.76vw) / 3);
-                flex: 0 0 33.33%;
+                flex: 0 0 calc((100% - 2.6vw) / 3);
+                // flex: 0 0 33.33%;
             }
 
             &__header-container {

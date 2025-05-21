@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import Swiper from 'swiper';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
+import { works as worksBreakpoints } from '../data/swiper-space-between-breakpoints';
 
 export default function WorksSwiper({ children }: { children: React.ReactNode }) {
     const swiperRef = useRef<HTMLDivElement | null>(null);
@@ -30,7 +31,7 @@ export default function WorksSwiper({ children }: { children: React.ReactNode })
                 disableOnInteraction: true,
                 reverseDirection: true,
             } : false,
-            spaceBetween: 10,
+            breakpoints: worksBreakpoints,
             pagination: {
                 el: '.works-swiper-pagination',
                 clickable: true,
