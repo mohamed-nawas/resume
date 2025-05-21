@@ -1,4 +1,5 @@
 @use "../shared/media-queries" as screens;
+@use "../base/animations" as animations;
 
 .swiper {
     &-slide { width: auto; height: auto !important; /* display: flex !important; */ }
@@ -14,4 +15,25 @@
     }
     &-button-prev { margin-right: clamp(12px, 0.83vw, 16px); }
     &-items-wrapper { @include screens.max-md { display: flex; justify-content: center; }}
+}
+
+.works-swiper {
+    opacity: 0;
+    -webkit-animation: #{animations.fade-in-up-works-items-container-animation()};
+    -moz-animation: #{animations.fade-in-up-works-items-container-animation()};
+    -ms-animation: #{animations.fade-in-up-works-items-container-animation()};
+    animation: #{animations.fade-in-up-works-items-container-animation()};
+    @include screens.max-tb {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        transform: none;
+        transition: opacity 1s ease-out;
+        transition-delay: 5.85s;
+        &.is-visible { opacity: 1; }
+    }
 }

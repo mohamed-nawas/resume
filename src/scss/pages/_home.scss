@@ -208,11 +208,21 @@
                 margin-bottom: clamp(2px, 0.5vw, 6px);
                 font-weight: 600;
                 color: var(--color-grey-20);
+                opacity: 0;
+                -webkit-animation: #{animations.fade-in-up-skills-heading-animation()};
+                -moz-animation: #{animations.fade-in-up-skills-heading-animation()};
+                -ms-animation: #{animations.fade-in-up-skills-heading-animation()};
+                animation: #{animations.fade-in-up-skills-heading-animation()};
             }
 
             &__slug {
                 font-weight: 400;
                 color: var(--color-grey-30);
+                opacity: 0;
+                -webkit-animation: #{animations.fade-in-up-skills-slug-animation()};
+                -moz-animation: #{animations.fade-in-up-skills-slug-animation()};
+                -ms-animation: #{animations.fade-in-up-skills-slug-animation()};
+                animation: #{animations.fade-in-up-skills-slug-animation()};
             }
         }
 
@@ -231,6 +241,48 @@
                 align-items: center;
                 text-align: center;
                 flex: 0 0 100%;
+                &:nth-child(1) {
+                    opacity: 0;
+                    -webkit-animation: #{animations.fade-in-up-skills-card-1-animation()};
+                    -moz-animation: #{animations.fade-in-up-skills-card-1-animation()};
+                    -ms-animation: #{animations.fade-in-up-skills-card-1-animation()};
+                    animation: #{animations.fade-in-up-skills-card-1-animation()};
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                    -webkit-animation: #{animations.fade-in-up-skills-card-2-animation()};
+                    -moz-animation: #{animations.fade-in-up-skills-card-2-animation()};
+                    -ms-animation: #{animations.fade-in-up-skills-card-2-animation()};
+                    animation: #{animations.fade-in-up-skills-card-2-animation()};
+                }
+                &:nth-child(3) {
+                    opacity: 0;
+                    -webkit-animation: #{animations.fade-in-up-skills-card-3-animation()};
+                    -moz-animation: #{animations.fade-in-up-skills-card-3-animation()};
+                    -ms-animation: #{animations.fade-in-up-skills-card-3-animation()};
+                    animation: #{animations.fade-in-up-skills-card-3-animation()};
+                }
+                &:nth-child(4) {
+                    opacity: 0;
+                    -webkit-animation: #{animations.fade-in-up-skills-card-4-animation()};
+                    -moz-animation: #{animations.fade-in-up-skills-card-4-animation()};
+                    -ms-animation: #{animations.fade-in-up-skills-card-4-animation()};
+                    animation: #{animations.fade-in-up-skills-card-4-animation()};
+                }
+                &:nth-child(5) {
+                    opacity: 0;
+                    -webkit-animation: #{animations.fade-in-up-skills-card-5-animation()};
+                    -moz-animation: #{animations.fade-in-up-skills-card-5-animation()};
+                    -ms-animation: #{animations.fade-in-up-skills-card-5-animation()};
+                    animation: #{animations.fade-in-up-skills-card-5-animation()};
+                }
+                &:nth-child(6) {
+                    opacity: 0;
+                    -webkit-animation: #{animations.fade-in-up-skills-card-6-animation()};
+                    -moz-animation: #{animations.fade-in-up-skills-card-6-animation()};
+                    -ms-animation: #{animations.fade-in-up-skills-card-6-animation()};
+                    animation: #{animations.fade-in-up-skills-card-6-animation()};
+                }
 
                 @include screens.min-md {
                     flex: 0 0 calc((100% - (clamp(20px, 5vw, 30px) * 2)) / 3);
@@ -281,11 +333,21 @@
                 margin-bottom: clamp(2px, 0.5vw, 6px);
                 font-weight: 600;
                 color: var(--color-grey-20);
+                opacity: 0;
+                -webkit-animation: #{animations.fade-in-up-benefits-heading-animation()};
+                -moz-animation: #{animations.fade-in-up-benefits-heading-animation()};
+                -ms-animation: #{animations.fade-in-up-benefits-heading-animation()};
+                animation: #{animations.fade-in-up-benefits-heading-animation()};
             }
 
             &__slug {
                 font-weight: 400;
                 color: var(--color-grey-30);
+                opacity: 0;
+                -webkit-animation: #{animations.fade-in-up-benefits-slug-animation()};
+                -moz-animation: #{animations.fade-in-up-benefits-slug-animation()};
+                -ms-animation: #{animations.fade-in-up-benefits-slug-animation()};
+                animation: #{animations.fade-in-up-benefits-slug-animation()};
             }
         }
 
@@ -302,6 +364,41 @@
                 flex-direction: column;
                 gap: clamp(24px, 6vw, 30px);
                 flex: 0 0 100%;
+                &:nth-child(1) {
+                    opacity: 0;
+                    -webkit-animation: #{animations.fade-in-up-benefits-card-1-animation()};
+                    -moz-animation: #{animations.fade-in-up-benefits-card-1-animation()};
+                    -ms-animation: #{animations.fade-in-up-benefits-card-1-animation()};
+                    animation: #{animations.fade-in-up-benefits-card-1-animation()};
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                    -webkit-animation: #{animations.fade-in-up-benefits-card-2-animation()};
+                    -moz-animation: #{animations.fade-in-up-benefits-card-2-animation()};
+                    -ms-animation: #{animations.fade-in-up-benefits-card-2-animation()};
+                    animation: #{animations.fade-in-up-benefits-card-2-animation()};
+                }
+                &:nth-child(3) {
+                    opacity: 0;
+                    -webkit-animation: #{animations.fade-in-up-benefits-card-3-animation()};
+                    -moz-animation: #{animations.fade-in-up-benefits-card-3-animation()};
+                    -ms-animation: #{animations.fade-in-up-benefits-card-3-animation()};
+                    animation: #{animations.fade-in-up-benefits-card-3-animation()};
+                }
+                &:nth-child(4) {
+                    opacity: 0;
+                    -webkit-animation: #{animations.fade-in-up-benefits-card-4-animation()};
+                    -moz-animation: #{animations.fade-in-up-benefits-card-4-animation()};
+                    -ms-animation: #{animations.fade-in-up-benefits-card-4-animation()};
+                    animation: #{animations.fade-in-up-benefits-card-4-animation()};
+                }
+                &:nth-child(5) {
+                    opacity: 0;
+                    -webkit-animation: #{animations.fade-in-up-benefits-card-5-animation()};
+                    -moz-animation: #{animations.fade-in-up-benefits-card-5-animation()};
+                    -ms-animation: #{animations.fade-in-up-benefits-card-5-animation()};
+                    animation: #{animations.fade-in-up-benefits-card-5-animation()};
+                }
 
                 @include screens.min-md {
                     flex: 1 0 calc((100% - (clamp(20px, 5vw, 30px) * 2)) / 3);

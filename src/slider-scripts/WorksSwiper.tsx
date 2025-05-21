@@ -47,9 +47,26 @@ export default function WorksSwiper({ children }: { children: React.ReactNode })
 
         const resizeHandler = () => swiperInstance.update();
         window.addEventListener('resize', resizeHandler);
+
+        const currentSwiperElement = swiperRef.current;
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5,
+        });
+        observer.observe(currentSwiperElement);
+
         return () => {
             window.removeEventListener('resize', resizeHandler);
             swiperInstance.destroy(true, true);
+            if (currentSwiperElement) observer.unobserve(currentSwiperElement);
         };
     }, []);
 
