@@ -6,6 +6,7 @@ import Works from "./components/works";
 import { items as projects } from "./data/professional-projects";
 import { items as articles } from "./data/personal-projects";
 import shuffleArray from "./utils/array-shuffle";
+import { useCounterUp } from "./hooks/useCounterUp";
 
 function Home() {
   const works = shuffleArray([...projects, ...articles]);
@@ -48,15 +49,15 @@ function Home() {
               </div>
               <div className="rss-home__details-section__content-container__status-container">
                 <div className="rss-home__details-section__content-container__status-container__item-container rss-home__details-section__content-container__status-container__item-container-full">
-                  <h6 className="rss-home__details-section__content-container__status-container__item-container__count">25<span className="rss-home__details-section__content-container__status-container__item-container__count-sy">+</span></h6>
+                  <h6 className="rss-home__details-section__content-container__status-container__item-container__count">{useCounterUp(25, 2100)}<span className="rss-home__details-section__content-container__status-container__item-container__count-sy">+</span></h6>
                   <p className="rss-home__details-section__content-container__status-container__item-container__text font-14-18">Completed Projects</p>
                 </div>
                 <div className="rss-home__details-section__content-container__status-container__item-container">
-                  <h6 className="rss-home__details-section__content-container__status-container__item-container__count">10<span className="rss-home__details-section__content-container__status-container__item-container__count-sy">+</span></h6>
+                  <h6 className="rss-home__details-section__content-container__status-container__item-container__count">{useCounterUp(10, 2150)}<span className="rss-home__details-section__content-container__status-container__item-container__count-sy">+</span></h6>
                   <p className="rss-home__details-section__content-container__status-container__item-container__text font-14-18">Happy Customers</p>
                 </div>
                 <div className="rss-home__details-section__content-container__status-container__item-container">
-                  <h6 className="rss-home__details-section__content-container__status-container__item-container__count">04<span className="rss-home__details-section__content-container__status-container__item-container__count-sy">+</span></h6>
+                  <h6 className="rss-home__details-section__content-container__status-container__item-container__count">{useCounterUp(4, 2200)}<span className="rss-home__details-section__content-container__status-container__item-container__count-sy">+</span></h6>
                   <p className="rss-home__details-section__content-container__status-container__item-container__text font-14-18">Years of Experience</p>
                 </div>
               </div>
