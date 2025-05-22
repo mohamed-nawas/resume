@@ -262,31 +262,19 @@
 .rss-works__home {
     &__title {
         opacity: 0;
-        -webkit-animation: #{animations.fade-in-up-works-heading-animation()};
-        -moz-animation: #{animations.fade-in-up-works-heading-animation()};
-        -ms-animation: #{animations.fade-in-up-works-heading-animation()};
-        animation: #{animations.fade-in-up-works-heading-animation()};
+        animation: #{animations.fade-in-up-20-animation(0.8s, 5.45s)};
     }
     &__slug {
         opacity: 0;
-        -webkit-animation: #{animations.fade-in-up-works-slug-animation()};
-        -moz-animation: #{animations.fade-in-up-works-slug-animation()};
-        -ms-animation: #{animations.fade-in-up-works-slug-animation()};
-        animation: #{animations.fade-in-up-works-slug-animation()};
+        animation: #{animations.fade-in-up-15-animation(0.9s, 5.65s)};
     }
     &__arrows-container {
         opacity: 0;
-        -webkit-animation: #{animations.fade-in-up-works-arrows-container-animation()};
-        -moz-animation: #{animations.fade-in-up-works-arrows-container-animation()};
-        -ms-animation: #{animations.fade-in-up-works-arrows-container-animation()};
-        animation: #{animations.fade-in-up-works-arrows-container-animation()};
+        animation: #{animations.fade-in-up-20-scale-95-animation(0.5s, 6.05s)};
     }
     &__view-btn {
         opacity: 0;
-        -webkit-animation: #{animations.fade-in-up-works-btn-animation()};
-        -moz-animation: #{animations.fade-in-up-works-btn-animation()};
-        -ms-animation: #{animations.fade-in-up-works-btn-animation()};
-        animation: #{animations.fade-in-up-works-btn-animation()};
+        animation: #{animations.fade-in-up-20-scale-95-animation(0.3s, 6.05s)};
     }
 }
 
