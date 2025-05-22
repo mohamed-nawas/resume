@@ -145,7 +145,7 @@ function Contact() {
                         </div>
                     </div>
 
-                    <FAQ baseClassName='' title="Frequently Asked Questions" slug="Here are answers to some common questions" containerHelpIconPath="icons/star-ico.png" containerHelpIconAlt="Star Icon" containerHelpTextTitle="Still have any Questions ?" containerHelpTextSlug="Let's collaborate to create an exceptional website that sets you apart from the competition. Contact me today to discuss your web design needs and bring your digital vision to life!" containerHelpBtnValue="Contact Me" />
+                    <FAQ baseClassName='rss-faq__contact' title="Frequently Asked Questions" slug="Here are answers to some common questions" containerHelpIconPath="icons/star-ico.png" containerHelpIconAlt="Star Icon" containerHelpTextTitle="Still have any Questions ?" containerHelpTextSlug="Let's collaborate to create an exceptional website that sets you apart from the competition. Contact me today to discuss your web design needs and bring your digital vision to life!" containerHelpBtnValue="Contact Me" />
 
                 </div>
             </section>
