@@ -383,6 +383,70 @@
     0% { opacity: 0; transform: translateY(20px) scale(0.95); }
     100% { opacity: 1; transform: none; }
 }
+@-webkit-keyframes fade-in-up-faq-heading {
+    0% { opacity: 0; -webkit-transform: translateY(20px); transform: translateY(20px); }
+    100% { opacity: 1; -webkit-transform: none; transform: none; }
+}
+@-moz-keyframes fade-in-up-faq-heading {
+    0% { opacity: 0; -moz-transform: translateY(20px); transform: translateY(20px); }
+    100% { opacity: 1; -moz-transform: none; transform: none; }
+}
+@-ms-keyframes fade-in-up-faq-heading {
+    0% { opacity: 0; -ms-transform: translateY(20px); transform: translateY(20px); }
+    100% { opacity: 1; -ms-transform: none; transform: none; }
+}
+@keyframes fade-in-up-faq-heading {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: none; }
+}
+@-webkit-keyframes fade-in-up-faq-slug {
+    0% { opacity: 0; -webkit-transform: translateY(15px); transform: translateY(15px); }
+    100% { opacity: 1; -webkit-transform: none; transform: none; }
+}
+@-moz-keyframes fade-in-up-faq-slug {
+    0% { opacity: 0; -moz-transform: translateY(15px); transform: translateY(15px); }
+    100% { opacity: 1; -moz-transform: none; transform: none; }
+}
+@-ms-keyframes fade-in-up-faq-slug {
+    0% { opacity: 0; -ms-transform: translateY(15px); transform: translateY(15px); }
+    100% { opacity: 1; -ms-transform: none; transform: none; }
+}
+@keyframes fade-in-up-faq-slug {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: none; }
+}
+@-webkit-keyframes fade-in-up-faq-item-container {
+    0% { opacity: 0; -webkit-transform: translateY(30px) scale(0.98); transform: translateY(30px) scale(0.98); }
+    100% { opacity: 1; -webkit-transform: none; transform: none; }
+}
+@-moz-keyframes fade-in-up-faq-item-container {
+    0% { opacity: 0; -moz-transform: translateY(30px) scale(0.98); transform: translateY(30px) scale(0.98); }
+    100% { opacity: 1; -moz-transform: none; transform: none; }
+}
+@-ms-keyframes fade-in-up-faq-item-container {
+    0% { opacity: 0; -ms-transform: translateY(30px) scale(0.98); transform: translateY(30px) scale(0.98); }
+    100% { opacity: 1; -ms-transform: none; transform: none; }
+}
+@keyframes fade-in-up-faq-item-container {
+    0% { opacity: 0; transform: translateY(30px) scale(0.98); }
+    100% { opacity: 1; transform: none; }
+}
+@-webkit-keyframes fade-in-up-faq-help-item-container {
+    0% { opacity: 0; -webkit-transform: translateY(30px) scale(0.98); transform: translateY(30px) scale(0.98); }
+    100% { opacity: 1; -webkit-transform: none; transform: none; }
+}
+@-moz-keyframes fade-in-up-faq-help-item-container {
+    0% { opacity: 0; -moz-transform: translateY(30px) scale(0.98); transform: translateY(30px) scale(0.98); }
+    100% { opacity: 1; -moz-transform: none; transform: none; }
+}
+@-ms-keyframes fade-in-up-faq-help-item-container {
+    0% { opacity: 0; -ms-transform: translateY(30px) scale(0.98); transform: translateY(30px) scale(0.98); }
+    100% { opacity: 1; -ms-transform: none; transform: none; }
+}
+@keyframes fade-in-up-faq-help-item-container {
+    0% { opacity: 0; transform: translateY(30px) scale(0.98); }
+    100% { opacity: 1; transform: none; }
+}
 
 
 
@@ -434,3 +498,16 @@
 @function fade-in-up-review-hr-line-animation($duration: 0.5s, $delay: 6.85s) { @return fade-in-up-review-count #{$duration} #{$delay} cubic-bezier(0, 0.5, 0, 1) forwards }
 @function fade-in-up-review-items-container-animation($duration: 0.7s, $delay: 7.05s) { @return fade-in-up-review-items-container #{$duration} #{$delay} cubic-bezier(0, 0.5, 0, 1) forwards }
 @function fade-in-up-review-arrows-container-animation($duration: 0.5s, $delay: 7.25s) { @return fade-in-up-review-arrows-container #{$duration} #{$delay} cubic-bezier(0, 0.5, 0, 1) forwards }
+@function fade-in-up-faq-heading-animation($duration: 0.8s, $delay: 7.65s) { @return fade-in-up-faq-heading #{$duration} #{$delay} cubic-bezier(0, 0.5, 0, 1) forwards }
+@function fade-in-up-faq-slug-animation($duration: 0.9s, $delay: 7.85s) { @return fade-in-up-faq-slug #{$duration} #{$delay} cubic-bezier(0, 0.5, 0, 1) forwards }
+@function fade-in-up-faq-container-animation($duration: 0.7s, $delay: 8.05s) { @return fade-in-up-faq-item-container #{$duration} #{$delay} cubic-bezier(0, 0.5, 0, 1) forwards }
+@function fade-in-up-faq-item-container-1-animation($duration: 0.7s, $delay: 8.05s) { @return fade-in-up-faq-item-container #{$duration} #{$delay} cubic-bezier(0, 0.5, 0, 1) forwards }
+@function fade-in-up-faq-item-container-2-animation($duration: 0.7s, $delay: 8.2s) { @return fade-in-up-faq-item-container #{$duration} #{$delay} cubic-bezier(0, 0.5, 0, 1) forwards }
+@function fade-in-up-faq-item-container-3-animation($duration: 0.7s, $delay: 8.35s) { @return fade-in-up-faq-item-container #{$duration} #{$delay} cubic-bezier(0, 0.5, 0, 1) forwards }
+@function fade-in-up-faq-item-container-4-animation($duration: 0.7s, $delay: 8.5s) { @return fade-in-up-faq-item-container #{$duration} #{$delay} cubic-bezier(0, 0.5, 0, 1) forwards }
+@function fade-in-up-faq-item-container-5-animation($duration: 0.7s, $delay: 8.65s) { @return fade-in-up-faq-item-container #{$duration} #{$delay} cubic-bezier(0, 0.5, 0, 1) forwards }
+@function fade-in-up-faq-help-container-animation($duration: 0.7s, $delay: 9.05s) { @return fade-in-up-faq-help-item-container #{$duration} #{$delay} cubic-bezier(0, 0.5, 0, 1) forwards }
+@function fade-in-up-faq-help-item-1-animation($duration: 0.7s, $delay: 9.05s) { @return fade-in-up-faq-help-item-container #{$duration} #{$delay} cubic-bezier(0, 0.5, 0, 1) forwards }
+@function fade-in-up-faq-help-item-2-animation($duration: 0.7s, $delay: 9.05s) { @return fade-in-up-faq-help-item-container #{$duration} #{$delay} cubic-bezier(0, 0.5, 0, 1) forwards }
+@function fade-in-up-faq-help-item-3-animation($duration: 0.7s, $delay: 9.2s) { @return fade-in-up-faq-help-item-container #{$duration} #{$delay} cubic-bezier(0, 0.5, 0, 1) forwards }
+@function fade-in-up-faq-help-item-4-animation($duration: 0.7s, $delay: 9.35s) { @return fade-in-up-faq-help-item-container #{$duration} #{$delay} cubic-bezier(0, 0.5, 0, 1) forwards }

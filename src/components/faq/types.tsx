@@ -1,4 +1,5 @@
 interface FAQProps {
+    baseClassName: string;
     title: string;
     slug: string;
     containerHelpIconPath: string;
@@ -10,6 +11,7 @@ interface FAQProps {
 
 interface FAQUIProps {
     containerRef: React.RefObject<HTMLDivElement>;
+    baseClassName: string;
     title: string;
     slug: string;
     containerHelpIconPath: string;
