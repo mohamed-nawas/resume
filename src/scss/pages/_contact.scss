@@ -1,4 +1,5 @@
 @use "../shared/media-queries" as screens;
+@use "../base/animations" as animations;
 
 .rss-contact {
     background-color: var(--color-peach-92);
@@ -23,6 +24,8 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 16px;
+            opacity: 0;
+            animation: #{animations.fade-in-left-300-scale-98-animation(1s, 2.1s)};
 
             &__input {
                 background-color: var(--color-peach-95);
@@ -106,6 +109,8 @@
             flex-direction: column;
             align-items: center;
             gap: 30px;
+            opacity: 0;
+            animation: #{animations.fade-in-right-300-scale-98-animation(1s, 2.1s)};
 
             &__contents {
                 display: flex;

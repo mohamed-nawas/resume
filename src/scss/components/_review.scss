@@ -11,10 +11,7 @@
         color: var(--color-grey-20);
         margin-bottom: clamp(2px, 0.5vw, 6px);
         opacity: 0;
-        -webkit-animation: #{animations.fade-in-up-review-heading-animation()};
-        -moz-animation: #{animations.fade-in-up-review-heading-animation()};
-        -ms-animation: #{animations.fade-in-up-review-heading-animation()};
-        animation: #{animations.fade-in-up-review-heading-animation()};
+        animation: #{animations.fade-in-up-20-animation(0.8s, 6.45s)};
     }
 
     &__slug {
@@ -22,19 +19,13 @@
         color: var(--color-grey-30);
         margin-bottom: clamp(40px, 10vw, 80px);
         opacity: 0;
-        -webkit-animation: #{animations.fade-in-up-review-slug-animation()};
-        -moz-animation: #{animations.fade-in-up-review-slug-animation()};
-        -ms-animation: #{animations.fade-in-up-review-slug-animation()};
-        animation: #{animations.fade-in-up-review-slug-animation()};
+        animation: #{animations.fade-in-up-15-animation(0.9s, 6.65s)};
     }
 
     &__total-container {
         margin-bottom: clamp(20px, 5vw, 30px);
         opacity: 0;
-        -webkit-animation: #{animations.fade-in-up-review-count-animation()};
-        -moz-animation: #{animations.fade-in-up-review-count-animation()};
-        -ms-animation: #{animations.fade-in-up-review-count-animation()};
-        animation: #{animations.fade-in-up-review-count-animation()};
+        animation: #{animations.fade-in-up-30-animation(0.5s, 6.85s)};
 
         @include screens.min-md {
             display: flex;
@@ -49,10 +40,7 @@
         &__arrow-container {
             display: none;
             opacity: 0;
-            -webkit-animation: #{animations.fade-in-up-review-arrow-container-animation()};
-            -moz-animation: #{animations.fade-in-up-review-arrow-container-animation()};
-            -ms-animation: #{animations.fade-in-up-review-arrow-container-animation()};
-            animation: #{animations.fade-in-up-review-arrow-container-animation()};
+            animation: #{animations.fade-in-up-30-animation(0.5s, 6.85s)};
 
             @include screens.min-md {
                 display: flex;
@@ -99,10 +87,7 @@
         height: 1px;
         background-color: var(--color-peach-85);
         opacity: 0;
-        -webkit-animation: #{animations.fade-in-up-review-hr-line-animation()};
-        -moz-animation: #{animations.fade-in-up-review-hr-line-animation()};
-        -ms-animation: #{animations.fade-in-up-review-hr-line-animation()};
-        animation: #{animations.fade-in-up-review-hr-line-animation()};
+        animation: #{animations.fade-in-up-30-animation(0.5s, 6.85s)};
     }
 
     &__review-items-container {
@@ -195,10 +180,7 @@
         gap: 70px;
         align-items: center;
         opacity: 0;
-        -webkit-animation: #{animations.fade-in-up-review-arrows-container-animation()};
-        -moz-animation: #{animations.fade-in-up-review-arrows-container-animation()};
-        -ms-animation: #{animations.fade-in-up-review-arrows-container-animation()};
-        animation: #{animations.fade-in-up-review-arrows-container-animation()};
+        animation: #{animations.fade-in-up-20-scale-95-animation(0.5s, 7.25s)};
 
         @include screens.min-md {
             display: none;

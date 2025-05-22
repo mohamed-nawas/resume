@@ -1,5 +1,6 @@
 import Footer from "../../components/footer";
 import Header from "../../components/header";
+import { useCounterUp } from "../../hooks/useCounterUp";
 
 function About() {
     return (
@@ -17,17 +18,17 @@ function About() {
                             <p className="rss-about__details-section__content-container__content font-14-18">A versatile web developer passionate about building efficient, scalable, and high-quality web applications. With a strong foundation in both front-end and back-end technologies, I am committed to delivering robust solutions tailored to meet specific needs. I thrive on solving complex challenges and collaborating effectively to bring digital visions to life</p>
                             <div className="rss-about__details-section__content-container__status-container">
                                 <div className="rss-about__details-section__content-container__status-container__item-container">
-                                    <h6 className="rss-about__details-section__content-container__status-container__item-container__count">25<span className="rss-about__details-section__content-container__status-container__item-container__count-sy">+</span></h6>
+                                    <h6 className="rss-about__details-section__content-container__status-container__item-container__count">{useCounterUp(25, 2000)}<span className="rss-about__details-section__content-container__status-container__item-container__count-sy">+</span></h6>
                                     <p className="rss-about__details-section__content-container__status-container__item-container__text font-14-18">Completed Projects</p>
                                 </div>
                                 <div className="rss-about__details-section__content-container__status-container__hr-line" />
                                 <div className="rss-about__details-section__content-container__status-container__item-container">
-                                    <h6 className="rss-about__details-section__content-container__status-container__item-container__count">10<span className="rss-about__details-section__content-container__status-container__item-container__count-sy">+</span></h6>
+                                    <h6 className="rss-about__details-section__content-container__status-container__item-container__count">{useCounterUp(10, 2150)}<span className="rss-about__details-section__content-container__status-container__item-container__count-sy">+</span></h6>
                                     <p className="rss-about__details-section__content-container__status-container__item-container__text font-14-18">Happy Customers</p>
                                 </div>
                                 <div className="rss-about__details-section__content-container__status-container__hr-line" />
                                 <div className="rss-about__details-section__content-container__status-container__item-container">
-                                    <h6 className="rss-about__details-section__content-container__status-container__item-container__count">04<span className="rss-about__details-section__content-container__status-container__item-container__count-sy">+</span></h6>
+                                    <h6 className="rss-about__details-section__content-container__status-container__item-container__count">{useCounterUp(4, 2300)}<span className="rss-about__details-section__content-container__status-container__item-container__count-sy">+</span></h6>
                                     <p className="rss-about__details-section__content-container__status-container__item-container__text font-14-18">Years of Experience</p>
                                 </div>
                             </div>

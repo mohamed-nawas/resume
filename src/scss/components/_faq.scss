@@ -140,97 +140,119 @@
 .rss-faq__home {
     &__title {
         opacity: 0;
-        -webkit-animation: #{animations.fade-in-up-faq-heading-animation()};
-        -moz-animation: #{animations.fade-in-up-faq-heading-animation()};
-        -ms-animation: #{animations.fade-in-up-faq-heading-animation()};
-        animation: #{animations.fade-in-up-faq-heading-animation()};
+        animation: #{animations.fade-in-up-20-animation(0.8s, 7.65s)};
     }
     &__slug {
         opacity: 0;
-        -webkit-animation: #{animations.fade-in-up-faq-slug-animation()};
-        -moz-animation: #{animations.fade-in-up-faq-slug-animation()};
-        -ms-animation: #{animations.fade-in-up-faq-slug-animation()};
-        animation: #{animations.fade-in-up-faq-slug-animation()};
+        animation: #{animations.fade-in-up-15-animation(0.9s, 7.85s)};
     }
     &__container {
         &__faq-container {
             opacity: 0;
-            -webkit-animation: #{animations.fade-in-up-faq-container-animation()};
-            -moz-animation: #{animations.fade-in-up-faq-container-animation()};
-            -ms-animation: #{animations.fade-in-up-faq-container-animation()};
-            animation: #{animations.fade-in-up-faq-container-animation()};
+            animation: #{animations.fade-in-right-300-scale-98-animation(0.7s, 8.05s)};
             &>* {
                 &:nth-child(1) {
                     opacity: 0;
-                    -webkit-animation: #{animations.fade-in-up-faq-item-container-1-animation()};
-                    -moz-animation: #{animations.fade-in-up-faq-item-container-1-animation()};
-                    -ms-animation: #{animations.fade-in-up-faq-item-container-1-animation()};
-                    animation: #{animations.fade-in-up-faq-item-container-1-animation()};
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 8.05s)};
                 }
                 &:nth-child(2) {
                     opacity: 0;
-                    -webkit-animation: #{animations.fade-in-up-faq-item-container-2-animation()};
-                    -moz-animation: #{animations.fade-in-up-faq-item-container-2-animation()};
-                    -ms-animation: #{animations.fade-in-up-faq-item-container-2-animation()};
-                    animation: #{animations.fade-in-up-faq-item-container-2-animation()};
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 8.2s)};
                 }
                 &:nth-child(3) {
                     opacity: 0;
-                    -webkit-animation: #{animations.fade-in-up-faq-item-container-3-animation()};
-                    -moz-animation: #{animations.fade-in-up-faq-item-container-3-animation()};
-                    -ms-animation: #{animations.fade-in-up-faq-item-container-3-animation()};
-                    animation: #{animations.fade-in-up-faq-item-container-3-animation()};
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 8.35s)};
                 }
                 &:nth-child(4) {
                     opacity: 0;
-                    -webkit-animation: #{animations.fade-in-up-faq-item-container-4-animation()};
-                    -moz-animation: #{animations.fade-in-up-faq-item-container-4-animation()};
-                    -ms-animation: #{animations.fade-in-up-faq-item-container-4-animation()};
-                    animation: #{animations.fade-in-up-faq-item-container-4-animation()};
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 8.5s)};
                 }
                 &:nth-child(5) {
                     opacity: 0;
-                    -webkit-animation: #{animations.fade-in-up-faq-item-container-5-animation()};
-                    -moz-animation: #{animations.fade-in-up-faq-item-container-5-animation()};
-                    -ms-animation: #{animations.fade-in-up-faq-item-container-5-animation()};
-                    animation: #{animations.fade-in-up-faq-item-container-5-animation()};
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 8.65s)};
                 }
             }
         }
         &__help-container {
             opacity: 0;
-            -webkit-animation: #{animations.fade-in-up-faq-help-container-animation()};
-            -moz-animation: #{animations.fade-in-up-faq-help-container-animation()};
-            -ms-animation: #{animations.fade-in-up-faq-help-container-animation()};
-            animation: #{animations.fade-in-up-faq-help-container-animation()};
+            animation: #{animations.fade-in-left-300-scale-98-animation(0.7s, 8.05s)};
             &>* {
                 &:nth-child(1) {
                     opacity: 0;
-                    -webkit-animation: #{animations.fade-in-up-faq-help-item-1-animation()};
-                    -moz-animation: #{animations.fade-in-up-faq-help-item-1-animation()};
-                    -ms-animation: #{animations.fade-in-up-faq-help-item-1-animation()};
-                    animation: #{animations.fade-in-up-faq-help-item-1-animation()};
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 8.05s)};
                 }
                 &:nth-child(2) {
                     opacity: 0;
-                    -webkit-animation: #{animations.fade-in-up-faq-help-item-2-animation()};
-                    -moz-animation: #{animations.fade-in-up-faq-help-item-2-animation()};
-                    -ms-animation: #{animations.fade-in-up-faq-help-item-2-animation()};
-                    animation: #{animations.fade-in-up-faq-help-item-2-animation()};
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 8.05s)};
                 }
                 &:nth-child(3) {
                     opacity: 0;
-                    -webkit-animation: #{animations.fade-in-up-faq-help-item-3-animation()};
-                    -moz-animation: #{animations.fade-in-up-faq-help-item-3-animation()};
-                    -ms-animation: #{animations.fade-in-up-faq-help-item-3-animation()};
-                    animation: #{animations.fade-in-up-faq-help-item-3-animation()};
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 8.2s)};
                 }
                 &:nth-child(4) {
                     opacity: 0;
-                    -webkit-animation: #{animations.fade-in-up-faq-help-item-4-animation()};
-                    -moz-animation: #{animations.fade-in-up-faq-help-item-4-animation()};
-                    -ms-animation: #{animations.fade-in-up-faq-help-item-4-animation()};
-                    animation: #{animations.fade-in-up-faq-help-item-4-animation()};
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 8.35s)};
+                }
+            }
+        }
+    }
+}
+
+.rss-faq__contact {
+    &__title {
+        opacity: 0;
+        animation: #{animations.fade-in-up-20-animation(0.8s, 2.5s)};
+    }
+    &__slug {
+        opacity: 0;
+        animation: #{animations.fade-in-up-15-animation(0.9s, 2.7s)};
+    }
+    &__container {
+        &__faq-container {
+            opacity: 0;
+            animation: #{animations.fade-in-right-300-scale-98-animation(0.7s, 2.9s)};
+            &>* {
+                &:nth-child(1) {
+                    opacity: 0;
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 2.9s)};
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 3.05s)};
+                }
+                &:nth-child(3) {
+                    opacity: 0;
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 3.2s)};
+                }
+                &:nth-child(4) {
+                    opacity: 0;
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 3.35s)};
+                }
+                &:nth-child(5) {
+                    opacity: 0;
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 3.5s)};
+                }
+            }
+        }
+        &__help-container {
+            opacity: 0;
+            animation: #{animations.fade-in-left-300-scale-98-animation(0.7s, 2.9s)};
+            &>* {
+                &:nth-child(1) {
+                    opacity: 0;
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 2.9s)};
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 2.9s)};
+                }
+                &:nth-child(3) {
+                    opacity: 0;
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 3.05s)};
+                }
+                &:nth-child(4) {
+                    opacity: 0;
+                    animation: #{animations.fade-in-up-30-scale-98-animation(0.7s, 3.2s)};
                 }
             }
         }
