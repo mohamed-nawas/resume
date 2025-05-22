@@ -1,4 +1,5 @@
 @use "../shared/media-queries" as screens;
+@use "../base/animations" as animations;
 
 .rss-banner {
     background-color: var(--color-peach-96);
@@ -9,11 +10,15 @@
     align-items: center;
     text-align: center;
     gap: clamp(30px, 7.5vw, 40px);
+    opacity: 0;
+    animation: #{animations.fade-in-up-30-scale-95-animation(1s, 0.8s)};
 
     &__ico {
         width: clamp(52px, 4%, 66px);
         aspect-ratio: 1;
         border-radius: 6px;
+        opacity: 0;
+        animation: #{animations.fade-in-up-30-animation(0.8s, 0.95s)};
     }
 
     &__content {
@@ -21,11 +26,15 @@
             color: var(--color-grey-20);
             font-weight: 600;
             margin-bottom: clamp(4px, 1vw, 8px);
+            opacity: 0;
+            animation: #{animations.fade-in-up-30-animation(0.8s, 1.1s)};
         }
-
+        
         &__slug {
             color: var(--color-grey-30);
             font-weight: 400;
+            opacity: 0;
+            animation: #{animations.fade-in-up-30-animation(0.9s, 1.25s)};
         }
     }
 
@@ -33,7 +42,7 @@
         width: 100%;
         display: flex;
         gap: clamp(14px, 3.5vw, 20px);
-
+        
         &__item {
             display: flex;
             border-radius: clamp(6px, 1.5vw, 8px);
@@ -43,6 +52,18 @@
             justify-content: center;
             align-items: center;
             gap: clamp(4px, 1vw, 6px);
+            &:nth-child(1) {
+                opacity: 0;
+                animation: #{animations.fade-in-up-30-scale-98-animation(1s, 1.4s)};
+            }
+            &:nth-child(2) {
+                opacity: 0;
+                animation: #{animations.fade-in-up-30-scale-98-animation(1s, 1.55s)};
+            }
+            &:nth-child(3) {
+                opacity: 0;
+                animation: #{animations.fade-in-up-30-scale-98-animation(1s, 1.7s)};
+            }
             @include screens.min-smd { flex: 1 0 calc((100% - clamp(14px, 3.5vw, 20px)) / 3); }
             @include screens.min-md { flex: 1 0 calc((100% - clamp(14px, 3.5vw, 20px) * 2) / 3); }
 
