@@ -1,14 +1,16 @@
 import * as React from 'react';
 import BlogsSwiper from '../../slider-scripts/BlogsSwiper';
+import shuffleArray from '../../utils/array-shuffle';
 
 const BlogsUI: React.FC<BlogsUIProps> = ({ containerRef, blogs }) => {
+    const shuffledBlogs = React.useMemo(() => shuffleArray(blogs), []);
     const isProd = process.env.NODE_ENV === 'production';
     return (
         <div ref={containerRef} className="rss-blogs">
             <h3 className="rss-blogs__title font-28-48">Blogs</h3>
             <BlogsSwiper>
                 <div className="swiper-wrapper rss-blogs__items-container">
-                    {blogs.map((item) => (
+                    {shuffledBlogs.map((item) => (
                         <a href={isProd ? `/resume/#/blog-detail?${item.id}` : `/blog-detail?${item.id}`} className="swiper-slide rss-blogs__items-container__item" key={item.id}>
                             <div className="rss-blogs__items-container__item__img-container">
                                 <img
