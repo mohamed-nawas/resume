@@ -7,6 +7,7 @@ import Portfolio from "../pages/portfolio";
 import Detail from "../pages/detail";
 import NotFound from '../pages/NotFound';
 import BlogDetail from '../pages/blog-detail';
+import ScrollToTop from '../components/ScrollToTop';
 
 
 const isProd = import.meta.env.PROD;
@@ -18,14 +19,17 @@ export default function Routes() {
     // HashRouter uses the hash portion of the URL (window.location.hash)
     // to keep the UI in sync with the URL
     return React.createElement(Router, {}, (
-        <Switch>
-            <Route exact path="/" component={App} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/projects" component={Portfolio} />
-            <Route exact path="/contact" component={Contact} />
-            <Route exact path="/detail" component={Detail} />
-            <Route exact path="/blog-detail" component={BlogDetail} />
-            <Route path="*" component={NotFound} />
-        </Switch>
+        <>
+            <ScrollToTop />
+            <Switch>
+                <Route exact path="/" component={App} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/projects" component={Portfolio} />
+                <Route exact path="/contact" component={Contact} />
+                <Route exact path="/detail" component={Detail} />
+                <Route exact path="/blog-detail" component={BlogDetail} />
+                <Route path="*" component={NotFound} />
+            </Switch>
+        </>
     ));
 }
