@@ -1,4 +1,6 @@
 interface WorksProps {
+    baseClassName: string;
+    swiperBaseClassName: string;
     title: string;
     slug: string;
     items: WorkItems[][];
@@ -6,6 +8,8 @@ interface WorksProps {
 
 interface WorksUIProps {
     containerRef: React.RefObject<HTMLDivElement>;
+    baseClassName: string;
+    swiperBaseClassName: string;
     title: string;
     slug: string;
     items: WorkItems[][];

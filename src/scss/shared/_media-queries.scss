@@ -39,20 +39,24 @@ $screen-lg: 1920px;
 }
 
 // Max media queries
-@mixin max-tb {
-    @media (max-width: #{$screen-tb - 1}) { @content; }
-}
-
-@mixin max-sm {
-    @media (max-width: #{$screen-sm - 1}) { @content; }
+@mixin max-md {
+    @media (max-width: #{$screen-md - 1}) { @content; }
 }
 
 @mixin max-smd2 {
     @media (max-width: #{$screen-smd2 - 1}) { @content; }
 }
 
-@mixin max-md {
-    @media (max-width: #{$screen-md - 1}) { @content; }
+@mixin max-smd {
+    @media (max-width: #{$screen-smd - 1}) { @content; }
+}
+
+@mixin max-tb {
+    @media (max-width: #{$screen-tb - 1}) { @content; }
+}
+
+@mixin max-sm {
+    @media (max-width: #{$screen-sm - 1}) { @content; }
 }
 
 /* Media query range - sm */
