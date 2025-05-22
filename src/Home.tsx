@@ -148,7 +148,7 @@ function Home() {
 
           <Review title="Recommendations" slug="Here's what some of my satisfied clients have to say about my work" count="3 Total Reviews" />
 
-          <FAQ title="Frequently Asked Questions" slug="Here are answers to some common questions" containerHelpBtnValue="Contact Me" containerHelpIconPath="icons/star-ico.png" containerHelpIconAlt="Star Icon" containerHelpTextTitle="Let's Discuss Your Project" containerHelpTextSlug="Have a web development project in mind? I'm eager to learn more and discuss how my skills can contribute to your success. Reach out to start the conversation!" />
+          <FAQ baseClassName='rss-faq__home' title="Frequently Asked Questions" slug="Here are answers to some common questions" containerHelpBtnValue="Contact Me" containerHelpIconPath="icons/star-ico.png" containerHelpIconAlt="Star Icon" containerHelpTextTitle="Let's Discuss Your Project" containerHelpTextSlug="Have a web development project in mind? I'm eager to learn more and discuss how my skills can contribute to your success. Reach out to start the conversation!" />
 
         </div>
       </section>
