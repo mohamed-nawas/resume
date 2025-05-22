@@ -1,4 +1,5 @@
 @use "../shared/media-queries" as screens;
+@use "../base/animations" as animations;
 
 .rss-review {
     margin-top: clamp(60px, 15vw, 150px);
@@ -9,16 +10,31 @@
         font-weight: 600;
         color: var(--color-grey-20);
         margin-bottom: clamp(2px, 0.5vw, 6px);
+        opacity: 0;
+        -webkit-animation: #{animations.fade-in-up-review-heading-animation()};
+        -moz-animation: #{animations.fade-in-up-review-heading-animation()};
+        -ms-animation: #{animations.fade-in-up-review-heading-animation()};
+        animation: #{animations.fade-in-up-review-heading-animation()};
     }
 
     &__slug {
         font-weight: 400;
         color: var(--color-grey-30);
         margin-bottom: clamp(40px, 10vw, 80px);
+        opacity: 0;
+        -webkit-animation: #{animations.fade-in-up-review-slug-animation()};
+        -moz-animation: #{animations.fade-in-up-review-slug-animation()};
+        -ms-animation: #{animations.fade-in-up-review-slug-animation()};
+        animation: #{animations.fade-in-up-review-slug-animation()};
     }
 
     &__total-container {
         margin-bottom: clamp(20px, 5vw, 30px);
+        opacity: 0;
+        -webkit-animation: #{animations.fade-in-up-review-count-animation()};
+        -moz-animation: #{animations.fade-in-up-review-count-animation()};
+        -ms-animation: #{animations.fade-in-up-review-count-animation()};
+        animation: #{animations.fade-in-up-review-count-animation()};
 
         @include screens.min-md {
             display: flex;
@@ -32,6 +48,11 @@
 
         &__arrow-container {
             display: none;
+            opacity: 0;
+            -webkit-animation: #{animations.fade-in-up-review-arrow-container-animation()};
+            -moz-animation: #{animations.fade-in-up-review-arrow-container-animation()};
+            -ms-animation: #{animations.fade-in-up-review-arrow-container-animation()};
+            animation: #{animations.fade-in-up-review-arrow-container-animation()};
 
             @include screens.min-md {
                 display: flex;
@@ -77,6 +98,11 @@
         width: 100%;
         height: 1px;
         background-color: var(--color-peach-85);
+        opacity: 0;
+        -webkit-animation: #{animations.fade-in-up-review-hr-line-animation()};
+        -moz-animation: #{animations.fade-in-up-review-hr-line-animation()};
+        -ms-animation: #{animations.fade-in-up-review-hr-line-animation()};
+        animation: #{animations.fade-in-up-review-hr-line-animation()};
     }
 
     &__review-items-container {
@@ -168,6 +194,11 @@
         justify-content: center;
         gap: 70px;
         align-items: center;
+        opacity: 0;
+        -webkit-animation: #{animations.fade-in-up-review-arrows-container-animation()};
+        -moz-animation: #{animations.fade-in-up-review-arrows-container-animation()};
+        -ms-animation: #{animations.fade-in-up-review-arrows-container-animation()};
+        animation: #{animations.fade-in-up-review-arrows-container-animation()};
 
         @include screens.min-md {
             display: none;

@@ -144,7 +144,7 @@ function Home() {
             </div>
           </div>
 
-          <Works title="Featured Works" slug="Here's are some of my featured works" items={[works]} />
+          <Works baseClassName='rss-works__home' swiperBaseClassName='rss-works__home__swiper' title="Featured Works" slug="Here's are some of my featured works" items={[works]} />
 
           <Review title="Recommendations" slug="Here's what some of my satisfied clients have to say about my work" count="3 Total Reviews" />
 

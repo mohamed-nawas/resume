@@ -3,7 +3,7 @@ import WorksSwiper from '../../slider-scripts/WorksSwiper';
 import shuffleArray from '../../utils/array-shuffle';
 import ImagePopupPortal from '../img-popup-portal';
 
-const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) => {
+const WorksUI: React.FC<WorksUIProps> = ({ containerRef, baseClassName, swiperBaseClassName, title, slug, items }) => {
     const works = [...items.flat()];
     const shuffledWorks = React.useMemo(() => shuffleArray(works), []);
     const isProd = process.env.NODE_ENV === 'production';
@@ -13,13 +13,13 @@ const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) =
 
     return (
 
-        <div ref={containerRef} className="rss-works">
+        <div ref={containerRef} className={`rss-works ${baseClassName}`}>
             {popupImg && <ImagePopupPortal src={popupImg} onClose={() => setPopupImg(null)} />}
 
-            <h3 className="rss-works__title font-28-48">{title}</h3>
-            <p className="rss-works__slug font-14-18">{slug}</p>
+            <h3 className={`rss-works__title ${baseClassName}__title font-28-48`}>{title}</h3>
+            <p className={`rss-works__slug ${baseClassName}__slug font-14-18`}>{slug}</p>
 
-            <WorksSwiper>
+            <WorksSwiper baseClassName={swiperBaseClassName}>
                 <div className="swiper-wrapper rss-works__items-container">
                     {shuffledWorks.map((item) => {
                         const activeImageSrc = activeImages[item.id] || (isProd ? `${basePath}/${item.mainImgPath}` : item.mainImgPath);
@@ -34,7 +34,11 @@ const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) =
                                     />
                                     <div
                                         className="rss-works__items-container__item__banner-image-container__expand-container"
-                                        onClick={() => setPopupImg(activeImageSrc)} // <- expands active image now
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            e.preventDefault();
+                                            setPopupImg(activeImageSrc)
+                                        }}
                                     >
                                         <div className="rss-works__items-container__item__banner-image-container__expand-container__arrow" />
                                     </div>
@@ -48,7 +52,9 @@ const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) =
                                                 <div
                                                 className={`rss-works__items-container__item__image-list-container__image${!isActive ? ' rss-works__items-container__item__image-list-container__image-inactive' : ''}`}
                                                     key={index}
-                                                    onClick={() => {
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        e.preventDefault();
                                                         setActiveImages((prev) => ({...prev, [item.id]: thumbnailSrc}));
                                                     }}
                                                 >
@@ -64,7 +70,7 @@ const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) =
                 </div>
             </WorksSwiper>
 
-            <div className="rss-works__arrows-container">
+            <div className={`rss-works__arrows-container ${baseClassName}__arrows-container`}>
                 <div className="rss-works__arrows-container__arrow rss-works__arrows-container__arrow-left works-swiper-button-prev swiper-button-prev"></div>
                 <div className="rss-works__arrows-container__line-container">
                     <div className="rss-works__arrows-container__line-container__item" />
@@ -74,7 +80,7 @@ const WorksUI: React.FC<WorksUIProps> = ({ containerRef, title, slug, items }) =
                 <div className="rss-works__arrows-container__arrow rss-works__arrows-container__arrow-right works-swiper-button-next swiper-button-next"></div>
             </div>
 
-            <div className="rss-works__view-btn">
+            <div className={`rss-works__view-btn ${baseClassName}__view-btn`}>
                 {isProd ? <a href='/resume/#/projects'><input type='button' value='View All' /></a> : <a href='/projects'><input type='button' value='View All' /></a>}
             </div>
         </div>

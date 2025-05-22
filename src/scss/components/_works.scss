@@ -10,22 +10,12 @@
         font-weight: 600;
         color: var(--color-grey-20);
         margin-bottom: clamp(2px, 0.5vw, 6px);
-        opacity: 0;
-        -webkit-animation: #{animations.fade-in-up-works-heading-animation()};
-        -moz-animation: #{animations.fade-in-up-works-heading-animation()};
-        -ms-animation: #{animations.fade-in-up-works-heading-animation()};
-        animation: #{animations.fade-in-up-works-heading-animation()};
     }
 
     &__slug {
         font-weight: 400;
         color: var(--color-grey-30);
         margin-bottom: clamp(40px, 10vw, 80px);
-        opacity: 0;
-        -webkit-animation: #{animations.fade-in-up-works-slug-animation()};
-        -moz-animation: #{animations.fade-in-up-works-slug-animation()};
-        -ms-animation: #{animations.fade-in-up-works-slug-animation()};
-        animation: #{animations.fade-in-up-works-slug-animation()};
     }
 
     &__items-container {
@@ -176,11 +166,6 @@
         justify-content: center;
         gap: 70px;
         align-items: center;
-        opacity: 0;
-        -webkit-animation: #{animations.fade-in-up-works-arrows-container-animation()};
-        -moz-animation: #{animations.fade-in-up-works-arrows-container-animation()};
-        -ms-animation: #{animations.fade-in-up-works-arrows-container-animation()};
-        animation: #{animations.fade-in-up-works-arrows-container-animation()};
 
         @include screens.min-md {
             display: none;
@@ -246,11 +231,6 @@
         border-color: transparent;
         background-color: var(--color-purple-50);
         margin-top: 40px;
-        opacity: 0;
-        -webkit-animation: #{animations.fade-in-up-works-btn-animation()};
-        -moz-animation: #{animations.fade-in-up-works-btn-animation()};
-        -ms-animation: #{animations.fade-in-up-works-btn-animation()};
-        animation: #{animations.fade-in-up-works-btn-animation()};
 
         input[type="button"] {
             all: unset;
@@ -276,6 +256,37 @@
             border-left: 10px solid transparent;
             border-bottom: 10px solid var(--color-purple-50);
         }
+    }
+}
+
+.rss-works__home {
+    &__title {
+        opacity: 0;
+        -webkit-animation: #{animations.fade-in-up-works-heading-animation()};
+        -moz-animation: #{animations.fade-in-up-works-heading-animation()};
+        -ms-animation: #{animations.fade-in-up-works-heading-animation()};
+        animation: #{animations.fade-in-up-works-heading-animation()};
+    }
+    &__slug {
+        opacity: 0;
+        -webkit-animation: #{animations.fade-in-up-works-slug-animation()};
+        -moz-animation: #{animations.fade-in-up-works-slug-animation()};
+        -ms-animation: #{animations.fade-in-up-works-slug-animation()};
+        animation: #{animations.fade-in-up-works-slug-animation()};
+    }
+    &__arrows-container {
+        opacity: 0;
+        -webkit-animation: #{animations.fade-in-up-works-arrows-container-animation()};
+        -moz-animation: #{animations.fade-in-up-works-arrows-container-animation()};
+        -ms-animation: #{animations.fade-in-up-works-arrows-container-animation()};
+        animation: #{animations.fade-in-up-works-arrows-container-animation()};
+    }
+    &__view-btn {
+        opacity: 0;
+        -webkit-animation: #{animations.fade-in-up-works-btn-animation()};
+        -moz-animation: #{animations.fade-in-up-works-btn-animation()};
+        -ms-animation: #{animations.fade-in-up-works-btn-animation()};
+        animation: #{animations.fade-in-up-works-btn-animation()};
     }
 }
 

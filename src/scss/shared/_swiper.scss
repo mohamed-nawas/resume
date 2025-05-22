@@ -17,7 +17,7 @@
     &-items-wrapper { @include screens.max-md { display: flex; justify-content: center; }}
 }
 
-.works-swiper {
+.rss-works__home__swiper {
     opacity: 0;
     -webkit-animation: #{animations.fade-in-up-works-items-container-animation()};
     -moz-animation: #{animations.fade-in-up-works-items-container-animation()};
@@ -33,7 +33,30 @@
         -ms-transform: none;
         transform: none;
         transition: opacity 1s ease-out;
-        transition-delay: 5.85s;
+        // transition-delay: 5.85s;
+        transition-delay: 0.2s;
+        &.is-visible { opacity: 1; }
+    }
+}
+
+.review-swiper {
+    opacity: 0;
+    -webkit-animation: #{animations.fade-in-up-review-items-container-animation()};
+    -moz-animation: #{animations.fade-in-up-review-items-container-animation()};
+    -ms-animation: #{animations.fade-in-up-review-items-container-animation()};
+    animation: #{animations.fade-in-up-review-items-container-animation()};
+    @include screens.max-smd {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        transform: none;
+        transition: opacity 1s ease-out;
+        // transition-delay: 5.85s;
+        transition-delay: 0.2s;
         &.is-visible { opacity: 1; }
     }
 }

@@ -4,7 +4,7 @@ import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import { works as worksBreakpoints } from '../data/swiper-space-between-breakpoints';
 
-export default function WorksSwiper({ children }: { children: React.ReactNode }) {
+export default function WorksSwiper({ children, baseClassName }: { children: React.ReactNode, baseClassName: string }) {
     const swiperRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
@@ -71,7 +71,7 @@ export default function WorksSwiper({ children }: { children: React.ReactNode })
     }, []);
 
     return (
-        <div className="swiper works-swiper" ref={swiperRef}>
+        <div className={`swiper works-swiper ${baseClassName}`} ref={swiperRef}>
             {children}
         </div>
     );
