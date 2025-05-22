@@ -37,9 +37,8 @@ function Portfolio() {
                     </Banner>
 
                     <div className="rss-portfolio__contents-container">
-                        <Works title="Professional Projects" slug="" items={[projects]} />
-                        <Works title="Personal Projects" slug="" items={[articles]} />
-                        {/* <Works title="Blogs" slug="" items={[cases]} /> */}
+                        <Works baseClassName='' swiperBaseClassName='' title="Professional Projects" slug="" items={[projects]} />
+                        <Works baseClassName='' swiperBaseClassName='' title="Personal Projects" slug="" items={[articles]} />
                         <Blogs blogs={blogs} />
                     </div>
 
