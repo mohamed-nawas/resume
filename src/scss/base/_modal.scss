@@ -19,7 +19,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background: var(--color-peach-92);
-        padding: 100px 50px;
+        padding: 50px 25px;
         border-radius: 10px;
         width: 700px;
         min-width: 270px;
@@ -32,13 +32,13 @@
 
         &__title {
             font-weight: 700;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             color: var(--color-grey-10);
         }
 
         &__slug {
             font-weight: 600;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             color: var(--color-grey-20);
         }
 
@@ -59,7 +59,7 @@
             @include screens.max-smtb { flex-direction: column; gap: 10px; }
             &__download-btn, &__submit-btn {
                 display: block;
-                width: 50%;
+                width: 100%;
                 margin-top: 12px;
                 padding: 10px;
                 border: none;
@@ -84,7 +84,7 @@
         border-radius: 6px;
         border: 1px solid #CCCCCC;
         resize: none;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         color: var(--color-grey-10);
     }
 }
