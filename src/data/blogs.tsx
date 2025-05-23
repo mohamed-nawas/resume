@@ -1,5 +1,11 @@
 export const items = [
     {
+        id: 2147856,
+        title: 'Building local LLM AI-Powered Applications with Quarkus, Ollama and Testcontainers',
+        description: "Traditionally, many AI-powered applications rely on cloud-based APIs or centralized services for...",
+        cover_image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdefv9j6s88xk87tot29t.png"
+    },
+    {
         id: 2464126,
         title: 'Docker Advance: Mastering Containerization',
         description: "As an experienced developer, you're beyond the basics of docker run and docker build. You need to...",
