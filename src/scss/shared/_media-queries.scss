@@ -55,6 +55,10 @@ $screen-lg: 1920px;
     @media (max-width: #{$screen-tb - 1}) { @content; }
 }
 
+@mixin max-smtb {
+    @media (max-width: #{$screen-smtb - 1}) { @content; }
+}
+
 @mixin max-sm {
     @media (max-width: #{$screen-sm - 1}) { @content; }
 }

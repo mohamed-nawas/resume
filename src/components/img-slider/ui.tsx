@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ImgSwiper from '../../slider-scripts/ImgSwiper';
+import ImgSwiper from '../../scripts/slider-scripts/ImgSwiper';
 
 const ImgSliderUI: React.FC<ImgSliderUIProps> = ({ containerRef, data }) => {
     const isProd = process.env.NODE_ENV === 'production';

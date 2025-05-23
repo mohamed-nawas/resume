@@ -2,9 +2,9 @@ import { useEffect, useRef } from 'react';
 import Swiper from 'swiper';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
-import { img as imgBreakpoints } from "../data/swiper-space-between-breakpoints";
+import { blogs as blogsBreakpoints } from "../../data/swiper-space-between-breakpoints";
 
-export default function ImgSwiper({ children }: { children: React.ReactNode }) {
+export default function BlogsSwiper({ children }: { children: React.ReactNode }) {
     const swiperRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
@@ -20,7 +20,7 @@ export default function ImgSwiper({ children }: { children: React.ReactNode }) {
         if (slideCount > 3) { shouldLoop = true; shouldAutoplay = true; }
         else if (slideCount === 3 && width < 1440) {  shouldLoop = true; shouldAutoplay = true; }
         else if (slideCount === 2 && width < 768) {  shouldLoop = true; shouldAutoplay = true; }
-        
+
         Swiper.use([Autoplay]);
 
         const swiperInstance = new Swiper(swiperRef.current, {
@@ -31,7 +31,7 @@ export default function ImgSwiper({ children }: { children: React.ReactNode }) {
                 reverseDirection: true,
             } : false,
             slidesPerView: 'auto',
-            breakpoints: imgBreakpoints,
+            breakpoints: blogsBreakpoints,
         });
 
         const resizeHandler = () => swiperInstance.update();
@@ -43,7 +43,7 @@ export default function ImgSwiper({ children }: { children: React.ReactNode }) {
     }, []);
 
     return (
-        <div className="swiper img-swiper" ref={swiperRef}>
+        <div className="swiper blogs-swiper" ref={swiperRef}>
             {children}
         </div>
     );
