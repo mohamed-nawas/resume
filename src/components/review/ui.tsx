@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { items } from '../../data/reviews';
-import ReviewSwiper from '../../slider-scripts/ReviewSwiper';
+import ReviewSwiper from '../../scripts/slider-scripts/ReviewSwiper';
 
 const ReviewUI: React.FC<ReviewUIProps> = ({ containerRef, title, slug, count }) => {
     return (

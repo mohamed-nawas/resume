@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import Swiper from 'swiper';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
-import { review as reviewBreakpoints } from '../data/swiper-space-between-breakpoints';
+import { review as reviewBreakpoints } from '../../data/swiper-space-between-breakpoints';
 
 // function calculateSpaceBetween() {
 //     const width = window.innerWidth;

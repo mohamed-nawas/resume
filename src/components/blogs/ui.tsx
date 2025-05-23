@@ -1,5 +1,5 @@
 import * as React from 'react';
-import BlogsSwiper from '../../slider-scripts/BlogsSwiper';
+import BlogsSwiper from '../../scripts/slider-scripts/BlogsSwiper';
 import shuffleArray from '../../utils/array-shuffle';
 
 const BlogsUI: React.FC<BlogsUIProps> = ({ containerRef, blogs }) => {

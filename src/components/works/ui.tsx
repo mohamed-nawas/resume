@@ -1,5 +1,5 @@
 import * as React from 'react';
-import WorksSwiper from '../../slider-scripts/WorksSwiper';
+import WorksSwiper from '../../scripts/slider-scripts/WorksSwiper';
 import shuffleArray from '../../utils/array-shuffle';
 import ImagePopupPortal from '../img-popup-portal';
 
