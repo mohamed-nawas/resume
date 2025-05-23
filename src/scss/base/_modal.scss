@@ -31,20 +31,25 @@
         @include screens.max-smd { width: 80%; }
 
         &__title {
-            font-weight: 600;
+            font-weight: 700;
             margin-bottom: 30px;
             color: var(--color-grey-10);
         }
 
+        &__slug {
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: var(--color-grey-20);
+        }
+
         &__close-btn {
             position: absolute;
-            top: 20px;
+            top: 0;
             right: 20px;
             font-size: clamp(28px, 7vw, 48px);
+            font-weight: 700;
             cursor: pointer;
             color: red;
-            padding: 0 15px;
-            background-color: var(--color-absolute-white);
             border-radius: 10px;
         }
 
@@ -54,19 +59,20 @@
             @include screens.max-smtb { flex-direction: column; gap: 10px; }
             &__download-btn, &__submit-btn {
                 display: block;
-                width: 100%;
+                width: 50%;
                 margin-top: 12px;
                 padding: 10px;
                 border: none;
                 background: var(--color-purple-50);
                 color: var(--color-absolute-white);
                 border-radius: 5px;
-                cursor: pointe;
-                font-weight: 600;
+                cursor: pointer;
+                font-weight: 700;
                 transition: background 0.3s ease;
     
                 &:hover { background: var(--color-other-purple); }
             }
+            &__download-btn { background: #8A2BE2; }
         }
     }
 

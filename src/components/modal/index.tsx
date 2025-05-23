@@ -37,7 +37,8 @@ const Modal = () => {
         <div className="rss-modal">
             <div className="rss-modal__content">
                 <span className="rss-modal__content__close-btn" onClick={closeModal}>&times;</span>
-                <h2 className="rss-modal__content__title font-18-28">Drop a Quick Message</h2>
+                <h2 className="rss-modal__content__title font-18-28">Considering a Project? Get My CV Instantly</h2>
+                <h4 className="rss-modal__content__slug font-16-20">See how my experience aligns with your needs.</h4>
                 <form onSubmit={handleSubmit}>
                     <textarea name="message" placeholder="Leave a Quick Message..." required />
                     <div className="rss-modal__content__btn-container">
@@ -46,7 +47,7 @@ const Modal = () => {
                             download
                             className="rss-modal__content__btn-container__download-btn font-14-18"
                         >
-                            Download CV
+                            Download CV ⤓
                         </a>
                         <button type="submit" className="rss-modal__content__btn-container__submit-btn font-14-18">
                             Send Message
