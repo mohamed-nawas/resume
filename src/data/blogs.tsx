@@ -6,6 +6,12 @@ export const items = [
         cover_image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdefv9j6s88xk87tot29t.png"
     },
     {
+        id: 2427984,
+        title: 'Building a Simple AI Agent with n8n',
+        description: "Introduction   I've been playing around with AI Agents for a while now, and in a bit, I'll...",
+        cover_image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Foi6fcxggr217qki55g0e.png"
+    },
+    {
         id: 2464126,
         title: 'Docker Advance: Mastering Containerization',
         description: "As an experienced developer, you're beyond the basics of docker run and docker build. You need to...",
