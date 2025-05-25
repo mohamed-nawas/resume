@@ -3,8 +3,8 @@ import DynamicGrid from "../../components/dynamic_grid";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 import { items } from "../../data/banner-projects";
-import { items as projects } from "../../data/professional-projects";
-import { items as articles } from "../../data/personal-projects";
+import { items as projects } from "../../data/completed-projects";
+import { items as articles } from "../../data/ongoing-projects";
 import { items as blogs } from "../../data/blogs";
 import Works from "../../components/works";
 import Blogs from "../../components/blogs";
@@ -37,8 +37,8 @@ function Portfolio() {
                     </Banner>
 
                     <div className="rss-portfolio__contents-container">
-                        <Works baseClassName='' swiperBaseClassName='' title="Professional Projects" slug="" items={[projects]} />
-                        <Works baseClassName='' swiperBaseClassName='' title="Personal Projects" slug="" items={[articles]} />
+                        <Works baseClassName='' swiperBaseClassName='' title="Completed Projects" slug="" items={[projects]} />
+                        <Works baseClassName='' swiperBaseClassName='' title="Ongoing Projects" slug="" items={[articles]} />
                         <Blogs blogs={blogs} />
                     </div>
 

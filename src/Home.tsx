@@ -3,8 +3,8 @@ import Footer from "./components/footer";
 import FAQ from "./components/faq";
 import Review from "./components/review";
 import Works from "./components/works";
-import { items as projects } from "./data/professional-projects";
-import { items as articles } from "./data/personal-projects";
+import { items as projects } from "./data/completed-projects";
+import { items as articles } from "./data/ongoing-projects";
 import shuffleArray from "./utils/array-shuffle";
 import { useCounterUp } from "./hooks/useCounterUp";
 
