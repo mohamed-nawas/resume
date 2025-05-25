@@ -13,4 +13,11 @@ export const items = [
         subImgsPath: ["images/zentry-image-1.png", "images/zentry-image-1.png", "images/zentry-image-1.png", "images/zentry-image-1.png"],
         imgAlt: "Zentry Image",
     },
+    {
+        id: 'project-008',
+        title: "Computic Solutions",
+        mainImgPath: "images/computic-solutions-image-1.png",
+        subImgsPath: ["images/computic-solutions-image-1.png", "images/computic-solutions-image-1.png", "images/computic-solutions-image-1.png", "images/computic-solutions-image-1.png"],
+        imgAlt: "Computic Solutions Image",
+    },
 ];

@@ -219,6 +219,38 @@ const Projects: Record<string, Project> = {
     demo: 'https://zentry-git-main-mohamed-nawas-projects.vercel.app/',
     repo: 'https://github.com/mohamed-nawas/zentry'
   },
+  'computic-solutions': {
+    mainImg: 'images/computic-solutions-image-1.png',
+    title: "Computic Solutions",
+    slug: "IT Solutions Provider",
+    role: "Fullstack Engineer",
+    teamSize: "Solo Project",
+    tools: ["React", "SCSS", "Figma", "Vercel", "Typescript"],
+    description: "Computic Solutions is a professional IT solutions provider specializing in delivering tailored technology services to meet the unique needs of businesses. The platform showcases a range of services, including software development, IT consulting, and system integration, aimed at helping organizations optimize their operations and achieve their technological goals.",
+    images: [
+      { src: 'images/computic-solutions-1.png', alt: 'Computic Solutions Dashboard' },
+      { src: 'images/computic-solutions-2.png', alt: 'Computic Solutions Dashboard' },
+    ],
+    problems: [
+      'Businesses struggling to find reliable and customized IT solutions',
+      'Lack of a centralized platform to explore and access diverse IT services'
+    ],
+    decisions: [
+      'Developed a clean and responsive website to present services effectively',
+      'Utilized React for dynamic content rendering and seamless user experience',
+      'Employed Tailwind CSS for efficient styling and consistent design'
+    ],
+    challenges: [
+      'Ensuring the website is informative yet concise to engage potential clients',
+      "Maintaining a professional design that reflects the company's expertise"
+    ],
+    outcomes: [
+      "Launched a user-friendly platform that effectively communicates the company's services",
+      'Enhanced online presence, leading to increased client inquiries and engagement',
+    ],
+    demo: 'https://computic-solutions-git-main-mohamed-nawas-projects.vercel.app/',
+    repo: ''
+  },
 }
 
 export default Projects;
