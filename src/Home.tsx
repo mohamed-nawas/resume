@@ -57,42 +57,42 @@ function Home() {
             <div className="rss-home__skills-section__list-container">
               <div className="rss-home__skills-section__list-container__item">
                 <div className="rss-home__skills-section__list-container__item__icon-container">
-                  <img src={process.env.NODE_ENV === 'production' ? `${import.meta.env.BASE_URL}/icons/web-design-ico.png` : 'icons/web-design-ico.png'} alt="web-design" />
+                  <img src={`${import.meta.env.BASE_URL}icons/web-design-ico.png`} alt="web-design" />
                 </div>
                 <h5 className="rss-home__skills-section__list-container__item__title font-18-24">Client-Side Expertise</h5>
                 <p className="rss-home__skills-section__list-container__item__slug font-14-18">Proficient in building interactive and responsive user interfaces using modern JavaScript frameworks like React, along with core web technologies such as HTML, CSS, and TypeScript. Experienced in state management, component-based architecture, and UI/UX best practices (leveraging Figma for design understanding)</p>
               </div>
               <div className="rss-home__skills-section__list-container__item">
                 <div className="rss-home__skills-section__list-container__item__icon-container">
-                  <img src={process.env.NODE_ENV === 'production' ? `${import.meta.env.BASE_URL}/icons/ui-design-ico.png` : 'icons/ui-design-ico.png'} alt="ui-design" />
+                  <img src={`${import.meta.env.BASE_URL}icons/ui-design-ico.png`} alt="ui-design" />
                 </div>
                 <h5 className="rss-home__skills-section__list-container__item__title font-18-24">Server-Side Expertise</h5>
                 <p className="rss-home__skills-section__list-container__item__slug font-14-18">Experienced in developing robust and scalable server-side applications using Java (Spring Boot), Node.js, and PHP. Proficient in designing and developing RESTful APIs and integrating with third-party services. Focused on creating efficient, secure, and well-documented back-end solutions to power web applications</p>
               </div>
               <div className="rss-home__skills-section__list-container__item">
                 <div className="rss-home__skills-section__list-container__item__icon-container">
-                  <img src={process.env.NODE_ENV === 'production' ? `${import.meta.env.BASE_URL}/icons/ux-design-ico.png` : 'icons/ux-design-ico.png'} alt="ux-design" />
+                  <img src={`${import.meta.env.BASE_URL}icons/ux-design-ico.png`} alt="ux-design" />
                 </div>
                 <h5 className="rss-home__skills-section__list-container__item__title font-18-24">Database Management</h5>
                 <p className="rss-home__skills-section__list-container__item__slug font-14-18">Skilled in designing, implementing, and managing relational (MySQL, PostgreSQL) and NoSQL (MongoDB) databases. Experienced in data modeling, query optimization, and ensuring data integrity</p>
               </div>
               <div className="rss-home__skills-section__list-container__item">
                 <div className="rss-home__skills-section__list-container__item__icon-container">
-                  <img src={process.env.NODE_ENV === 'production' ? `${import.meta.env.BASE_URL}/icons/responsive-design-ico.png` : 'icons/responsive-design-ico.png'} alt="responsive-design" />
+                  <img src={`${import.meta.env.BASE_URL}icons/responsive-design-ico.png`} alt="responsive-design" />
                 </div>
                 <h5 className="rss-home__skills-section__list-container__item__title font-18-24">Cloud & DevOps</h5>
                 <p className="rss-home__skills-section__list-container__item__slug font-14-18">Experienced in deploying web applications to various environments, including cloud platforms like AWS. Familiar with setting up and managing CI/CD pipelines using tools such as Jenkins, GitHub Actions, or Bitbucket Pipelines for automated building, testing, and deployment and containerizations using Docker</p>
               </div>
               <div className="rss-home__skills-section__list-container__item">
                 <div className="rss-home__skills-section__list-container__item__icon-container">
-                  <img src={process.env.NODE_ENV === 'production' ? `${import.meta.env.BASE_URL}/icons/wireframing-ico.png` : 'icons/wireframing-ico.png'} alt="wireframing" />
+                  <img src={`${import.meta.env.BASE_URL}icons/wireframing-ico.png`} alt="wireframing" />
                 </div>
                 <h5 className="rss-home__skills-section__list-container__item__title font-18-24">Quality Assurance</h5>
                 <p className="rss-home__skills-section__list-container__item__slug font-14-18">Committed to delivering high-quality software through thorough testing and quality analysis. Experienced with tools like SonarQube for code quality checks and various testing methodologies</p>
               </div>
               <div className="rss-home__skills-section__list-container__item">
                 <div className="rss-home__skills-section__list-container__item__icon-container">
-                  <img src={process.env.NODE_ENV === 'production' ? `${import.meta.env.BASE_URL}/icons/optimization-ico.png` : 'icons/optimization-ico.png'} alt="optimization" />
+                  <img src={`${import.meta.env.BASE_URL}icons/optimization-ico.png`} alt="optimization" />
                 </div>
                 <h5 className="rss-home__skills-section__list-container__item__title font-18-24">Version Control & Collaboration</h5>
                 <p className="rss-home__skills-section__list-container__item__slug font-14-18">Experienced in using Git for version control and collaborating effectively with teams through platforms like GitHub and Bitbucket. Familiar with branching strategies, pull requests, and code reviews to ensure code quality and efficient teamwork</p>
