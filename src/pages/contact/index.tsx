@@ -64,13 +64,7 @@ function Contact() {
                                         <p className="rss-contact__form-container__content-container__contents__item__text-container__slug font-16-20">mgmnawas@gmail.com</p>
                                     </div>
                                     <div className="rss-contact__form-container__content-container__contents__item__arrow-container">
-                                        {
-                                            process.env.NODE_ENV === "production" ? (
-                                                <img src={`${import.meta.env.BASE_URL}/icons/arrow-ico.png`} alt="Arrow Icon" className="rss-contact__form-container__content-container__contents__item__arrow-container__arrow" />
-                                            ) : (
-                                                <img src='icons/arrow-ico.png' alt="Arrow Icon" className="rss-contact__form-container__content-container__contents__item__arrow-container__arrow" />
-                                            )
-                                        }
+                                        <img src={`${import.meta.env.BASE_URL}icons/arrow-ico.png`} alt="Arrow Icon" className="rss-contact__form-container__content-container__contents__item__arrow-container__arrow" />
                                     </div>
                                 </div>
                                 <div className="rss-contact__form-container__content-container__contents__item">
@@ -79,13 +73,7 @@ function Contact() {
                                         <p className="rss-contact__form-container__content-container__contents__item__text-container__slug font-16-20">+94 77 455 2663</p>
                                     </div>
                                     <div className="rss-contact__form-container__content-container__contents__item__arrow-container">
-                                        {
-                                            process.env.NODE_ENV === "production" ? (
-                                                <img src={`${import.meta.env.BASE_URL}/icons/arrow-ico.png`} alt="Arrow Icon" className="rss-contact__form-container__content-container__contents__item__arrow-container__arrow" />
-                                            ) : (
-                                                <img src='icons/arrow-ico.png' alt="Arrow Icon" className="rss-contact__form-container__content-container__contents__item__arrow-container__arrow" />
-                                            )
-                                        }
+                                        <img src={`${import.meta.env.BASE_URL}icons/arrow-ico.png`} alt="Arrow Icon" className="rss-contact__form-container__content-container__contents__item__arrow-container__arrow" />
                                     </div>
                                 </div>
                                 <div className="rss-contact__form-container__content-container__contents__item">
@@ -94,13 +82,7 @@ function Contact() {
                                         <p className="rss-contact__form-container__content-container__contents__item__text-container__slug font-16-20">Colombo, Sri Lanka</p>
                                     </div>
                                     <div className="rss-contact__form-container__content-container__contents__item__arrow-container">
-                                        {
-                                            process.env.NODE_ENV === "production" ? (
-                                                <img src={`${import.meta.env.BASE_URL}/icons/arrow-ico.png`} alt="Arrow Icon" className="rss-contact__form-container__content-container__contents__item__arrow-container__arrow" />
-                                            ) : (
-                                                <img src='icons/arrow-ico.png' alt="Arrow Icon" className="rss-contact__form-container__content-container__contents__item__arrow-container__arrow" />
-                                            )
-                                        }
+                                        <img src={`${import.meta.env.BASE_URL}icons/arrow-ico.png`} alt="Arrow Icon" className="rss-contact__form-container__content-container__contents__item__arrow-container__arrow" />
                                     </div>
                                 </div>
                             </div>
@@ -109,35 +91,17 @@ function Contact() {
                                 <div className="rss-contact__form-container__content-container__profiles__icons-container">
                                     <div className="rss-contact__form-container__content-container__profiles__icons-container__item">
                                         <a href="https://www.linkedin.com/in/mohamed-nawaz/" target="_blank">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/icons/linkedin-ico.png`} alt="Linkedin Icon" className="rss-contact__form-container__content-container__profiles__icons-container__item__img" />
-                                                ) : (
-                                                    <img src='icons/linkedin-ico.png' alt="Linkedin Icon" className="rss-contact__form-container__content-container__profiles__icons-container__item__img" />
-                                                )
-                                            }
+                                            <img src={`${import.meta.env.BASE_URL}icons/linkedin-ico.png`} alt="Linkedin Icon" className="rss-contact__form-container__content-container__profiles__icons-container__item__img" />
                                         </a>
                                     </div>
                                     <div className="rss-contact__form-container__content-container__profiles__icons-container__item">
                                         <a href="https://www.twitter.com/" target="_blank">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/icons/twitter-ico.png`} alt="Twitter Icon" className="rss-contact__form-container__content-container__profiles__icons-container__item__img" />
-                                                ) : (
-                                                    <img src='icons/twitter-ico.png' alt="Twitter Icon" className="rss-contact__form-container__content-container__profiles__icons-container__item__img" />
-                                                )
-                                            }
+                                            <img src={`${import.meta.env.BASE_URL}icons/twitter-ico.png`} alt="Twitter Icon" className="rss-contact__form-container__content-container__profiles__icons-container__item__img" />
                                         </a>
                                     </div>
                                     <div className="rss-contact__form-container__content-container__profiles__icons-container__item">
                                         <a href="https://github.com/mohamed-nawas/" target="_blank">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/icons/web-ico.png`} alt="Web Icon" className="rss-contact__form-container__content-container__profiles__icons-container__item__img" />
-                                                ) : (
-                                                    <img src='icons/web-ico.png' alt="Web Icon" className="rss-contact__form-container__content-container__profiles__icons-container__item__img" />
-                                                )
-                                            }
+                                            <img src={`${import.meta.env.BASE_URL}icons/web-ico.png`} alt="Web Icon" className="rss-contact__form-container__content-container__profiles__icons-container__item__img" />
                                         </a>
                                     </div>
                                 </div>
