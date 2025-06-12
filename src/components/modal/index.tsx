@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 
 const Modal = () => {
-    const isProd = process.env.NODE_ENV === 'production';
     const [show, setShow] = useState(false);
 
     useEffect(() => {
@@ -43,7 +42,7 @@ const Modal = () => {
                     <textarea name="message" placeholder="Leave a Quick Message..." required />
                     <div className="rss-modal__content__btn-container">
                         <a
-                            href={`${isProd ? import.meta.env.BASE_URL + '/docs/Resume_Final.pdf' : '/docs/Resume_Final.pdf'}`}
+                            href={import.meta.env.BASE_URL + '/docs/Resume_Final.pdf'}
                             download
                             className="rss-modal__content__btn-container__download-btn font-14-18"
                         >

@@ -19,9 +19,7 @@ const FAQUI: React.FC<FAQUIProps> = ({ containerRef, baseClassName, title, slug,
                         const currentIconPath = isClosed ? item.crossIconPath : item.plusIconPath;
                         const currentIconAlt = isClosed ? item.crossIconAlt : item.plusIconAlt;
 
-                        const iconSrc = process.env.NODE_ENV === "production"
-                            ? `${import.meta.env.BASE_URL}/${currentIconPath}`
-                            : currentIconPath;
+                        const iconSrc = import.meta.env.BASE_URL + currentIconPath;
 
                         return (
                             <div
@@ -48,11 +46,7 @@ const FAQUI: React.FC<FAQUIProps> = ({ containerRef, baseClassName, title, slug,
                 <div className={`rss-faq__container__help-container ${baseClassName}__container__help-container`}>
                     <div className={`rss-faq__container__help-container__ico-container ${baseClassName}__container__help-container__ico-container`}>
                         <img
-                            src={
-                                process.env.NODE_ENV === "production"
-                                    ? `${import.meta.env.BASE_URL}/${containerHelpIconPath}`
-                                    : containerHelpIconPath
-                            }
+                            src={import.meta.env.BASE_URL + containerHelpIconPath}
                             alt={containerHelpIconAlt}
                             className={`rss-faq__container__help-container__ico-container__icon ${baseClassName}__container__help-container__ico-container__icon`}
                         />
@@ -61,13 +55,7 @@ const FAQUI: React.FC<FAQUIProps> = ({ containerRef, baseClassName, title, slug,
                         <h4 className={`rss-faq__container__help-container__text-container__title ${baseClassName}__container__help-container__text-container__title font-18-24`}>{containerHelpTextTitle}</h4>
                         <p className={`rss-faq__container__help-container__text-container__slug ${baseClassName}__container__help-container__text-container__slug font-14-18`}>{containerHelpTextSlug}</p>
                     </div>
-                    {
-                        process.env.NODE_ENV === "production" ? (
-                            <a href='/resume/#/contact#form'><input type="button" value={containerHelpBtnValue} className={`rss-faq__container__help-container__submit-btn ${baseClassName}__container__help-container__submit-btn`} /></a>
-                        ) : (
-                            <a href='/contact#form'><input type="button" value={containerHelpBtnValue} className={`rss-faq__container__help-container__submit-btn ${baseClassName}__container__help-container__submit-btn`} /></a>
-                        )
-                    }
+                    <a href='/contact#form'><input type="button" value={containerHelpBtnValue} className={`rss-faq__container__help-container__submit-btn ${baseClassName}__container__help-container__submit-btn`} /></a>
                 </div>
             </div>
         </div>
