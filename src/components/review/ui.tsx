@@ -28,35 +28,17 @@ const ReviewUI: React.FC<ReviewUIProps> = ({ containerRef, title, slug, count })
                                 <div className="rss-review__review-items-container__item__header-container__profile-container">
                                     <div className="rss-review__review-items-container__item__header-container__profile-container__item-container">
                                         <a href={item.linkedin} target="_blank">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/icons/linkedin-filled-ico.png`} alt="Linkedin Icon" className="rss-review__review-items-container__item__header-container__profile-container__item-container__item" />
-                                                ) : (
-                                                    <img src='icons/linkedin-filled-ico.png' alt="Linkedin Icon" className="rss-review__review-items-container__item__header-container__profile-container__item-container__item" />
-                                                )
-                                            }
+                                            <img src={`${import.meta.env.BASE_URL}icons/linkedin-filled-ico.png`} alt="Linkedin Icon" className="rss-review__review-items-container__item__header-container__profile-container__item-container__item" />
                                         </a>
                                     </div>
                                     <div className="rss-review__review-items-container__item__header-container__profile-container__item-container">
                                         <a href={item.facebook} target="_blank">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/icons/facebook-filled-ico.png`} alt="Facebook Icon" className="rss-review__review-items-container__item__header-container__profile-container__item-container__item" />
-                                                ) : (
-                                                    <img src='icons/facebook-filled-ico.png' alt="Facebook Icon" className="rss-review__review-items-container__item__header-container__profile-container__item-container__item" />
-                                                )
-                                            }
+                                            <img src={`${import.meta.env.BASE_URL}icons/facebook-filled-ico.png`} alt="Facebook Icon" className="rss-review__review-items-container__item__header-container__profile-container__item-container__item" />
                                         </a>
                                     </div>
                                     <div className="rss-review__review-items-container__item__header-container__profile-container__item-container">
                                         <a href={item.twiter} target="_blank">
-                                            {
-                                                process.env.NODE_ENV === "production" ? (
-                                                    <img src={`${import.meta.env.BASE_URL}/icons/twitter-filled-ico.png`} alt="Twitter Icon" className="rss-review__review-items-container__item__header-container__profile-container__item-container__item" />
-                                                ) : (
-                                                    <img src='icons/twitter-filled-ico.png' alt="Twitter Icon" className="rss-review__review-items-container__item__header-container__profile-container__item-container__item" />
-                                                )
-                                            }
+                                            <img src={`${import.meta.env.BASE_URL}icons/twitter-filled-ico.png`} alt="Twitter Icon" className="rss-review__review-items-container__item__header-container__profile-container__item-container__item" />
                                         </a>
                                     </div>
                                 </div>
