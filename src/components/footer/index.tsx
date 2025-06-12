@@ -3,39 +3,20 @@ function Footer() {
         <footer className="rss-footer">
             <div className="rss-footer__brand-container">
                 <h5 className="rss-footer__brand-container__title font-18-24">Mohamed Nawaz</h5>
-                {
-                    process.env.NODE_ENV === "production" ? (
-                        <div className="rss-footer__brand-container__link-container">
-                            <a href="/resume">
-                                <p className="rss-footer__brand-container__link-container__link font-14-18">Home</p>
-                            </a>
-                            <a href="/resume/#/about">
-                                <p className="rss-footer__brand-container__link-container__link font-14-18">About</p>
-                            </a>
-                            <a href="/resume/#/projects">
-                                <p className="rss-footer__brand-container__link-container__link font-14-18">Works</p>
-                            </a>
-                            <a href="/resume/#/contact">
-                                <p className="rss-footer__brand-container__link-container__link font-14-18">Contact</p>
-                            </a>
-                        </div>
-                    ) : (
-                        <div className="rss-footer__brand-container__link-container">
-                            <a href="/">
-                                <p className="rss-footer__brand-container__link-container__link font-14-18">Home</p>
-                            </a>
-                            <a href="/about">
-                                <p className="rss-footer__brand-container__link-container__link font-14-18">About</p>
-                            </a>
-                            <a href="/projects">
-                                <p className="rss-footer__brand-container__link-container__link font-14-18">Works</p>
-                            </a>
-                            <a href="/contact">
-                                <p className="rss-footer__brand-container__link-container__link font-14-18">Contact</p>
-                            </a>
-                        </div>
-                    )
-                }
+                    <div className="rss-footer__brand-container__link-container">
+                        <a href="/">
+                            <p className="rss-footer__brand-container__link-container__link font-14-18">Home</p>
+                        </a>
+                        <a href="/about">
+                            <p className="rss-footer__brand-container__link-container__link font-14-18">About</p>
+                        </a>
+                        <a href="/projects">
+                            <p className="rss-footer__brand-container__link-container__link font-14-18">Works</p>
+                        </a>
+                        <a href="/contact">
+                            <p className="rss-footer__brand-container__link-container__link font-14-18">Contact</p>
+                        </a>
+                    </div>
                 <div className="rss-footer__brand-container__icons-container">
                     <div className="rss-footer__brand-container__icons-container__ico-container">
                         <a href="https://www.linkedin.com/in/mohamed-nawaz/" target="_blank">
