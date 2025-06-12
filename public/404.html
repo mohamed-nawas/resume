@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/" />
+    <meta charset="UTF-8" />
     <title>Redirecting...</title>
+    <script>
+      // Redirect to index.html but preserve the full path
+      window.location.replace('/?redirect=' + encodeURIComponent(
+        window.location.pathname + window.location.search + window.location.hash
+      ));
+    </script>
   </head>
   <body>
-    <p>If you're not redirected, <a href="/">click here</a>.</p>
+    <p>Redirecting...</p>
   </body>
 </html>
