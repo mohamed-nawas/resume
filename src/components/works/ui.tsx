@@ -22,9 +22,9 @@ const WorksUI: React.FC<WorksUIProps> = ({ containerRef, baseClassName, swiperBa
             <WorksSwiper baseClassName={swiperBaseClassName}>
                 <div className="swiper-wrapper rss-works__items-container">
                     {shuffledWorks.map((item) => {
-                        const activeImageSrc = activeImages[item.id] || (isProd ? `${basePath}/${item.mainImgPath}` : item.mainImgPath);
+                        const activeImageSrc = activeImages[item.id] || (`${basePath}${item.mainImgPath}`);
                         return (
-                            <a href={isProd ? `/resume/#/detail?${item.title.trim().toLowerCase().replace(/\s+/g, '-')}` : `/detail?${item.title.trim().toLowerCase().replace(/\s+/g, '-')}`} className="swiper-slide rss-works__items-container__item" key={item.id}>
+                            <a href={`/detail?${item.title.trim().toLowerCase().replace(/\s+/g, '-')}`} className="swiper-slide rss-works__items-container__item" key={item.id}>
                                 <h4 className="rss-works__items-container__item__title font-16-20">{item.title}</h4>
                                 <div className="rss-works__items-container__item__banner-image-container">
                                     <img
@@ -46,7 +46,7 @@ const WorksUI: React.FC<WorksUIProps> = ({ containerRef, baseClassName, swiperBa
                                 <div className="rss-works__items-container__item__image-list-container">
                                     {
                                         item.subImgsPath.map((imgPath, index) => {
-                                            const thumbnailSrc = isProd ? `${basePath}/${imgPath}` : imgPath;
+                                            const thumbnailSrc = basePath + imgPath;
                                             const isActive = activeImageSrc === thumbnailSrc;
                                             return (
                                                 <div
@@ -81,7 +81,7 @@ const WorksUI: React.FC<WorksUIProps> = ({ containerRef, baseClassName, swiperBa
             </div>
 
             <div className={`rss-works__view-btn ${baseClassName}__view-btn`}>
-                {isProd ? <a href='/resume/#/projects'><input type='button' value='View All' /></a> : <a href='/projects'><input type='button' value='View All' /></a>}
+                <a href='/projects'><input type='button' value='View All' /></a>
             </div>
         </div>
     );
