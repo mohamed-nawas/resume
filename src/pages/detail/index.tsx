@@ -7,7 +7,6 @@ import Projects from "./data";
 function Detail() {
     const location = useLocation();
     const id = location.search.startsWith('?') ? location.search.slice(1) : location.search;
-    const isProd = process.env.NODE_ENV === 'production';
     const basePath = import.meta.env.BASE_URL;
 
     const project = Projects[id];
@@ -16,7 +15,7 @@ function Detail() {
             <Header />
             <section className="rss-works-detail">
                 <div className="container-fluid">
-                    <div className="rss-works-detail__hero-section" style={{ '--bg-detail-hero': `url('${isProd ? basePath + project.mainImg : project.mainImg}')` } as React.CSSProperties}>
+                    <div className="rss-works-detail__hero-section" style={{ '--bg-detail-hero': `url('${basePath + project.mainImg}')` } as React.CSSProperties}>
                         <h2 className="rss-works-detail__hero-section__title font-38-58">{project.title}</h2>
                         <p className="rss-works-detail__hero-section__slug font-28-48">{project.slug}</p>
                     </div>

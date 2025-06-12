@@ -49,13 +49,7 @@ function About() {
                             <div className="rss-about__timeline-section__content-container__line-styled" />
                             <div className="rss-about__timeline-section__content-container__details-container-right rss-about__timeline-section__content-container__details-container-right-1">
                                 <p className="rss-about__timeline-section__content-container__details-container__content font-14-18">Continuing on my path of growth and exploration, I've expanded my skill set by delving into cloud technologies (AWS), advanced front-end frameworks (TypeScript). I'm focused on building scalable microservices, performant single-page applications and expanding my knowledge in the area of <span className="rss-about__timeline-section__content-container__details-container__content-strong">Software Engineering</span></p>
-                                {
-                                    process.env.NODE_ENV === "production" ? (
-                                        <img src={`${import.meta.env.BASE_URL}/icons/timeline_purple-ico.png`} alt="Timeline Purple" className="rss-about__timeline-section__content-container__details-container__ico" />
-                                    ) : (
-                                        <img src='icons/timeline_purple-ico.png' alt="Timeline Purple" className="rss-about__timeline-section__content-container__details-container__ico" />
-                                    )
-                                }
+                                <img src={`${import.meta.env.BASE_URL}icons/timeline_purple-ico.png`} alt="Timeline Purple" className="rss-about__timeline-section__content-container__details-container__ico" />
                             </div>
 
                             <div className="rss-about__timeline-section__content-container__line rss-about__timeline-section__content-container__line-green" />
@@ -65,13 +59,7 @@ function About() {
                             <div className="rss-about__timeline-section__content-container__line-styled rss-about__timeline-section__content-container__line-styled-green" />
                             <div className="rss-about__timeline-section__content-container__details-container-left rss-about__timeline-section__content-container__details-container-left-1">
                                 <p className="rss-about__timeline-section__content-container__details-container__content font-14-18">At <span className="rss-about__timeline-section__content-container__details-container__content-strong">Maytech</span>, I was involved in building and maintaing front-end and CMS based web applications with React for their clients while also gaining experience on handling projects fully from planning to delivery</p>
-                                {
-                                    process.env.NODE_ENV === "production" ? (
-                                        <img src={`${import.meta.env.BASE_URL}/icons/timeline_green-ico.png`} alt="Timeline Green" className="rss-about__timeline-section__content-container__details-container__ico" />
-                                    ) : (
-                                        <img src='icons/timeline_green-ico.png' alt="Timeline Green" className="rss-about__timeline-section__content-container__details-container__ico" />
-                                    )
-                                }
+                                <img src={`${import.meta.env.BASE_URL}icons/timeline_green-ico.png`} alt="Timeline Green" className="rss-about__timeline-section__content-container__details-container__ico" />
                             </div>
 
                             <div className="rss-about__timeline-section__content-container__line rss-about__timeline-section__content-container__line-yellow" />
@@ -81,13 +69,7 @@ function About() {
                             <div className="rss-about__timeline-section__content-container__line-styled rss-about__timeline-section__content-container__line-styled-yellow" />
                             <div className="rss-about__timeline-section__content-container__details-container-right rss-about__timeline-section__content-container__details-container-right-2">
                                 <p className="rss-about__timeline-section__content-container__details-container__content font-14-18">During my time at <span className="rss-about__timeline-section__content-container__details-container__content-strong">Swivel Tech</span>, I focused on building Restful APIs using Java and Spring Boot with microservice architectures, was able to gain hands on experience on industry best practices, tools and processes to building robust and scalable applications</p>
-                                {
-                                    process.env.NODE_ENV === "production" ? (
-                                        <img src={`${import.meta.env.BASE_URL}/icons/timeline_yellow-ico.png`} alt="Timeline Yellow" className="rss-about__timeline-section__content-container__details-container__ico" />
-                                    ) : (
-                                        <img src='icons/timeline_yellow-ico.png' alt="Timeline Yellow" className="rss-about__timeline-section__content-container__details-container__ico" />
-                                    )
-                                }
+                                <img src={`${import.meta.env.BASE_URL}icons/timeline_yellow-ico.png`} alt="Timeline Yellow" className="rss-about__timeline-section__content-container__details-container__ico" />
                             </div>
 
                             <div className="rss-about__timeline-section__content-container__line rss-about__timeline-section__content-container__line-orange" />
@@ -97,13 +79,7 @@ function About() {
                             <div className="rss-about__timeline-section__content-container__line-styled rss-about__timeline-section__content-container__line-styled-orange" />
                             <div className="rss-about__timeline-section__content-container__details-container-left rss-about__timeline-section__content-container__details-container-left-2">
                                 <p className="rss-about__timeline-section__content-container__details-container__content font-14-18">Graduated in <span className="rss-about__timeline-section__content-container__details-container__content-strong">Information and Communication Engineering</span> from <span className="rss-about__timeline-section__content-container__details-container__content-strong">SLTC Research University</span>, This academic foundation provided me with a strong understanding of skills like determination, persistence, data structures and algorithms, etc</p>
-                                {
-                                    process.env.NODE_ENV === "production" ? (
-                                        <img src={`${import.meta.env.BASE_URL}/icons/timeline_orange-ico.png`} alt="Timeline Orange" className="rss-about__timeline-section__content-container__details-container__ico" />
-                                    ) : (
-                                        <img src='icons/timeline_orange-ico.png' alt="Timeline Orange" className="rss-about__timeline-section__content-container__details-container__ico" />
-                                    )
-                                }
+                                <img src={`${import.meta.env.BASE_URL}icons/timeline_orange-ico.png`} alt="Timeline Orange" className="rss-about__timeline-section__content-container__details-container__ico" />
                             </div>
 
                             <div className="rss-about__timeline-section__content-container__line rss-about__timeline-section__content-container__line-pink" />
@@ -113,13 +89,7 @@ function About() {
                             <div className="rss-about__timeline-section__content-container__line-styled rss-about__timeline-section__content-container__line-styled-pink" />
                             <div className="rss-about__timeline-section__content-container__details-container-right rss-about__timeline-section__content-container__details-container-right-3">
                                 <p className="rss-about__timeline-section__content-container__details-container__content font-14-18">As a freelanceer, I undertook various projects involving graphic design, data entry, digital marketing, social media handling, as well as some small development tasks, These experiences honed my skills in these areas as well as things like client communication, project management, and independent problem solving<span className="rss-about__timeline-section__content-container__details-container__content-strong"></span></p>
-                                {
-                                    process.env.NODE_ENV === "production" ? (
-                                        <img src={`${import.meta.env.BASE_URL}/icons/timeline_pink-ico.png`} alt="Timeline Pink" className="rss-about__timeline-section__content-container__details-container__ico" />
-                                    ) : (
-                                        <img src='icons/timeline_pink-ico.png' alt="Timeline Pink" className="rss-about__timeline-section__content-container__details-container__ico" />
-                                    )
-                                }
+                                <img src={`${import.meta.env.BASE_URL}icons/timeline_pink-ico.png`} alt="Timeline Pink" className="rss-about__timeline-section__content-container__details-container__ico" />
                             </div>
 
                             <div className="rss-about__timeline-section__content-container__line rss-about__timeline-section__content-container__line-blue" />
@@ -132,13 +102,7 @@ function About() {
                                     <h6 className="rss-about__timeline-section__content-container__details-container-top__title font-16-20">Foundations</h6>
                                     <p className="rss-about__timeline-section__content-container__details-container__content font-14-18">My intial journey into development involved building a strong foundation in the core technologies like HTML, CSS, and JS. This stage was crucial for understanding key foundations of digitalization and development<span className="rss-about__timeline-section__content-container__details-container__content-strong"></span></p>
                                 </div>
-                                {
-                                    process.env.NODE_ENV === "production" ? (
-                                        <img src={`${import.meta.env.BASE_URL}/icons/timeline_blue-ico.png`} alt="Timeline Blue" className="rss-about__timeline-section__content-container__details-container__ico" />
-                                    ) : (
-                                        <img src='icons/timeline_blue-ico.png' alt="Timeline Blue" className="rss-about__timeline-section__content-container__details-container__ico" />
-                                    )
-                                }
+                                <img src={`${import.meta.env.BASE_URL}icons/timeline_blue-ico.png`} alt="Timeline Blue" className="rss-about__timeline-section__content-container__details-container__ico" />
                             </div>
 
                         </div>
