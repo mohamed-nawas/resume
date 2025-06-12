@@ -25,27 +25,12 @@ function Home() {
               <p className="rss-home__details-section__content-container__content font-14-18">A dedicated full-stack developer experienced in building robust and user-friendly web solutions. My expertise spans from crafting engaging user interfaces to developing powerful server-side logic and managing databases and deployments. Browse my portfolio to see what I can do</p>
               <div className="rss-home__details-section__content-container__contact-container">
                 <div className="rss-home__details-section__content-container__contact-container__btn">
-                  {
-                    process.env.NODE_ENV === 'production' ? (
-                      <a href="/resume/#/contact#form">
-                        <span className="glyphicon glyphicon-earphone"></span>
-                        <p className="font-14-18">Let's Connect</p>
-                      </a>
-                    ) : (
-                      <a href="/contact#form">
-                        <span className="glyphicon glyphicon-earphone"></span>
-                        <p className="font-14-18">Let's Connect</p>
-                      </a>
-                    )
-                  }
+                  <a href="/contact#form">
+                    <span className="glyphicon glyphicon-earphone"></span>
+                    <p className="font-14-18">Let's Connect</p>
+                  </a>
                 </div>
-                {
-                  process.env.NODE_ENV === 'production' ? (
-                    <a href="/resume/#/projects" className="rss-home__details-section__content-container__contact-container__link font-14-18">View Portfolio</a>
-                  ) : (
-                    <a href="/projects" className="rss-home__details-section__content-container__contact-container__link font-14-18">View Portfolio</a>
-                  )
-                }
+                <a href="/projects" className="rss-home__details-section__content-container__contact-container__link font-14-18">View Portfolio</a>
               </div>
               <div className="rss-home__details-section__content-container__status-container">
                 <div className="rss-home__details-section__content-container__status-container__item-container rss-home__details-section__content-container__status-container__item-container-full">
