@@ -6,7 +6,6 @@ import ImagePopupPortal from '../img-popup-portal';
 const WorksUI: React.FC<WorksUIProps> = ({ containerRef, baseClassName, swiperBaseClassName, title, slug, items }) => {
     const works = [...items.flat()];
     const shuffledWorks = React.useMemo(() => shuffleArray(works), []);
-    const isProd = process.env.NODE_ENV === 'production';
     const basePath = import.meta.env.BASE_URL;
     const [popupImg, setPopupImg] = React.useState<string | null>(null);
     const [activeImages, setActiveImages] = React.useState<{ [id: string]: string }>({});
